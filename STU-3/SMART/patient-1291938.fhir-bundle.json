@@ -1,0 +1,306 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-11"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "267024001",
+                            "display": "Abnormal weight loss",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Abnormal weight loss"
+                },
+                "id": "smart-Condition-11",
+                "onsetDateTime": "2008-11-19",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abnormal weight loss</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-11"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-12"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "38341003",
+                            "display": "Essential hypertension",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Essential hypertension"
+                },
+                "id": "smart-Condition-12",
+                "onsetDateTime": "2009-06-17",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Essential hypertension</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-12"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-13"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "55822004",
+                            "display": "Hyperlipidemia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hyperlipidemia"
+                },
+                "id": "smart-Condition-13",
+                "onsetDateTime": "2009-06-17",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hyperlipidemia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-13"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/smart-Procedure-1"
+            },
+            "resource": {
+                "code": {
+                    "coding": [
+                        {
+                            "code": "35637008",
+                            "display": "Alcohol rehabilitation",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Alcohol rehabilitation"
+                },
+                "id": "smart-Procedure-1",
+                "performedDateTime": "2002-05-23",
+                "resourceType": "Procedure",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Alcohol rehabilitation</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Procedure/smart-Procedure-1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/smart-Procedure-2"
+            },
+            "resource": {
+                "code": {
+                    "coding": [
+                        {
+                            "code": "384742004",
+                            "display": "Smoking cessation assistance",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Smoking cessation assistance"
+                },
+                "id": "smart-Procedure-2",
+                "performedDateTime": "2000-02-12",
+                "resourceType": "Procedure",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Smoking cessation assistance</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Procedure/smart-Procedure-2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-47"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-06-10",
+                "id": "smart-smokingstatus-47",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-47"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71032702"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Never smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "266919005",
+                            "display": "Never smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Never smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-47"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-29"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-29",
+                "patient": {
+                    "reference": "Patient/smart-1291938"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-29"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

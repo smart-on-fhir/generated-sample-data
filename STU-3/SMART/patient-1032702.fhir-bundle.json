@@ -1,0 +1,621 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1032702"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Mounds",
+                        "country": "USA",
+                        "line": [
+                            "49 Meadow St"
+                        ],
+                        "postalCode": "74047",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2007-03-20",
+                "gender": "female",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "id": "smart-1032702",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-1032702"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Shaw",
+                        "given": [
+                            "Amy",
+                            "V"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-782-6765"
+                    },
+                    {
+                        "system": "email",
+                        "value": "amy.shaw@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amy Shaw</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-1032702"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-101"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 10
+                        },
+                        "text": "10 mL bid",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-05"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-101",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "582620",
+                            "display": "Nizatidine 15 MG/ML Oral Solution [Axid]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Nizatidine 15 MG/ML Oral Solution [Axid]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nizatidine 15 MG/ML Oral Solution [Axid] (rxnorm: 582620)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-101"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-119"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "442311008",
+                            "display": "Single liveborn, born in hospital, delivered without mention of cesarean section",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                },
+                "id": "smart-Condition-119",
+                "onsetDateTime": "2007-12-14",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Single liveborn, born in hospital, delivered without mention of cesarean section</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-119"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-120"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "267024001",
+                            "display": "Abnormal weight loss",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Abnormal weight loss"
+                },
+                "id": "smart-Condition-120",
+                "onsetDateTime": "2007-12-19",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abnormal weight loss</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-120"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-121"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "310249008",
+                            "display": "Follow-up encounter",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Follow-up encounter"
+                },
+                "id": "smart-Condition-121",
+                "onsetDateTime": "2007-12-19",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Follow-up encounter</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-121"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-122"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "235595009",
+                            "display": "Gastroesophageal reflux disease",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Gastroesophageal reflux disease"
+                },
+                "id": "smart-Condition-122",
+                "onsetDateTime": "2008-04-03",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gastroesophageal reflux disease</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-122"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-123"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "185903001",
+                            "display": "Needs influenza immunization",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Needs influenza immunization"
+                },
+                "id": "smart-Condition-123",
+                "onsetDateTime": "2008-06-29",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Needs influenza immunization</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-123"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-1"
+            },
+            "resource": {
+                "date": "2007-09-27",
+                "id": "smart-Immunization-1",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">DTaP-hepatitis B and poliovirus vaccine</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "110",
+                            "display": "DTaP-hepatitis B and poliovirus vaccine",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "DTaP-hepatitis B and poliovirus vaccine"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-2"
+            },
+            "resource": {
+                "date": "2011-01-27",
+                "id": "smart-Immunization-2",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">poliovirus vaccine, unspecified formulation</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "89",
+                            "display": "poliovirus vaccine, unspecified formulation",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "poliovirus vaccine, unspecified formulation"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-3"
+            },
+            "resource": {
+                "date": "2011-05-27",
+                "id": "smart-Immunization-3",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">poliovirus vaccine, unspecified formulation</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "89",
+                            "display": "poliovirus vaccine, unspecified formulation",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "poliovirus vaccine, unspecified formulation"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-4"
+            },
+            "resource": {
+                "date": "2007-05-24",
+                "id": "smart-Immunization-4",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">rotavirus, live, pentavalent vaccine</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "116",
+                            "display": "rotavirus, live, pentavalent vaccine",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "rotavirus, live, pentavalent vaccine"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-4"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-5"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-09-16",
+                "id": "smart-smokingstatus-5",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-5"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Current some day smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "428041000124106",
+                            "display": "Current some day smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-5"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-19"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-19",
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-19"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

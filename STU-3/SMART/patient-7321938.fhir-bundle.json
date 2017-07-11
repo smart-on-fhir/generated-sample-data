@@ -1,0 +1,660 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-7321938"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Sand Springs",
+                        "country": "USA",
+                        "line": [
+                            "80 Mill St"
+                        ],
+                        "postalCode": "74063",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2010-12-16",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "id": "smart-7321938",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-7321938"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Himston",
+                        "given": [
+                            "Billie",
+                            "H"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "billi.himston@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Billie Himston</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-7321938"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-7321938-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "exam",
+                            "display": "Exam",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2010-12-16",
+                "id": "smart-7321938-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-7321938-gestage"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-16: Gestational age at birth = 30.6 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "18185-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 30.6
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-7321938-gestage"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3508-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-16T06:39:00+05:00",
+                "id": "smart-3508-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3508-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-16T06:39:00+05:00: Bilirub Skin-mCnc = 4 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 4
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3508-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3509-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-17T06:39:00+05:00",
+                "id": "smart-3509-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3509-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-17T06:39:00+05:00: Bilirub Skin-mCnc = 14 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 14
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3509-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3510-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-17T12:39:00+05:00",
+                "id": "smart-3510-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3510-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-17T12:39:00+05:00: Bilirub Skin-mCnc = 13.2 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 13.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3510-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3511-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-17T18:39:00+05:00",
+                "id": "smart-3511-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3511-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-17T18:39:00+05:00: Bilirub Skin-mCnc = 12 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 12
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3511-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3512-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-18T18:39:00+05:00",
+                "id": "smart-3512-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3512-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-18T18:39:00+05:00: Bilirub Skin-mCnc = 11 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 11
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3512-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3513-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "effectiveDateTime": "2010-12-20T18:39:00+05:00",
+                "id": "smart-3513-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3513-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-20T18:39:00+05:00: Bilirub Skin-mCnc = 8 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "58941-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 8
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3513-lab"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

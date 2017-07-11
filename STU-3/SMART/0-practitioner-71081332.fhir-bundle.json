@@ -1,0 +1,85 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-71081332"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "19 Church StApt 29"
+                        ],
+                        "postalCode": "74108",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1963-10-02",
+                "gender": "male",
+                "id": "smart-Practitioner-71081332",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0006"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Ross",
+                        "given": [
+                            "Joseph",
+                            "I"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-960-9294"
+                    },
+                    {
+                        "system": "email",
+                        "value": "joseph.ross@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Joseph Ross</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-71081332"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

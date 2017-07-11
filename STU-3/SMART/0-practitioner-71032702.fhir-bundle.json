@@ -1,0 +1,85 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-71032702"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Mounds",
+                        "country": "USA",
+                        "line": [
+                            "49 Meadow St"
+                        ],
+                        "postalCode": "74047",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1987-03-20",
+                "gender": "female",
+                "id": "smart-Practitioner-71032702",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0005"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Cox",
+                        "given": [
+                            "Amy",
+                            "V"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-782-6765"
+                    },
+                    {
+                        "system": "email",
+                        "value": "amy.shaw@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amy Cox</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-71032702"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

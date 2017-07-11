@@ -1,0 +1,2764 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-2542-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30522-7",
+                            "display": "CRP SerPl HS-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "CRP SerPl HS-mCnc"
+                },
+                "effectiveDateTime": "2005-04-24",
+                "id": "smart-2542-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-2542-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/L",
+                        "value": 3
+                    },
+                    "low": {
+                        "code": "mg/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/L",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-04-24: CRP SerPl HS-mCnc = 4.2 mg/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "30522-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/L",
+                    "value": 4.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-2542-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-40"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 60
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 bid prn anxiety",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2006-10-06"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-40",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197528",
+                            "display": "Clonazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clonazepam 1 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clonazepam 1 MG Oral Tablet (rxnorm: 197528)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-40"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1323"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-40"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1323",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197528",
+                            "display": "Clonazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clonazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 30 day supply of Clonazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2006-10-06",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1323"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-41"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 2
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 10
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 q6h prn pain",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-07-18"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-41",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309462",
+                            "display": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acetaminophen 300 MG / Codeine 30 MG Oral Tablet (rxnorm: 309462)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-41"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1317"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-41"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 2
+                },
+                "id": "smart-MedicationDispense-1317",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309462",
+                            "display": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 10
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 10 tablets = 2 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-07-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1317"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-42"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 5
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 40
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 q6h prn pain",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-08-17"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-42",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856903",
+                            "display": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet (rxnorm: 856903)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-42"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1314"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-42"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 4
+                },
+                "id": "smart-MedicationDispense-1314",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856903",
+                            "display": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 20
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 20 tablets = 4 day supply of Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-11-25",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1314"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1313"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-42"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 5
+                },
+                "id": "smart-MedicationDispense-1313",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856903",
+                            "display": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 40
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 40 tablets = 5 day supply of Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-08-17",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1313"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1315"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-42"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 4
+                },
+                "id": "smart-MedicationDispense-1315",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856903",
+                            "display": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 20
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 20 tablets = 4 day supply of Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-12-29",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1315"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1316"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-42"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 4
+                },
+                "id": "smart-MedicationDispense-1316",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856903",
+                            "display": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 20
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 20 tablets = 4 day supply of Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-05-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1316"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-43"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 3
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "taper as directed"
+                    }
+                ],
+                "id": "smart-MedicationRequest-43",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197582",
+                            "display": "Dexamethasone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Dexamethasone 4 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dexamethasone 4 MG Oral Tablet (rxnorm: 197582)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-43"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1301"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-43"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 3
+                },
+                "id": "smart-MedicationDispense-1301",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197582",
+                            "display": "Dexamethasone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Dexamethasone 4 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 12
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 12 tablets = 3 day supply of Dexamethasone 4 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-10",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1301"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1303"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-43"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 6
+                },
+                "id": "smart-MedicationDispense-1303",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197582",
+                            "display": "Dexamethasone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Dexamethasone 4 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 12
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 12 tablets = 6 day supply of Dexamethasone 4 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-10-12",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1303"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1302"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-43"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 3
+                },
+                "id": "smart-MedicationDispense-1302",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197582",
+                            "display": "Dexamethasone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Dexamethasone 4 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 12
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 12 tablets = 3 day supply of Dexamethasone 4 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-10-02",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1302"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-44"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 bid prn anxiety",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-09-12"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-44",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lorazepam 1 MG Oral Tablet (rxnorm: 197901)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-44"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1318"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-44"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1318",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Lorazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-12",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1318"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1319"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-44"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1319",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Lorazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-11-10",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1319"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1322"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-44"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1322",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Lorazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-02-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1322"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1321"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-44"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1321",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Lorazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-01-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1321"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1320"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-44"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1320",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197901",
+                            "display": "Lorazepam 1 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Lorazepam 1 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Lorazepam 1 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-12-16",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1320"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-45"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 5
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 qid prn nausea",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-09-12"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-45",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198365",
+                            "display": "Prochlorperazine 10 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Prochlorperazine 10 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prochlorperazine 10 MG Oral Tablet (rxnorm: 198365)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-45"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1311"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-45"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 5
+                },
+                "id": "smart-MedicationDispense-1311",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198365",
+                            "display": "Prochlorperazine 10 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Prochlorperazine 10 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 5 day supply of Prochlorperazine 10 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-12",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1311"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-46"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "rinse mouth daily as directed",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-09-18"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-46",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "312055",
+                            "display": "Nystatin 100000 UNT/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Nystatin 100000 UNT/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nystatin 100000 UNT/ML Oral Suspension (rxnorm: 312055)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-46"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1312"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-46"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-1312",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "312055",
+                            "display": "Nystatin 100000 UNT/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Nystatin 100000 UNT/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 498
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 498 tablets = 10 day supply of Nystatin 100000 UNT/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1312"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-47"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 5
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 15
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tid",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-10-16"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-47",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198080",
+                            "display": "Phenazopyridine 200 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Phenazopyridine 200 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Phenazopyridine 200 MG Oral Tablet (rxnorm: 198080)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-47"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1310"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-47"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 5
+                },
+                "id": "smart-MedicationDispense-1310",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198080",
+                            "display": "Phenazopyridine 200 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Phenazopyridine 200 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 15
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 15 tablets = 5 day supply of Phenazopyridine 200 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-10-16",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1310"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-48"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 1
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 4
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 2
+                        },
+                        "text": "2 bid x1",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-11-13"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-48",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198382",
+                            "display": "famciclovir 500 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "famciclovir 500 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">famciclovir 500 MG Oral Tablet (rxnorm: 198382)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-48"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1308"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-48"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-1308",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198382",
+                            "display": "famciclovir 500 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "famciclovir 500 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 21
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 21 tablets = 7 day supply of famciclovir 500 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-11-13",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1308"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-49"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 7
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "taper as directed"
+                    }
+                ],
+                "id": "smart-MedicationRequest-49",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "762675",
+                            "display": "Methylprednisolone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Methylprednisolone 4 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Methylprednisolone 4 MG Oral Tablet (rxnorm: 762675)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-49"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1324"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-49"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-1324",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "762675",
+                            "display": "Methylprednisolone 4 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Methylprednisolone 4 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 21
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 21 tablets = 7 day supply of Methylprednisolone 4 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-12-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1324"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-50"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "Apply bid to affected area",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2009-01-24"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-50",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197574",
+                            "display": "Desoximetasone 2.5 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Desoximetasone 2.5 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Desoximetasone 2.5 MG/ML Topical Cream (rxnorm: 197574)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-50"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1309"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-50"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 20
+                },
+                "id": "smart-MedicationDispense-1309",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197574",
+                            "display": "Desoximetasone 2.5 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Desoximetasone 2.5 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 20 day supply of Desoximetasone 2.5 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-01-24",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1309"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-51"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 qhs",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2009-04-02"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-51",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856377",
+                            "display": "Trazodone 50 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Trazodone 50 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Trazodone 50 MG Oral Tablet (rxnorm: 856377)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-51"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1305"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-51"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1305",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856377",
+                            "display": "Trazodone 50 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Trazodone 50 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-05-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1305"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1304"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-51"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1304",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856377",
+                            "display": "Trazodone 50 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Trazodone 50 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-04-02",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1304"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1306"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-51"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1306",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856377",
+                            "display": "Trazodone 50 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Trazodone 50 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-07-13",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1306"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1307"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-51"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-1307",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "856377",
+                            "display": "Trazodone 50 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Trazodone 50 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-08-24",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1307"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-501"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "35678005",
+                            "display": "Multiple joint pain",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Multiple joint pain"
+                },
+                "id": "smart-Condition-501",
+                "onsetDateTime": "2004-03-06",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Multiple joint pain</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-501"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-502"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "404640003",
+                            "display": "Dizziness and giddiness",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Dizziness and giddiness"
+                },
+                "id": "smart-Condition-502",
+                "onsetDateTime": "2006-12-23",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dizziness and giddiness</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-502"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-503"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "68962001",
+                            "display": "Myalgia and myositis, unspecified",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Myalgia and myositis, unspecified"
+                },
+                "id": "smart-Condition-503",
+                "onsetDateTime": "2007-03-10",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Myalgia and myositis, unspecified</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-503"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-504"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "36971009",
+                            "display": "Acute sinusitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute sinusitis"
+                },
+                "id": "smart-Condition-504",
+                "onsetDateTime": "2008-01-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute sinusitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-504"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-505"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9826008",
+                            "display": "Conjunctivitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Conjunctivitis"
+                },
+                "id": "smart-Condition-505",
+                "onsetDateTime": "2008-01-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Conjunctivitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-505"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-506"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "408643008",
+                            "display": "Overlapping malignant neoplasm of female breast",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Overlapping malignant neoplasm of female breast"
+                },
+                "id": "smart-Condition-506",
+                "onsetDateTime": "2008-07-18",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Overlapping malignant neoplasm of female breast</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-506"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-507"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "254837009",
+                            "display": "Primary malignant neoplasm of female breast",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Primary malignant neoplasm of female breast"
+                },
+                "id": "smart-Condition-507",
+                "onsetDateTime": "2008-07-25",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Primary malignant neoplasm of female breast</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-507"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-508"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "161891005",
+                            "display": "Backache",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Backache"
+                },
+                "id": "smart-Condition-508",
+                "onsetDateTime": "2008-07-26",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Backache</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-508"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-509"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "89164003",
+                            "display": "Breast lump",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Breast lump"
+                },
+                "id": "smart-Condition-509",
+                "onsetDateTime": "2008-07-26",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast lump</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-509"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-510"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-510",
+                "onsetDateTime": "2008-08-15",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-510"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-511"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "239160006",
+                            "display": "Hemorrhage AND/OR hematoma complicating procedure",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hemorrhage AND/OR hematoma complicating procedure"
+                },
+                "id": "smart-Condition-511",
+                "onsetDateTime": "2008-08-16",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemorrhage AND/OR hematoma complicating procedure</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-511"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-512"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "429494008",
+                            "display": "Seroma complicating a procedure",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Seroma complicating a procedure"
+                },
+                "id": "smart-Condition-512",
+                "onsetDateTime": "2008-08-16",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Seroma complicating a procedure</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-512"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-43"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-11-27",
+                "id": "smart-smokingstatus-43",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-43"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-765583"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Unknown if ever smoked</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "266927001",
+                            "display": "Unknown if ever smoked",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Unknown if ever smoked"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-43"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-11"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-11",
+                "patient": {
+                    "reference": "Patient/smart-765583"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-11"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

@@ -1,0 +1,4662 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-217-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2093-3",
+                            "display": "Cholest SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Cholest SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-217-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-217-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 200
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: Cholest SerPl-mCnc = 202 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2093-3",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 202
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-217-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-218-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "789-8",
+                            "display": "RBC # Bld Auto",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "RBC # Bld Auto"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-218-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-218-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*6/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*6/uL",
+                        "value": 6
+                    },
+                    "low": {
+                        "code": "10*6/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*6/uL",
+                        "value": 4.6
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: RBC # Bld Auto = 4.8 10*6/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "789-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*6/uL",
+                    "value": 4.8
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-218-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-219-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2345-7",
+                            "display": "Glucose SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Glucose SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-219-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-219-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 110
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 75
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: Glucose SerPl-mCnc = 130 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2345-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 130
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-219-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-220-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "26464-8",
+                            "display": "WBC # Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "WBC # Bld"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-220-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-220-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 11.5
+                    },
+                    "low": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 4.5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: WBC # Bld = 7.5 10*3/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "26464-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*3/uL",
+                    "value": 7.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-220-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-221-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "718-7",
+                            "display": "Hgb Bld-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Hgb Bld-mCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-221-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-221-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 18
+                    },
+                    "low": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 14
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: Hgb Bld-mCnc = 15.9 g/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "718-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "g/dL",
+                    "value": 15.9
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-221-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-222-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "1742-6",
+                            "display": "ALT SerPl-cCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "ALT SerPl-cCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-222-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-222-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 72
+                    },
+                    "low": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 21
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: ALT SerPl-cCnc = 44 U/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "1742-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "U/L",
+                    "value": 44
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-222-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-223-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "786-4",
+                            "display": "MCHC RBC Auto-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCHC RBC Auto-mCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-223-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-223-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 36
+                    },
+                    "low": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 32
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: MCHC RBC Auto-mCnc = 36 g/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "786-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "g/dL",
+                    "value": 36
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-223-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-224-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "785-6",
+                            "display": "MCH RBC Qn Auto",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCH RBC Qn Auto"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-224-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-224-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "pg",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "pg",
+                        "value": 32
+                    },
+                    "low": {
+                        "code": "pg",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "pg",
+                        "value": 26
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: MCH RBC Qn Auto = 33 pg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "785-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "pg",
+                    "value": 33
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-224-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-225-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30428-7",
+                            "display": "MCV RBC",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCV RBC"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-225-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-225-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 94
+                    },
+                    "low": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 80
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: MCV RBC = 94 fL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "30428-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "fL",
+                    "value": 94
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-225-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-226-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "26515-7",
+                            "display": "Platelet # Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Platelet # Bld"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-226-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-226-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 450
+                    },
+                    "low": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 150
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: Platelet # Bld = 201 10*3/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "26515-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*3/uL",
+                    "value": 201
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-226-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-227-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "4548-4",
+                            "display": "Hgb A1c MFr Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Hgb A1c MFr Bld"
+                },
+                "effectiveDateTime": "2006-07-12",
+                "id": "smart-227-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-227-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "%",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "%",
+                        "value": 6
+                    },
+                    "low": {
+                        "code": "%",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "%",
+                        "value": 4.8
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-07-12: Hgb A1c MFr Bld = 6.2 %</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "4548-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%",
+                    "value": 6.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-227-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-228-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2345-7",
+                            "display": "Glucose SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Glucose SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-07-12",
+                "id": "smart-228-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-228-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 110
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 75
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-07-12: Glucose SerPl-mCnc = 87 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2345-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 87
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-228-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-229-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "1742-6",
+                            "display": "ALT SerPl-cCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "ALT SerPl-cCnc"
+                },
+                "effectiveDateTime": "2006-08-09",
+                "id": "smart-229-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-229-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 72
+                    },
+                    "low": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 21
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-08-09: ALT SerPl-cCnc = 22 U/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "1742-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "U/L",
+                    "value": 22
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-229-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-230-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2093-3",
+                            "display": "Cholest SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Cholest SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-08-09",
+                "id": "smart-230-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-230-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 200
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-08-09: Cholest SerPl-mCnc = 192 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2093-3",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 192
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-230-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-231-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2571-8",
+                            "display": "Trigl SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Trigl SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-08-09",
+                "id": "smart-231-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-231-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 150
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-08-09: Trigl SerPl-mCnc = 57 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2571-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 57
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-231-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-232-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2085-9",
+                            "display": "HDLc SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "HDLc SerPl-mCnc"
+                },
+                "effectiveDateTime": "2006-08-09",
+                "id": "smart-232-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-232-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 60
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 40
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-08-09: HDLc SerPl-mCnc = 51 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2085-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 51
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-232-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-233-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "13457-7",
+                            "display": "LDLc SerPl Calc-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "LDLc SerPl Calc-mCnc"
+                },
+                "effectiveDateTime": "2006-08-09",
+                "id": "smart-233-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-233-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 100
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-08-09: LDLc SerPl Calc-mCnc = 130 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "13457-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 130
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-233-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-234-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2085-9",
+                            "display": "HDLc SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "HDLc SerPl-mCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-234-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-234-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: HDLc SerPl-mCnc = 47 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2085-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 47
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-234-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-235-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "13457-7",
+                            "display": "LDLc SerPl Calc-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "LDLc SerPl Calc-mCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-235-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-235-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 100
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: LDLc SerPl Calc-mCnc = 122 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "13457-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 122
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-235-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-236-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "1742-6",
+                            "display": "ALT SerPl-cCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "ALT SerPl-cCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-236-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-236-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 45
+                    },
+                    "low": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: ALT SerPl-cCnc = 22 U/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "1742-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "U/L",
+                    "value": 22
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-236-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-237-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2571-8",
+                            "display": "Trigl SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Trigl SerPl-mCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-237-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-237-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 150
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: Trigl SerPl-mCnc = 73 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2571-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 73
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-237-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-238-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2093-3",
+                            "display": "Cholest SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Cholest SerPl-mCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-238-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-238-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 200
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: Cholest SerPl-mCnc = 184 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2093-3",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 184
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-238-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-239-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2345-7",
+                            "display": "Glucose SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Glucose SerPl-mCnc"
+                },
+                "effectiveDateTime": "2007-07-22",
+                "id": "smart-239-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-239-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 109
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 70
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-22: Glucose SerPl-mCnc = 99 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2345-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 99
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-239-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-240-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2857-1",
+                            "display": "PSA SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "PSA SerPl-mCnc"
+                },
+                "effectiveDateTime": "2008-09-07",
+                "id": "smart-240-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-240-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-09-07: PSA SerPl-mCnc = 0.02 ng/mL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2857-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "ng/mL",
+                    "value": 0.02
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-240-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-241-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2857-1",
+                            "display": "PSA SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "PSA SerPl-mCnc"
+                },
+                "effectiveDateTime": "2008-10-07",
+                "id": "smart-241-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-241-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-10-07: PSA SerPl-mCnc = 0.01 ng/mL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2857-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "ng/mL",
+                    "value": 0.01
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-241-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-242-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2857-1",
+                            "display": "PSA SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "PSA SerPl-mCnc"
+                },
+                "effectiveDateTime": "2008-12-06",
+                "id": "smart-242-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-242-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-12-06: PSA SerPl-mCnc = 0.013 ng/mL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2857-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "ng/mL",
+                    "value": 0.013
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-242-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-243-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "11580-8",
+                            "display": "TSH SerPl DL<=0.005 mU/L-aCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "TSH SerPl DL<=0.005 mU/L-aCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-243-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-243-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mcU/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mcU/mL",
+                        "value": 4.2
+                    },
+                    "low": {
+                        "code": "mcU/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mcU/mL",
+                        "value": 0.4
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: TSH SerPl DL&lt;=0.005 mU/L-aCnc = 1.471 mcU/mL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "11580-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mcU/mL",
+                    "value": 1.471
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-243-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-244-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "26515-7",
+                            "display": "Platelet # Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Platelet # Bld"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-244-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-244-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 450
+                    },
+                    "low": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 150
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Platelet # Bld = 183 10*3/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "26515-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*3/uL",
+                    "value": 183
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-244-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-245-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30428-7",
+                            "display": "MCV RBC",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCV RBC"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-245-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-245-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 94
+                    },
+                    "low": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 80
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: MCV RBC = 96 fL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "30428-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "fL",
+                    "value": 96
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-245-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-246-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2345-7",
+                            "display": "Glucose SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Glucose SerPl-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-246-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-246-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 109
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 70
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Glucose SerPl-mCnc = 112 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2345-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 112
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-246-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-247-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "786-4",
+                            "display": "MCHC RBC Auto-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCHC RBC Auto-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-247-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-247-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 36
+                    },
+                    "low": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 32
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: MCHC RBC Auto-mCnc = 34.3 g/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "786-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "g/dL",
+                    "value": 34.3
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-247-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-248-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "17861-6",
+                            "display": "Calcium SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Calcium SerPl-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-248-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-248-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 10.5
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 8.5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Calcium SerPl-mCnc = 9.6 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "17861-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 9.6
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-248-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-249-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2951-2",
+                            "display": "Sodium SerPl-sCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Sodium SerPl-sCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-249-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-249-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 145
+                    },
+                    "low": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 135
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Sodium SerPl-sCnc = 140 mmol/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2951-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mmol/L",
+                    "value": 140
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-249-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-250-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2160-0",
+                            "display": "Creat SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Creat SerPl-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-250-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-250-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 1.4
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 0.8
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Creat SerPl-mCnc = 0.94 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2160-0",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 0.94
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-250-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-251-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "1742-6",
+                            "display": "ALT SerPl-cCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "ALT SerPl-cCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-251-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-251-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 45
+                    },
+                    "low": {
+                        "code": "U/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "U/L",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: ALT SerPl-cCnc = 21 U/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "1742-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "U/L",
+                    "value": 21
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-251-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-252-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2823-3",
+                            "display": "Potassium SerPl-sCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Potassium SerPl-sCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-252-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-252-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 5.5
+                    },
+                    "low": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 3.5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Potassium SerPl-sCnc = 4.3 mmol/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2823-3",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mmol/L",
+                    "value": 4.3
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-252-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-253-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2075-0",
+                            "display": "Chloride SerPl-sCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Chloride SerPl-sCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-253-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-253-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 108
+                    },
+                    "low": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 98
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Chloride SerPl-sCnc = 104 mmol/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2075-0",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mmol/L",
+                    "value": 104
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-253-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-254-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2028-9",
+                            "display": "CO2 SerPl-sCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "CO2 SerPl-sCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-254-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-254-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 29
+                    },
+                    "low": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 22
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: CO2 SerPl-sCnc = 30 mmol/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2028-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mmol/L",
+                    "value": 30
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-254-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-255-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "718-7",
+                            "display": "Hgb Bld-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Hgb Bld-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-255-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-255-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 18
+                    },
+                    "low": {
+                        "code": "g/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "g/dL",
+                        "value": 14
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Hgb Bld-mCnc = 15.5 g/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "718-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "g/dL",
+                    "value": 15.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-255-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-256-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "26464-8",
+                            "display": "WBC # Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "WBC # Bld"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-256-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-256-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 11.5
+                    },
+                    "low": {
+                        "code": "10*3/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*3/uL",
+                        "value": 4.5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: WBC # Bld = 8.2 10*3/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "26464-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*3/uL",
+                    "value": 8.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-256-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-257-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "789-8",
+                            "display": "RBC # Bld Auto",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "RBC # Bld Auto"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-257-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-257-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "10*6/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*6/uL",
+                        "value": 6
+                    },
+                    "low": {
+                        "code": "10*6/uL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "10*6/uL",
+                        "value": 4.6
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: RBC # Bld Auto = 4.7 10*6/uL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "789-8",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "10*6/uL",
+                    "value": 4.7
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-257-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-258-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30385-9",
+                            "display": "RDW RBC-Rto",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "RDW RBC-Rto"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-258-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-258-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "%",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "%",
+                        "value": 14.5
+                    },
+                    "low": {
+                        "code": "%",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "%",
+                        "value": 11.5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: RDW RBC-Rto = 13.2 %</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "30385-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%",
+                    "value": 13.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-258-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-259-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "28542-9",
+                            "display": "PMV Bld",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "PMV Bld"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-259-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-259-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 9.6
+                    },
+                    "low": {
+                        "code": "fL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "fL",
+                        "value": 6.3
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: PMV Bld = 9.6 fL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "28542-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "fL",
+                    "value": 9.6
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-259-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-260-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "10466-1",
+                            "display": "Anion Gap3 SerPl-sCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Anion Gap3 SerPl-sCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-260-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-260-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 0
+                    },
+                    "low": {
+                        "code": "mmol/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mmol/L",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: Anion Gap3 SerPl-sCnc = 6 mmol/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "10466-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mmol/L",
+                    "value": 6
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-260-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-261-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3094-0",
+                            "display": "BUN SerPl-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "BUN SerPl-mCnc"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-261-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-261-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 20
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 5
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: BUN SerPl-mCnc = 12 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3094-0",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 12
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-261-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-262-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "785-6",
+                            "display": "MCH RBC Qn Auto",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "MCH RBC Qn Auto"
+                },
+                "effectiveDateTime": "2009-08-09",
+                "id": "smart-262-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-262-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "pg",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "pg",
+                        "value": 32
+                    },
+                    "low": {
+                        "code": "pg",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "pg",
+                        "value": 26
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-08-09: MCH RBC Qn Auto = 33 pg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "785-6",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "pg",
+                    "value": 33
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-262-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-263-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30522-7",
+                            "display": "CRP SerPl HS-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "CRP SerPl HS-mCnc"
+                },
+                "effectiveDateTime": "2006-06-18",
+                "id": "smart-263-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-263-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/L",
+                        "value": 3
+                    },
+                    "low": {
+                        "code": "mg/L",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/L",
+                        "value": 0
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-06-18: CRP SerPl HS-mCnc = 2.1 mg/L</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "30522-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/L",
+                    "value": 2.1
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-263-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-44"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "399068003",
+                            "display": "Primary malignant neoplasm of prostate",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Primary malignant neoplasm of prostate"
+                },
+                "id": "smart-Condition-44",
+                "onsetDateTime": "2003-08-23",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Primary malignant neoplasm of prostate</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-44"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-45"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "34014006",
+                            "display": "Viral disease",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Viral disease"
+                },
+                "id": "smart-Condition-45",
+                "onsetDateTime": "2004-05-29",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Viral disease</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-45"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-46"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-46",
+                "onsetDateTime": "2005-12-17",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-46"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-47"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "55822004",
+                            "display": "Hyperlipidemia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hyperlipidemia"
+                },
+                "id": "smart-Condition-47",
+                "onsetDateTime": "2005-12-17",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hyperlipidemia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-47"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-48"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "12063002",
+                            "display": "Hemorrhage of rectum and anus",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hemorrhage of rectum and anus"
+                },
+                "id": "smart-Condition-48",
+                "onsetDateTime": "2006-05-27",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemorrhage of rectum and anus</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-48"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-49"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "60700002",
+                            "display": "Sensorineural hearing loss",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Sensorineural hearing loss"
+                },
+                "id": "smart-Condition-49",
+                "onsetDateTime": "2006-05-27",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sensorineural hearing loss</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-49"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-50"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "68496003",
+                            "display": "Benign neoplasm of colon",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Benign neoplasm of colon"
+                },
+                "id": "smart-Condition-50",
+                "onsetDateTime": "2006-07-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Benign neoplasm of colon</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-50"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-51"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "398050005",
+                            "display": "Diverticular disease of colon",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Diverticular disease of colon"
+                },
+                "id": "smart-Condition-51",
+                "onsetDateTime": "2006-07-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diverticular disease of colon</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-51"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-52"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "90458007",
+                            "display": "Internal hemorrhoids without mention of complication",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Internal hemorrhoids without mention of complication"
+                },
+                "id": "smart-Condition-52",
+                "onsetDateTime": "2006-07-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Internal hemorrhoids without mention of complication</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-52"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-53"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "363518003",
+                            "display": "Primary malignant neoplasm of kidney",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Primary malignant neoplasm of kidney"
+                },
+                "id": "smart-Condition-53",
+                "onsetDateTime": "2006-11-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Primary malignant neoplasm of kidney</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-53"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-54"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "279039007",
+                            "display": "Low back pain",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Low back pain"
+                },
+                "id": "smart-Condition-54",
+                "onsetDateTime": "2008-09-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Low back pain</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-54"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-55"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "45326000",
+                            "display": "Shoulder joint pain",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Shoulder joint pain"
+                },
+                "id": "smart-Condition-55",
+                "onsetDateTime": "2008-09-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Shoulder joint pain</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-55"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-56"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "84229001",
+                            "display": "Malaise and fatigue",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Malaise and fatigue"
+                },
+                "id": "smart-Condition-56",
+                "onsetDateTime": "2009-08-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Malaise and fatigue</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-56"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-20"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-11-19",
+                "id": "smart-smokingstatus-20",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-20"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Unknown if ever smoked</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "266927001",
+                            "display": "Unknown if ever smoked",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Unknown if ever smoked"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-20"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-27"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-27",
+                "patient": {
+                    "reference": "Patient/smart-1272431"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-27"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

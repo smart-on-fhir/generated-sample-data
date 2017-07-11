@@ -1,0 +1,402 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-questionnaire-SMART-PROMs-QUE3",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS6"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS6",
+                "name": "YesNoMissing",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "Yes"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS7"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS7",
+                "name": "AssistingPerson",
+                "status": "active",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "0",
+                                    "display": "N/A"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Family Member"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Other Relative"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Carer"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Friend/Neighbor"
+                                },
+                                {
+                                    "code": "5",
+                                    "display": "Healthcare Professional"
+                                },
+                                {
+                                    "code": "6",
+                                    "display": "Other"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS7"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS8"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS8",
+                "name": "LivingArrangement",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "I live with partner/spouse/family/friends"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "I live alone"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "I live in a nursing home, hospital or other long-term care home"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Other"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS8"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS9"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS9",
+                "name": "Results",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "Excellent"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Very Good"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Good"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Fair"
+                                },
+                                {
+                                    "code": "5",
+                                    "display": "Poor"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS9"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS10"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS10",
+                "name": "ProblemsCompared",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "Much better"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "A little better"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "About the same"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "A little worse"
+                                },
+                                {
+                                    "code": "5",
+                                    "display": "Much worse"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS10"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Questionnaire/SMART-PROMs-QUE3"
+            },
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "SMART-PROMs-QUE3",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Post-Op Q2 PROMs General Health Questionnaire</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://www.england.nhs.uk/statistics/statistical-work-areas/proms/",
+                        "value": "Post-Op Q2 PROMs General Health Questionnaire"
+                    }
+                ],
+                "status": "active",
+                "item": [
+                    {
+                        "linkId": "Assisted",
+                        "text": "Is Anyone helping you fill in this questionnaire?",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Assisted By",
+                        "text": "If Yes, give the relationship to you of the person assisting you",
+                        "type": "choice",
+                        "required": false,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS7"
+                        }
+                    },
+                    {
+                        "linkId": "Living Arrangements",
+                        "text": "Which statement best describes your living arrangements?",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS8"
+                        }
+                    },
+                    {
+                        "linkId": "Disability",
+                        "text": "Do you consider yourself to have a disability?",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Satisfaction",
+                        "text": "How would you describe the results of your operation",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS9"
+                        }
+                    },
+                    {
+                        "linkId": "Success",
+                        "text": "Overall, how are your problems now, compared to before your operation?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS10"
+                        }
+                    },
+                    {
+                        "linkId": "Allergy",
+                        "text": "Did you experience any of the following problems after your operation: Allergy or reaction to drug?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Bleeding",
+                        "text": "Did you experience any of the following problems after your operation: Bleeding?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Wound",
+                        "text": "Did you experience any of the following problems after your operation: Wound problems?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Urine",
+                        "text": "Did you experience any of the following problems after your operation: Urinary problems?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Further Surgery",
+                        "text": "Indicates whether the patient has had another operation on the affected area",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Readmitted",
+                        "text": "Have you been readmitted to the hospital since your operation?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS6"
+                        }
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Questionnaire/SMART-PROMs-QUE3"
+        }
+    ]
+}

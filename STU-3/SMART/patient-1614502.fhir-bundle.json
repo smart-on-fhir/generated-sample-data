@@ -1,0 +1,1721 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1614502"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "27 South Ave"
+                        ],
+                        "postalCode": "74126",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2006-11-22",
+                "gender": "female",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "id": "smart-1614502",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-1614502"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Williams",
+                        "given": [
+                            "Susan",
+                            "N"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-651-2242"
+                    },
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-471-8810"
+                    },
+                    {
+                        "system": "email",
+                        "value": "susan.williams@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Susan Williams</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-1614502"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1614502-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "exam",
+                            "display": "Exam",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2006-11-22",
+                "id": "smart-1614502-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1614502-gestage"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-11-22: Gestational age at birth = 45.2 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "18185-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 45.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1614502-gestage"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-172"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 15
+                        },
+                        "text": "15 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-09-14"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-172",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313850",
+                            "display": "Amoxicillin 40 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 40 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 40 MG/ML Oral Suspension (rxnorm: 313850)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-172"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-101"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-172"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-101",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313850",
+                            "display": "Amoxicillin 40 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 40 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 200
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 200 tablets = 10 day supply of Amoxicillin 40 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2007-09-14",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-101"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-173"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "apply bid to affected area",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-10-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-173",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309367",
+                            "display": "Clotrimazole 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clotrimazole 10 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clotrimazole 10 MG/ML Topical Cream (rxnorm: 309367)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-173"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-100"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-173"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-100",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309367",
+                            "display": "Clotrimazole 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clotrimazole 10 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 7 day supply of Clotrimazole 10 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-04-03",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-100"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-98"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-173"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-98",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309367",
+                            "display": "Clotrimazole 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clotrimazole 10 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 10 day supply of Clotrimazole 10 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2007-10-28",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-98"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-174"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 10
+                        },
+                        "text": "10 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-10-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-174",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313797",
+                            "display": "Amoxicillin 25 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 25 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 25 MG/ML Oral Suspension (rxnorm: 313797)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-174"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-94"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-174"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-94",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313797",
+                            "display": "Amoxicillin 25 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 25 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 150
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 150 tablets = 10 day supply of Amoxicillin 25 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2007-10-28",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-94"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-175"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-12-02"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-175",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309054",
+                            "display": "cefdinir 25 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "cefdinir 25 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">cefdinir 25 MG/ML Oral Suspension (rxnorm: 309054)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-175"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-109"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-175"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-109",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309054",
+                            "display": "cefdinir 25 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "cefdinir 25 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 10 day supply of cefdinir 25 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2007-12-02",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-109"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-176"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL q6h prn",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-03"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-176",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197803",
+                            "display": "Ibuprofen 20 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ibuprofen 20 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ibuprofen 20 MG/ML Oral Suspension (rxnorm: 197803)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-176"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-111"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-176"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 6
+                },
+                "id": "smart-MedicationDispense-111",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197803",
+                            "display": "Ibuprofen 20 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ibuprofen 20 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 120
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 120 tablets = 6 day supply of Ibuprofen 20 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-04-03",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-111"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-177"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-03"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-177",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 80 MG/ML Oral Suspension (rxnorm: 308189)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-177"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-107"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-177"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-107",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 150
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-11-12",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-107"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-105"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-177"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-105",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 150
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-07-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-105"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-103"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-177"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-103",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 150
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-04-03",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-103"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-178"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 1
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "apply x1 as directed"
+                    }
+                ],
+                "id": "smart-MedicationRequest-178",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "312320",
+                            "display": "Permethrin 10 MG/ML Topical Lotion",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Permethrin 10 MG/ML Topical Lotion"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Permethrin 10 MG/ML Topical Lotion (rxnorm: 312320)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-178"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-95"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-178"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-95",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "312320",
+                            "display": "Permethrin 10 MG/ML Topical Lotion",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Permethrin 10 MG/ML Topical Lotion"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 59
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-05-01",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-95"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-96"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-178"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-96",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "312320",
+                            "display": "Permethrin 10 MG/ML Topical Lotion",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Permethrin 10 MG/ML Topical Lotion"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 59
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-05-09",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-96"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-66"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "237084006",
+                            "display": "Cervicitis and endocervicitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Cervicitis and endocervicitis"
+                },
+                "id": "smart-Condition-66",
+                "onsetDateTime": "2007-10-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cervicitis and endocervicitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-66"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-67"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "91487003",
+                            "display": "Diaper rash",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Diaper rash"
+                },
+                "id": "smart-Condition-67",
+                "onsetDateTime": "2007-10-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diaper rash</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-67"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-68"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "65363002",
+                            "display": "Otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "id": "smart-Condition-68",
+                "onsetDateTime": "2007-10-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-68"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-69"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "425229001",
+                            "display": "Foreign body in larynx",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Foreign body in larynx"
+                },
+                "id": "smart-Condition-69",
+                "onsetDateTime": "2007-12-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Foreign body in larynx</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-69"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-70"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "422400008",
+                            "display": "Vomiting",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Vomiting"
+                },
+                "id": "smart-Condition-70",
+                "onsetDateTime": "2007-12-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vomiting</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-70"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-71"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-71",
+                "onsetDateTime": "2008-02-14",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-71"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-72"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "81302005",
+                            "display": "General well-being finding",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "General well-being finding"
+                },
+                "id": "smart-Condition-72",
+                "onsetDateTime": "2008-02-14",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">General well-being finding</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-72"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-73"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "25374005",
+                            "display": "Other and unspecified noninfectious gastroenteritis and colitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Other and unspecified noninfectious gastroenteritis and colitis"
+                },
+                "id": "smart-Condition-73",
+                "onsetDateTime": "2008-12-12",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other and unspecified noninfectious gastroenteritis and colitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-73"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-5"
+            },
+            "resource": {
+                "date": "2010-03-11",
+                "id": "smart-Immunization-5",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">measles, mumps and rubella virus vaccine</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "03",
+                            "display": "measles, mumps and rubella virus vaccine",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "measles, mumps and rubella virus vaccine"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-5"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-6"
+            },
+            "resource": {
+                "date": "2010-06-11",
+                "id": "smart-Immunization-6",
+                "notGiven": false,
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "primarySource": true,
+                "resourceType": "Immunization",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">measles, mumps and rubella virus vaccine</div>",
+                    "status": "generated"
+                },
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "03",
+                            "display": "measles, mumps and rubella virus vaccine",
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"
+                        }
+                    ],
+                    "text": "measles, mumps and rubella virus vaccine"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Immunization/smart-Immunization-6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-2"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-03-03",
+                "id": "smart-smokingstatus-2",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-2"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71614502"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Former smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "8517006",
+                            "display": "Former smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Former smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-36"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-36",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-36"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

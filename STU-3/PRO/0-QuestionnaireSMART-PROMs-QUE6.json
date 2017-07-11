@@ -1,0 +1,688 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-questionnaire-SMART-PROMs-QUE6",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS22"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS22",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "None at all"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Between 1 and 5 days"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Between 6 and 10 days"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "For more than 10 days"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS22"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS6"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS6",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "Yes"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS23"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS23",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Yes, above the knee only"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Yes, below the knee only"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Yes, above and below the knee"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS23"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS24"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS24",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Yes, but it does not require any treatment from a doctor or district nurse"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Yes, and it requires treatment from my doctor or district nurse"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS24"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS25"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS25",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Yes, those I bought myself without a doctor's prescription"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Yes, those my doctor prescribed for me which I wear occasionally"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Yes, those my doctor prescribed for me which I wear every day"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS25"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS26"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS26",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "None at all"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Slight ankle swelling"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Moderate ankle swelling"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Severe ankle swelling"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS26"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS27"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS27",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "I have been able to work but my work has suffered to some extent"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "I have been able to work but my work has suffered to a moderate extent"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "My veins have prevented me from working one day or more"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS27"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS28"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS28",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Yes, my enjoyment has suffered to a slight extent"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Yes, my enjoyment has suffered to a moderate extent"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "My veins have prevented me from taking part in any leisure activities"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS28"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS29"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS29",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Yes, their appearance causes me slight concern"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Yes, their appearance causes me moderate concern"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Yes, their appearance causes me a great deal of concern"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS29"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS30"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS30",
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://content.digital.nhs.uk/media/1361/HES-Hospital-Episode-Statistics-PROMS-Data-Dictionary/pdf/Proms_Data_Dictionary.pdf",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "No"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Occasionally"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Often"
+                                },
+                                {
+                                    "code": "4",
+                                    "display": "Always"
+                                },
+                                {
+                                    "code": "9",
+                                    "display": "Missing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS30"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Questionnaire/SMART-PROMs-QUE6"
+            },
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "SMART-PROMs-QUE6",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aberdeen Varicose Veins Questionnaire (AVVQ)</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://eprovide.mapi-trust.org/instruments/aberdeen-varicose-veins-questionnaire",
+                        "value": "Aberdeen Varicose Veins Questionnaire (AVVQ)"
+                    }
+                ],
+                "status": "active",
+                "publisher": "Garratt Andrew M",
+                "item": [
+                    {
+                        "linkId": "Painkillers",
+                        "text": "During the last two weeks, on how many days did you take painkilling tablets for your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS22"
+                        }
+                    },
+                    {
+                        "linkId": "Swelling",
+                        "text": "In the last two weeks, how much ankle swelling have you had?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS26"
+                        }
+                    },
+                    {
+                        "linkId": "Concern",
+                        "text": "Does the appearance of your varicose veins cause you concern",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS29"
+                        }
+                    },
+                    {
+                        "linkId": "Clothing",
+                        "text": "Does the appearance of your varicose veins influence your choice of clothing including tights?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS30"
+                        }
+                    },
+                    {
+                        "linkId": "Work",
+                        "text": "During the last two weeks, have your varicose veins interfered with your work/housework or other activities?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS27"
+                        }
+                    },
+                    {
+                        "linkId": "Leisure",
+                        "text": "During the last two weeks, have your varicose veins interfered with you leisure activities? (including sport, hobbies and social life)",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS28"
+                        }
+                    },
+                    {
+                        "linkId": "FrontCount-L",
+                        "text": "Count of the number of varicose veins visible on the front of the left leg",
+                        "type": "integer"
+                    },
+                    {
+                        "linkId": "BackCount-L",
+                        "text": "Count of the number of varicose veins visible on the back of the left leg",
+                        "type": "integer"
+                    },
+                    {
+                        "linkId": "PainDays-L",
+                        "text": "In the last 2 weeks for how many days did your veins cause you pain or ache?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS22"
+                        }
+                    },
+                    {
+                        "linkId": "Support-L",
+                        "text": "In the last two weeks, have you worn support stockings or tights?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS25"
+                        }
+                    },
+                    {
+                        "linkId": "Itch-L",
+                        "text": "In the past two weeks, have you had any itching in association with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS23"
+                        }
+                    },
+                    {
+                        "linkId": "Discolor-L",
+                        "text": "Do you have purple discoloration caused by tiny blood vessels in the skin, in association with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Rash-L",
+                        "text": "Do you have a rash or eczema in the area of your ankle?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS24"
+                        }
+                    },
+                    {
+                        "linkId": "Ulcer-L",
+                        "text": "Do you have a skin ulcer associated with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "FrontCount-R",
+                        "text": "Count of the number of varicose veins visible on the front of the right leg",
+                        "type": "integer"
+                    },
+                    {
+                        "linkId": "BackCount-R",
+                        "text": "Count of the number of varicose veins visible on the back of the right leg",
+                        "type": "integer"
+                    },
+                    {
+                        "linkId": "PainDays-R",
+                        "text": "In the last 2 weeks for how many days did your veins cause you pain or ache?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS22"
+                        }
+                    },
+                    {
+                        "linkId": "Support-R",
+                        "text": "In the last two weeks, have you worn support stockings or tights?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS25"
+                        }
+                    },
+                    {
+                        "linkId": "Itch-R",
+                        "text": "In the past two weeks, have you had any itching in association with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS23"
+                        }
+                    },
+                    {
+                        "linkId": "Discolor-R",
+                        "text": "Do you have purple discoloration caused by tiny blood vessels in the skin, in association with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Rash-R",
+                        "text": "Do you have a rash or eczema in the area of your ankle?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS24"
+                        }
+                    },
+                    {
+                        "linkId": "Ulcer-R",
+                        "text": "Do you have a skin ulcer associated with your varicose veins?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "SMART-PROMs-VS6"
+                        }
+                    },
+                    {
+                        "linkId": "Score",
+                        "text": "AVVQ Score",
+                        "type": "integer"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Questionnaire/SMART-PROMs-QUE6"
+        }
+    ]
+}

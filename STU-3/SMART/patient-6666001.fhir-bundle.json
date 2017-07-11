@@ -1,0 +1,273 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-6666001"
+            },
+            "resource": {
+                "active": true,
+                "birthDate": "2010-12-16",
+                "gender": "female",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "id": "smart-6666001",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-6666001"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Reynolds",
+                        "given": [
+                            "Sophia"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "demoally@hspc.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sophia Reynolds</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-6666001"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-353"
+            },
+            "resource": {
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "text": "prn"
+                    }
+                ],
+                "id": "smart-MedicationRequest-353",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "573621",
+                            "display": "Albuterol 0.09 MG/ACTUAT [Proventil]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT [Proventil]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Albuterol 0.09 MG/ACTUAT [Proventil] (rxnorm: 573621)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-353"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-354"
+            },
+            "resource": {
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{puff}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{puff}",
+                            "value": 1
+                        },
+                        "text": "1 puff bid",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2015-01-01"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-354",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "896235",
+                            "display": "60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair] (rxnorm: 896235)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-354"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-355"
+            },
+            "resource": {
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "text": "prn"
+                    }
+                ],
+                "id": "smart-MedicationRequest-355",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "373585",
+                            "display": "Prednisone Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Prednisone Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prednisone Oral Tablet (rxnorm: 373585)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-355"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-356"
+            },
+            "resource": {
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2015-01-01"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-356",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1183694",
+                            "display": "Singulair Pill",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Singulair Pill"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Singulair Pill (rxnorm: 1183694)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-356"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

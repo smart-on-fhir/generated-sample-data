@@ -1,0 +1,1545 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-5555002"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Greensboro",
+                        "country": "USA",
+                        "line": [
+                            "277 Dan Road"
+                        ],
+                        "postalCode": "27214",
+                        "state": "NC",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1967-01-02",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "id": "smart-5555002",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-5555002"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Peters",
+                        "given": [
+                            "Michael",
+                            "J"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "michael.peters@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Michael Peters</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-5555002"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-315"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-04-06"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-315",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "259255",
+                            "display": "Atorvastatin Tablet 80mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Atorvastatin Tablet 80mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Atorvastatin Tablet 80mg (rxnorm: 259255)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-315"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-316"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-06"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-316",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "352304",
+                            "display": "Zetia Tablet 10mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Zetia Tablet 10mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zetia Tablet 10mg (rxnorm: 352304)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-316"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-317"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qhs",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-11-01"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-317",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1098141",
+                            "display": "Niacin ER Tablet 500mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Niacin ER Tablet 500mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Niacin ER Tablet 500mg (rxnorm: 1098141)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-317"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-318"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab daily with meal",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-06"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-318",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1043582",
+                            "display": "Kombiglyze XR Tablet 5/500mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Kombiglyze XR Tablet 5/500mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kombiglyze XR Tablet 5/500mg (rxnorm: 1043582)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-318"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-319"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab daily with meal",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "end": "2014-08-04",
+                                    "start": "2014-05-16"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-319",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "860996",
+                            "display": "Metformin XR Tablet 1000mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Metformin XR Tablet 1000mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin XR Tablet 1000mg (rxnorm: 860996)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-319"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-320"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab daily with meal",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "end": "2014-05-12",
+                                    "start": "2014-02-15"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-320",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "860975",
+                            "display": "Metformin XR Tablet 500mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Metformin XR Tablet 500mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Metformin XR Tablet 500mg (rxnorm: 860975)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-320"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-321"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 84
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "inj",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "inj",
+                        "value": 12
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "inj",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "inj",
+                            "value": 1
+                        },
+                        "text": "1 injection SQ weekly",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-11-15"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "wk"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-321",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1544918",
+                            "display": "Bydureon 2mg per 0.65 ml prefilled pen",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Bydureon 2mg per 0.65 ml prefilled pen"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bydureon 2mg per 0.65 ml prefilled pen (rxnorm: 1544918)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-321"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-322"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2013-02-01"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-322",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "897646",
+                            "display": "Verapamil SR Tablet 240mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Verapamil SR Tablet 240mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Verapamil SR Tablet 240mg (rxnorm: 897646)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-322"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-323"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2013-02-02"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-323",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "751616",
+                            "display": "Bystolic Tablet 10mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Bystolic Tablet 10mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bystolic Tablet 10mg (rxnorm: 751616)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-323"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-324"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2013-02-03"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-324",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "401968",
+                            "display": "Ramipril Tablet 10mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ramipril Tablet 10mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ramipril Tablet 10mg (rxnorm: 401968)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-324"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-325"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{puff}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{puff}",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{puff}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{puff}",
+                            "value": 1
+                        },
+                        "text": "1 puffs per nostril qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2013-02-04"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-325",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "746201",
+                            "display": "Nasonex Nasal Inhaler",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Nasonex Nasal Inhaler"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nasonex Nasal Inhaler (rxnorm: 746201)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-325"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-326"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qd",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2013-02-05"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-326",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "855174",
+                            "display": "Xyzal Tablet 5mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Xyzal Tablet 5mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Xyzal Tablet 5mg (rxnorm: 855174)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-326"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-327"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{puff}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{puff}",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{puff}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{puff}",
+                            "value": 1
+                        },
+                        "text": "1 puff bid",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-10-15"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-327",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "799040",
+                            "display": "Alvesco Metered Dose Inhaler 80mcg/puff",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Alvesco Metered Dose Inhaler 80mcg/puff"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Alvesco Metered Dose Inhaler 80mcg/puff (rxnorm: 799040)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-327"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-328"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "text": "2 puffs q4-6 hrs prn asthma"
+                    }
+                ],
+                "id": "smart-MedicationRequest-328",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "859088",
+                            "display": "Ventolin HFA (200 actuations)",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ventolin HFA (200 actuations)"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ventolin HFA (200 actuations) (rxnorm: 859088)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-328"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-329"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 cap daily",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-04"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-329",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1092380",
+                            "display": "Vitamin D3 Capsule 4000 iu",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Vitamin D3 Capsule 4000 iu"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin D3 Capsule 4000 iu (rxnorm: 1092380)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-329"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-330"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 84
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 12
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 cap once a week",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "end": "2014-08-04",
+                                    "start": "2014-02-06"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "wk"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-330",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "1367410",
+                            "display": "Ergocalciferol Capsule 50,000 iu",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ergocalciferol Capsule 50,000 iu"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ergocalciferol Capsule 50,000 iu (rxnorm: 1367410)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-330"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-331"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 60
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 cap bid",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-09-12"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-331",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "411110",
+                            "display": "Calcium Acetate 500mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Calcium Acetate 500mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Calcium Acetate 500mg (rxnorm: 411110)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-331"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-332"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 90
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab tid prn pain",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-12-07"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-332",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197807",
+                            "display": "Ibuprofen Capsule 800mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ibuprofen Capsule 800mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ibuprofen Capsule 800mg (rxnorm: 197807)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-332"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-333"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qhs prn muscle spasm",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-12-07"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-333",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "828348",
+                            "display": "Cyclobenzaprine Tablet 10mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Cyclobenzaprine Tablet 10mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cyclobenzaprine Tablet 10mg (rxnorm: 828348)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-333"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-334"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 tab qhs prn sleep",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-29"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-334",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "854873",
+                            "display": "Zolpidem Tablet 10mg",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Zolpidem Tablet 10mg"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-5555002"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Zolpidem Tablet 10mg (rxnorm: 854873)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-334"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

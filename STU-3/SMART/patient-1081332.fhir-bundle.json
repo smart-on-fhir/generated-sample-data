@@ -1,0 +1,1549 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1081332"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "19 Church St"
+                        ],
+                        "postalCode": "74108",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2003-10-02",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "id": "smart-1081332",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-1081332"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Ross",
+                        "given": [
+                            "Joseph",
+                            "I"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-960-9294"
+                    },
+                    {
+                        "system": "email",
+                        "value": "joseph.ross@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Joseph Ross</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-1081332"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-102"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-07-13"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-102",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 80 MG/ML Oral Suspension (rxnorm: 308189)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-102"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1229"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-102"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-1229",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "308189",
+                            "display": "Amoxicillin 80 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 80 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 75
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 75 tablets = 7 day supply of Amoxicillin 80 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2004-07-13",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1229"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-103"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 5
+                        },
+                        "text": "5 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-01-04"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-103",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "617993",
+                            "display": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension (rxnorm: 617993)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-103"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1236"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-103"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-1236",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "617993",
+                            "display": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 75
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 75 tablets = 10 day supply of Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-01-04",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1236"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1237"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-103"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-1237",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "617993",
+                            "display": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 125
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 125 tablets = 10 day supply of Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-02-07",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1237"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-104"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 3
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 15
+                        },
+                        "text": "15 mL daily x 3 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-01-18"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-104",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "211307",
+                            "display": "Azithromycin 20 MG/ML Oral Suspension [Zithromax]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Azithromycin 20 MG/ML Oral Suspension [Zithromax]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Azithromycin 20 MG/ML Oral Suspension [Zithromax] (rxnorm: 211307)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-104"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1231"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-104"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 5
+                },
+                "id": "smart-MedicationDispense-1231",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "211307",
+                            "display": "Azithromycin 20 MG/ML Oral Suspension [Zithromax]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Azithromycin 20 MG/ML Oral Suspension [Zithromax]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 15
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 15 tablets = 5 day supply of Azithromycin 20 MG/ML Oral Suspension [Zithromax]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-01-18",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1231"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-105"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-01-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-105",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "261091",
+                            "display": "cefdinir 25 MG/ML Oral Suspension [Omnicef]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "cefdinir 25 MG/ML Oral Suspension [Omnicef]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">cefdinir 25 MG/ML Oral Suspension [Omnicef] (rxnorm: 261091)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-105"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1227"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-105"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-1227",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "261091",
+                            "display": "cefdinir 25 MG/ML Oral Suspension [Omnicef]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "cefdinir 25 MG/ML Oral Suspension [Omnicef]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 10 day supply of cefdinir 25 MG/ML Oral Suspension [Omnicef]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-01-28",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1227"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1228"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-105"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-1228",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "261091",
+                            "display": "cefdinir 25 MG/ML Oral Suspension [Omnicef]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "cefdinir 25 MG/ML Oral Suspension [Omnicef]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 7 day supply of cefdinir 25 MG/ML Oral Suspension [Omnicef]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-03-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1228"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-106"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 7
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "[drp]",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "[drp]",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "[drp]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "[drp]",
+                            "value": 4
+                        },
+                        "text": "4 gtt in ear bid x7 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-03-11"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-106",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "404630",
+                            "display": "Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex] (rxnorm: 404630)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-106"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-1230"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-106"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 7
+                },
+                "id": "smart-MedicationDispense-1230",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "404630",
+                            "display": "Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 7
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 7 tablets = 7 day supply of Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-03-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-1230"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-107"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 10
+                        },
+                        "text": "10 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-06-06"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-107",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "239191",
+                            "display": "Amoxicillin 50 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Amoxicillin 50 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 50 MG/ML Oral Suspension (rxnorm: 239191)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-107"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-108"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 5
+                        },
+                        "text": "5 mL bid x 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-08-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-108",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "208406",
+                            "display": "Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim] (rxnorm: 208406)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-108"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-448"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "442311008",
+                            "display": "Single liveborn, born in hospital, delivered without mention of cesarean section",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                },
+                "id": "smart-Condition-448",
+                "onsetDateTime": "2004-04-12",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Single liveborn, born in hospital, delivered without mention of cesarean section</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-448"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-449"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-449",
+                "onsetDateTime": "2004-06-15",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-449"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-450"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "65363002",
+                            "display": "Otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "id": "smart-Condition-450",
+                "onsetDateTime": "2004-07-13",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-450"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-451"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "68235000",
+                            "display": "Other diseases of nasal cavity and sinuses",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Other diseases of nasal cavity and sinuses"
+                },
+                "id": "smart-Condition-451",
+                "onsetDateTime": "2004-10-29",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other diseases of nasal cavity and sinuses</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-451"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-452"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "25374005",
+                            "display": "Other and unspecified noninfectious gastroenteritis and colitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Other and unspecified noninfectious gastroenteritis and colitis"
+                },
+                "id": "smart-Condition-452",
+                "onsetDateTime": "2004-12-05",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other and unspecified noninfectious gastroenteritis and colitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-452"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-453"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "62315008",
+                            "display": "Diarrhea",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Diarrhea"
+                },
+                "id": "smart-Condition-453",
+                "onsetDateTime": "2004-12-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diarrhea</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-453"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-454"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "386661006",
+                            "display": "Fever and other physiologic disturbances of temperature regulation",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Fever and other physiologic disturbances of temperature regulation"
+                },
+                "id": "smart-Condition-454",
+                "onsetDateTime": "2004-12-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Fever and other physiologic disturbances of temperature regulation</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-454"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-455"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "34095006",
+                            "display": "Hypovolemia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hypovolemia"
+                },
+                "id": "smart-Condition-455",
+                "onsetDateTime": "2004-12-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypovolemia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-455"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-456"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "233604007",
+                            "display": "Pneumonia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Pneumonia"
+                },
+                "id": "smart-Condition-456",
+                "onsetDateTime": "2004-12-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pneumonia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-456"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-457"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "422400008",
+                            "display": "Vomiting",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Vomiting"
+                },
+                "id": "smart-Condition-457",
+                "onsetDateTime": "2004-12-08",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vomiting</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-457"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-458"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "81564005",
+                            "display": "Chronic serous otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Chronic serous otitis media"
+                },
+                "id": "smart-Condition-458",
+                "onsetDateTime": "2005-02-22",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chronic serous otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-458"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-459"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "35183001",
+                            "display": "Acute secretory otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute secretory otitis media"
+                },
+                "id": "smart-Condition-459",
+                "onsetDateTime": "2007-06-20",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute secretory otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-459"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-6"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-07-18",
+                "id": "smart-smokingstatus-6",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Former smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "8517006",
+                            "display": "Former smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Former smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-20"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-20",
+                "patient": {
+                    "reference": "Patient/smart-1081332"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-20"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

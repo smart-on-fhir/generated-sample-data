@@ -1,0 +1,1490 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1098667"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Bixby",
+                        "country": "USA",
+                        "line": [
+                            "42 Park St"
+                        ],
+                        "postalCode": "74008",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1953-10-27",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-71081332"
+                },
+                "id": "smart-1098667",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-1098667"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Hill",
+                        "given": [
+                            "Robert",
+                            "P"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "robert.hill@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Robert Hill</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-1098667"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1098667-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "exam",
+                            "display": "Exam",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "1953-10-27",
+                "id": "smart-1098667-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1098667-gestage"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71081332"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">1953-10-27: Gestational age at birth = 43.4 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "18185-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 43.4
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1098667-gestage"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-109"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 30
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 daily",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-01-13"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-109",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "150840",
+                            "display": "Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin] (rxnorm: 150840)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-109"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-570"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-109"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-570",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "150840",
+                            "display": "Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-01-13",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-570"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-110"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 6
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 24
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 q6h prn pain",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-07-30"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-110",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309462",
+                            "display": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acetaminophen 300 MG / Codeine 30 MG Oral Tablet (rxnorm: 309462)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-110"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-565"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-110"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 6
+                },
+                "id": "smart-MedicationDispense-565",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309462",
+                            "display": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 24
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 24 tablets = 6 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-07-30",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-565"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-111"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 90
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "{tablet}",
+                        "value": 90
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "doseQuantity": {
+                            "code": "{tablet}",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "{tablet}",
+                            "value": 1
+                        },
+                        "text": "1 daily",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-09-10"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-111",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310333",
+                            "display": "fexofenadine 180 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "fexofenadine 180 MG Oral Tablet"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">fexofenadine 180 MG Oral Tablet (rxnorm: 310333)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-111"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-567"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-111"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 90
+                },
+                "id": "smart-MedicationDispense-567",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310333",
+                            "display": "fexofenadine 180 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "fexofenadine 180 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-01-07",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-567"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-566"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-111"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 90
+                },
+                "id": "smart-MedicationDispense-566",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310333",
+                            "display": "fexofenadine 180 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "fexofenadine 180 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-10",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-566"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-569"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-111"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 90
+                },
+                "id": "smart-MedicationDispense-569",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310333",
+                            "display": "fexofenadine 180 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "fexofenadine 180 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-08-04",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-569"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-568"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-111"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 90
+                },
+                "id": "smart-MedicationDispense-568",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310333",
+                            "display": "fexofenadine 180 MG Oral Tablet",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "fexofenadine 180 MG Oral Tablet"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-05-02",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-568"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-112"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 10
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "Apply bid x7 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-09-12"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-112",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "351396",
+                            "display": "Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC] (rxnorm: 351396)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-112"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-572"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-112"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 10
+                },
+                "id": "smart-MedicationDispense-572",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "351396",
+                            "display": "Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 10 day supply of Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-09-12",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-572"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-113"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 28
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "Apply bid x7 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2009-04-23"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-113",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310893",
+                            "display": "Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream (rxnorm: 310893)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-113"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-571"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-113"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 28
+                },
+                "id": "smart-MedicationDispense-571",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "310893",
+                            "display": "Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 28
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 28 tablets = 28 day supply of Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2009-04-23",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-571"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-272"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "68272006",
+                            "display": "Acute maxillary sinusitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute maxillary sinusitis"
+                },
+                "id": "smart-Condition-272",
+                "onsetDateTime": "2004-12-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute maxillary sinusitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-272"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-273"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "36971009",
+                            "display": "Acute sinusitis",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute sinusitis"
+                },
+                "id": "smart-Condition-273",
+                "onsetDateTime": "2005-02-24",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute sinusitis</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-273"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-274"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "25064002",
+                            "display": "Headache",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Headache"
+                },
+                "id": "smart-Condition-274",
+                "onsetDateTime": "2005-02-24",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Headache</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-274"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-275"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "56097005",
+                            "display": "Migraine without aura",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Migraine without aura"
+                },
+                "id": "smart-Condition-275",
+                "onsetDateTime": "2005-03-17",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Migraine without aura</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-275"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-276"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "55822004",
+                            "display": "Hyperlipidemia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hyperlipidemia"
+                },
+                "id": "smart-Condition-276",
+                "onsetDateTime": "2005-04-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hyperlipidemia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-276"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-277"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "80394007",
+                            "display": "Blood chemistry abnormal",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Blood chemistry abnormal"
+                },
+                "id": "smart-Condition-277",
+                "onsetDateTime": "2005-04-22",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blood chemistry abnormal</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-277"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-278"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "400210000",
+                            "display": "Hemangioma",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hemangioma"
+                },
+                "id": "smart-Condition-278",
+                "onsetDateTime": "2005-04-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemangioma</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-278"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-279"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "267432004",
+                            "display": "Pure hypercholesterolemia",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Pure hypercholesterolemia"
+                },
+                "id": "smart-Condition-279",
+                "onsetDateTime": "2005-04-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pure hypercholesterolemia</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-279"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-280"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "312824007",
+                            "display": "Family history of malignant neoplasm of gastrointestinal tract",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Family history of malignant neoplasm of gastrointestinal tract"
+                },
+                "id": "smart-Condition-280",
+                "onsetDateTime": "2005-08-26",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Family history of malignant neoplasm of gastrointestinal tract</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-280"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-281"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "429047008",
+                            "display": "History of polyp of colon",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "History of polyp of colon"
+                },
+                "id": "smart-Condition-281",
+                "onsetDateTime": "2005-08-26",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">History of polyp of colon</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-281"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-282"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "92359006",
+                            "display": "Benign neoplasm of skin of face",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Benign neoplasm of skin of face"
+                },
+                "id": "smart-Condition-282",
+                "onsetDateTime": "2005-10-15",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Benign neoplasm of skin of face</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-282"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-283"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "92380000",
+                            "display": "Benign neoplasm of skin of trunk",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Benign neoplasm of skin of trunk"
+                },
+                "id": "smart-Condition-283",
+                "onsetDateTime": "2005-10-15",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Benign neoplasm of skin of trunk</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-283"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-18"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-03-01",
+                "id": "smart-smokingstatus-18",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-18"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71081332"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Unknown if ever smoked</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "266927001",
+                            "display": "Unknown if ever smoked",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Unknown if ever smoked"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-18"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-21"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-21",
+                "patient": {
+                    "reference": "Patient/smart-1098667"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-21"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

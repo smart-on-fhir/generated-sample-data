@@ -1,0 +1,1229 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-prom-patient-data-SMART-PROMs-22",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/SMART-PROMs-22"
+            },
+            "resource": {
+                "resourceType": "Patient",
+                "id": "SMART-PROMs-22",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terry Hunt</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v2/0203",
+                                    "code": "MR",
+                                    "display": "Medical Record Number"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "SMART-PROMs-22"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Hunt",
+                        "given": [
+                            "Terry"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(896) 593-9979"
+                    },
+                    {
+                        "system": "email",
+                        "value": "Terry.Hunt@example.com"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1940-08-18",
+                "address": [
+                    {
+                        "line": [
+                            "45079 Morrow Street"
+                        ],
+                        "city": "Fresno",
+                        "state": "California",
+                        "postalCode": "93773"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/SMART-PROMs-22"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-22-ENC1"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-22-ENC1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Inpatient Encounter - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "Inpatient"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "270427003",
+                                "display": "Inpatient Encounter"
+                            }
+                        ],
+                        "text": "Inpatient Encounter"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "period": {
+                    "start": "2016-01-19",
+                    "end": "2016-01-21"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-22-ENC1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-22-ENC2"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-22-ENC2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Outpatient Encounter - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "outpatient"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "270427003",
+                                "display": "Outpatient Encounter"
+                            }
+                        ],
+                        "text": "Outpatient Encounter"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "period": {
+                    "start": "2016-01-05",
+                    "end": "2016-01-05"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-22-ENC2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-22-ENC3"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-22-ENC3",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other Encounter - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "Other"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "270427003",
+                                "display": "Other Encounter"
+                            }
+                        ],
+                        "text": "Other Encounter"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "period": {
+                    "start": "2016-07-29",
+                    "end": "2016-07-29"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-22-ENC3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/SMART-PROMs-22-PRO1"
+            },
+            "resource": {
+                "id": "SMART-PROMs-22-PRO1",
+                "resourceType": "Procedure",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Total replacement of hip (procedure) - completed</div>"
+                },
+                "status": "completed",
+                "code": {
+                    "coding": {
+                        "system": "http://snomed.info",
+                        "code": "52734007",
+                        "display": "Total replacement of hip (procedure)"
+                    }
+                },
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC1"
+                },
+                "performedDateTime": "2016-01-19",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Procedure/SMART-PROMs-22-PRO1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR1"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Pre-Op Q1 PROMs General Health Questionnaire by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE1",
+                    "display": "Pre-Op Q1 PROMs General Health Questionnaire"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC2"
+                },
+                "item": [
+                    {
+                        "linkId": "Assisted",
+                        "text": "Is Anyone helping you fill in this questionnaire?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Assisted By",
+                        "text": "If Yes, give the relationship to you of the person assisting you",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Symptom Period",
+                        "text": "For how long have you had problems with the body part on which you are about to have surgery?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Previous Surgery",
+                        "text": "Indicates whether the patient has had previous surgery of the type they are going to undergo",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Living Arrangements",
+                        "text": "Which statement best describes your living arrangements?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Disability",
+                        "text": "Do you consider yourself to have a disability?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Heart Disease",
+                        "text": "Have you been told by a doctor that you have heart disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Blood Pressure",
+                        "text": "Have you been told by a doctor that you have high blood pressure?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Stroke",
+                        "text": "Have you been told by a doctor that you have problems caused by a stroke?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Circulation",
+                        "text": "Have you been told by a doctor that you have leg pain when walking due to poor circulation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Lung Disease",
+                        "text": "Have you been told by a doctor that you have lung disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Diabetes",
+                        "text": "Have you been told by a doctor that you have diabetes?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Kidney Disease",
+                        "text": "Have you been told by a doctor that you have kidney disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Nervous System",
+                        "text": "Have you been told by a doctor that you have diseases of the nervous system?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Liver Disease",
+                        "text": "Have you been told by a doctor that you have liver disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Cancer",
+                        "text": "Have you been told by a doctor that you have cancer?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Depression",
+                        "text": "Have you been told by a doctor that you have depression?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Arthritis",
+                        "text": "Have you been told by a doctor that you have arthritis?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR4"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR4",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Post-Op Q2 PROMs General Health Questionnaire by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE3",
+                    "display": "Post-Op Q2 PROMs General Health Questionnaire"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC3"
+                },
+                "item": [
+                    {
+                        "linkId": "Assisted",
+                        "text": "Is Anyone helping you fill in this questionnaire?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Assisted By",
+                        "text": "If Yes, give the relationship to you of the person assisting you",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Living Arrangements",
+                        "text": "Which statement best describes your living arrangements?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Disability",
+                        "text": "Do you consider yourself to have a disability?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Satisfaction",
+                        "text": "How would you describe the results of your operation",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Success",
+                        "text": "Overall, how are your problems now, compared to before your operation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Allergy",
+                        "text": "Did you experience any of the following problems after your operation: Allergy or reaction to drug?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Bleeding",
+                        "text": "Did you experience any of the following problems after your operation: Bleeding?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Wound",
+                        "text": "Did you experience any of the following problems after your operation: Wound problems?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Urine",
+                        "text": "Did you experience any of the following problems after your operation: Urinary problems?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Further Surgery",
+                        "text": "Indicates whether the patient has had another operation on the affected area",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Readmitted",
+                        "text": "Have you been readmitted to the hospital since your operation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR4"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR2"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Pre-Op EQ5D3L by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE2",
+                    "display": "Pre-Op EQ5D3L"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC2"
+                },
+                "item": [
+                    {
+                        "linkId": "Mobility",
+                        "text": "Problems in walking about",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Self-care",
+                        "text": "Problems washing or dressing myself",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual Activities",
+                        "text": "Problems with performing my usual activities",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Pain/Discomfort",
+                        "text": "Pain or Discomfort",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Anxiety/Depression",
+                        "text": "Anxiety or Depression",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "EQ-VAS",
+                        "text": "Indicate on the scale how good or bad your own health is today",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "50"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR3"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR3",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Post-Op EQ5D3L by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE2",
+                    "display": "Post-Op EQ5D3L"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC3"
+                },
+                "item": [
+                    {
+                        "linkId": "Mobility",
+                        "text": "Problems in walking about",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Self-care",
+                        "text": "Problems washing or dressing myself",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual Activities",
+                        "text": "Problems with performing my usual activities",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Pain/Discomfort",
+                        "text": "Pain or Discomfort",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Anxiety/Depression",
+                        "text": "Anxiety or Depression",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "EQ-VAS",
+                        "text": "Indicate on the scale how good or bad your own health is today",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "93"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR5"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR5",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for The Oxford Hip Score (OHS) by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE4",
+                    "display": "The Oxford Hip Score (OHS)"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC2"
+                },
+                "item": [
+                    {
+                        "linkId": "Usual pain",
+                        "text": "How would you describe the pain you usually have in your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Sudden pain",
+                        "text": "Have you had any sudden, severe pain (shooting, stabbing, or spasms) from your affected hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Night pain",
+                        "text": "Have you been troubled by pain from your hip in bed at night?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Washing",
+                        "text": "Have you had any trouble with washing and drying yourself (all over) because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Transportation",
+                        "text": "Have you had any trouble getting in and out of a car or using public transportation because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Dressing",
+                        "text": "Have you been able to put on a pair of socks, stockings or tights?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Shopping",
+                        "text": "Could you do the household shopping on your own?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Walking",
+                        "text": "How long have you been able to walk before the pain in your hip becomes severe (with or without a walking aid)?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Limping",
+                        "text": "Have you been limping when walking because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Stairs",
+                        "text": "Have you been able to climb a flight of stairs?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Standing up",
+                        "text": "After a meal (sat at a table), how painful has it been for you to stand up from a chair because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual work",
+                        "text": "How much as pain from your hip interfered with your usual work, including housework?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Score",
+                        "text": "Your Oxford Hip Score is",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "14"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR5"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-22-QR6"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-22-QR6",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for The Oxford Hip Score (OHS) by Terry Hunt - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE4",
+                    "display": "The Oxford Hip Score (OHS)"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-22",
+                    "display": "Terry Hunt"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-22-ENC3"
+                },
+                "item": [
+                    {
+                        "linkId": "Usual pain",
+                        "text": "How would you describe the pain you usually have in your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Sudden pain",
+                        "text": "Have you had any sudden, severe pain (shooting, stabbing, or spasms) from your affected hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Night pain",
+                        "text": "Have you been troubled by pain from your hip in bed at night?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Washing",
+                        "text": "Have you had any trouble with washing and drying yourself (all over) because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Transportation",
+                        "text": "Have you had any trouble getting in and out of a car or using public transportation because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Dressing",
+                        "text": "Have you been able to put on a pair of socks, stockings or tights?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Shopping",
+                        "text": "Could you do the household shopping on your own?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Walking",
+                        "text": "How long have you been able to walk before the pain in your hip becomes severe (with or without a walking aid)?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Limping",
+                        "text": "Have you been limping when walking because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Stairs",
+                        "text": "Have you been able to climb a flight of stairs?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "3"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Standing up",
+                        "text": "After a meal (sat at a table), how painful has it been for you to stand up from a chair because of your hip?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual work",
+                        "text": "How much as pain from your hip interfered with your usual work, including housework?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Score",
+                        "text": "Your Oxford Hip Score is",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "45"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-22-QR6"
+        }
+    ]
+}

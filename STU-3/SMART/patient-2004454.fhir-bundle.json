@@ -1,0 +1,968 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-2004454"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Sand Springs",
+                        "country": "USA",
+                        "line": [
+                            "80 Mill St"
+                        ],
+                        "postalCode": "74063",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "2007-07-15",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "id": "smart-2004454",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-2004454"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Lee",
+                        "given": [
+                            "Kevin",
+                            "H"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "kevin.lee@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kevin Lee</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-2004454"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-2004454-gestage"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "exam",
+                            "display": "Exam",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Exam"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18185-9",
+                            "display": "Gestational age at birth",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "effectiveDateTime": "2007-07-15",
+                "id": "smart-2004454-gestage",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-2004454-gestage"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-15: Gestational age at birth = 30.6 weeks</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "18185-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "weeks",
+                    "value": 30.6
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-2004454-gestage"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1836-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2339-0",
+                            "display": "Glucose Bld-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Glucose Bld-mCnc"
+                },
+                "effectiveDateTime": "2008-07-10",
+                "id": "smart-1836-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1836-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 109
+                    },
+                    "low": {
+                        "code": "mg/dL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mg/dL",
+                        "value": 40
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2339-0",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg/dL",
+                    "value": 60
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1836-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1837-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "38478-4",
+                            "display": "Biotinidase DBS Ql",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Biotinidase DBS Ql"
+                },
+                "effectiveDateTime": "2008-07-11",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": [
+                            "Normal",
+                            "Abnormal"
+                        ]
+                    }
+                ],
+                "id": "smart-1837-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1837-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-07-11: Biotinidase DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "valueString": "Normal",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1837-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1838-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "29571-7",
+                            "display": "Phe DBS Ql",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Phe DBS Ql"
+                },
+                "effectiveDateTime": "2008-07-11",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": [
+                            "Normal",
+                            "Abnormal"
+                        ]
+                    }
+                ],
+                "id": "smart-1838-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1838-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-07-11: Phe DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "valueString": "Normal",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1838-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1839-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "29571-7",
+                            "display": "Phe DBS Ql",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Phe DBS Ql"
+                },
+                "effectiveDateTime": "2008-08-01",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": [
+                            "Normal",
+                            "Abnormal"
+                        ]
+                    }
+                ],
+                "id": "smart-1839-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1839-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-08-01: Phe DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "valueString": "Normal",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1839-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1840-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "49220-7",
+                            "display": "Prolactin SerPl 3rd IS-mCnc",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Prolactin SerPl 3rd IS-mCnc"
+                },
+                "effectiveDateTime": "2008-08-01",
+                "id": "smart-1840-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1840-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "referenceRange": {
+                    "high": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 15
+                    },
+                    "low": {
+                        "code": "ng/mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "ng/mL",
+                        "value": 2
+                    },
+                    "type": {
+                        "coding": {
+                            "code": "normal",
+                            "display": "Normal Range",
+                            "system": "http://hl7.org/fhir/referencerange-meaning"
+                        },
+                        "text": "Normal Range"
+                    }
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "49220-7",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "ng/mL",
+                    "value": 86.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1840-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1841-lab"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "laboratory",
+                            "display": "Laboratory",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Laboratory"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "38478-4",
+                            "display": "Biotinidase DBS Ql",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Biotinidase DBS Ql"
+                },
+                "effectiveDateTime": "2008-08-01",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": [
+                            "Normal",
+                            "Abnormal"
+                        ]
+                    }
+                ],
+                "id": "smart-1841-lab",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1841-lab"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-08-01: Biotinidase DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "valueString": "Normal",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1841-lab"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-295"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "442311008",
+                            "display": "Single liveborn, born in hospital, delivered without mention of cesarean section",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                },
+                "id": "smart-Condition-295",
+                "onsetDateTime": "2008-07-09",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Single liveborn, born in hospital, delivered without mention of cesarean section</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-295"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-296"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "267024001",
+                            "display": "Abnormal weight loss",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Abnormal weight loss"
+                },
+                "id": "smart-Condition-296",
+                "onsetDateTime": "2008-07-14",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Abnormal weight loss</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-296"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-297"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "91487003",
+                            "display": "Diaper rash",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Diaper rash"
+                },
+                "id": "smart-Condition-297",
+                "onsetDateTime": "2008-08-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diaper rash</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-297"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-298"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-298",
+                "onsetDateTime": "2009-03-02",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-298"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-299"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "65363002",
+                            "display": "Otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "id": "smart-Condition-299",
+                "onsetDateTime": "2009-03-02",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-299"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-300"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "16932000",
+                            "display": "Nausea and vomiting",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Nausea and vomiting"
+                },
+                "id": "smart-Condition-300",
+                "onsetDateTime": "2009-08-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nausea and vomiting</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-300"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-301"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "34014006",
+                            "display": "Viral disease",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Viral disease"
+                },
+                "id": "smart-Condition-301",
+                "onsetDateTime": "2009-08-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Viral disease</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-301"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-1"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-02-25",
+                "id": "smart-smokingstatus-1",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72004454"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Current some day smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "428041000124106",
+                            "display": "Current some day smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-45"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-45",
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-45"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

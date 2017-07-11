@@ -1,0 +1,1746 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3675-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-449"
+                },
+                "effectiveDateTime": "2008-09-24",
+                "id": "smart-3675-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3675-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-09-24: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3675-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3676-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3676-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3676-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: height = 152.146 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 152.146
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3676-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3677-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3677-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3677-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: heart_rate = 68.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 68
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3677-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3678-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3678-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3678-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: respiratory_rate = 17.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 17
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3678-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3679-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3679-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3679-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: temperature = 36.38889 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 36.38889
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3679-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3680-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3680-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3680-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: weight = 41.7305 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 41.7305
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3680-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3681-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3681-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3681-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: bmi = 18.0 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 18
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3681-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3682-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-450"
+                },
+                "effectiveDateTime": "2009-09-17",
+                "id": "smart-3682-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3682-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-09-17: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3682-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-144"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "apply bid to affected area",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-09-25"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-144",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "106256",
+                            "display": "Triamcinolone 1 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 1 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Triamcinolone 1 MG/ML Topical Cream (rxnorm: 106256)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-144"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-614"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-144"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-614",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "106256",
+                            "display": "Triamcinolone 1 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 1 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 30 day supply of Triamcinolone 1 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-12-01",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-614"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-615"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-144"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-615",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "106256",
+                            "display": "Triamcinolone 1 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 1 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 30 day supply of Triamcinolone 1 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2006-04-21",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-615"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-613"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-144"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 30
+                },
+                "id": "smart-MedicationDispense-613",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "106256",
+                            "display": "Triamcinolone 1 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 1 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 90
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 90 tablets = 30 day supply of Triamcinolone 1 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2005-09-25",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-613"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-145"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 7
+                        },
+                        "text": "7 mL q6h prn",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2006-06-15"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-145",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197803",
+                            "display": "Ibuprofen 20 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ibuprofen 20 MG/ML Oral Suspension"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ibuprofen 20 MG/ML Oral Suspension (rxnorm: 197803)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-145"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-622"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-145"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 3
+                },
+                "id": "smart-MedicationDispense-622",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "197803",
+                            "display": "Ibuprofen 20 MG/ML Oral Suspension",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Ibuprofen 20 MG/ML Oral Suspension"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 120
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 120 tablets = 3 day supply of Ibuprofen 20 MG/ML Oral Suspension</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2006-06-15",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-622"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-146"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 7
+                    },
+                    "numberOfRepeatsAllowed": 1,
+                    "quantity": {
+                        "code": "mL",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "mL",
+                        "value": 1
+                    }
+                },
+                "dosageInstruction": [
+                    {
+                        "asNeededBoolean": true,
+                        "doseQuantity": {
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mL",
+                            "value": 5
+                        },
+                        "text": "5 mL q6h prn pruritis",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2006-06-15"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-146",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313960",
+                            "display": "Diphenhydramine 2.5 MG/ML Oral Solution [Diphen]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Diphenhydramine 2.5 MG/ML Oral Solution [Diphen]"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diphenhydramine 2.5 MG/ML Oral Solution [Diphen] (rxnorm: 313960)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-146"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-618"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-146"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 3
+                },
+                "id": "smart-MedicationDispense-618",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "313960",
+                            "display": "Diphenhydramine 2.5 MG/ML Oral Solution [Diphen]",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Diphenhydramine 2.5 MG/ML Oral Solution [Diphen]"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 60
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 60 tablets = 3 day supply of Diphenhydramine 2.5 MG/ML Oral Solution [Diphen]</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2006-06-15",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-618"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-147"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "apply bid to affected area",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-05-04"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-147",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198305",
+                            "display": "Triamcinolone 0.25 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 0.25 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Triamcinolone 0.25 MG/ML Topical Cream (rxnorm: 198305)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-147"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-621"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-147"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 15
+                },
+                "id": "smart-MedicationDispense-621",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "198305",
+                            "display": "Triamcinolone 0.25 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Triamcinolone 0.25 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 80
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 80 tablets = 15 day supply of Triamcinolone 0.25 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-10-11",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-621"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationRequest/smart-MedicationRequest-148"
+            },
+            "resource": {
+                "dispenseRequest": {
+                    "expectedSupplyDuration": {
+                        "code": "d",
+                        "system": "http://unitsofmeasure.org",
+                        "unit": "days",
+                        "value": 30
+                    },
+                    "numberOfRepeatsAllowed": 1
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "apply bid to affected area",
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-05-04"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        }
+                    }
+                ],
+                "id": "smart-MedicationRequest-148",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309367",
+                            "display": "Clotrimazole 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clotrimazole 10 MG/ML Topical Cream"
+                },
+                "resourceType": "MedicationRequest",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clotrimazole 10 MG/ML Topical Cream (rxnorm: 309367)</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationRequest/smart-MedicationRequest-148"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-617"
+            },
+            "resource": {
+                "authorizingPrescription": {
+                    "reference": "MedicationRequest/smart-MedicationRequest-148"
+                },
+                "daysSupply": {
+                    "code": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "days",
+                    "value": 15
+                },
+                "id": "smart-MedicationDispense-617",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "309367",
+                            "display": "Clotrimazole 10 MG/ML Topical Cream",
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+                        }
+                    ],
+                    "text": "Clotrimazole 10 MG/ML Topical Cream"
+                },
+                "quantity": {
+                    "code": "{tablets}",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "tablets",
+                    "value": 30
+                },
+                "resourceType": "MedicationDispense",
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dispensed 30 tablets = 15 day supply of Clotrimazole 10 MG/ML Topical Cream</div>",
+                    "status": "generated"
+                },
+                "whenHandedOver": "2008-05-04",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/MedicationDispense/smart-MedicationDispense-617"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-313"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "271807003",
+                            "display": "Eruption",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Eruption"
+                },
+                "id": "smart-Condition-313",
+                "onsetDateTime": "2003-12-11",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eruption</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-313"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-314"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "id": "smart-Condition-314",
+                "onsetDateTime": "2004-01-31",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-314"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-315"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "65363002",
+                            "display": "Otitis media",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "id": "smart-Condition-315",
+                "onsetDateTime": "2004-01-31",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Otitis media</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-315"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-316"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "429305003",
+                            "display": "Insect bite, nonvenomous, of other, multiple, and unspecified sites, without mention of infection",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Insect bite, nonvenomous, of other, multiple, and unspecified sites, without mention of infection"
+                },
+                "id": "smart-Condition-316",
+                "onsetDateTime": "2005-06-25",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Insect bite, nonvenomous, of other, multiple, and unspecified sites, without mention of infection</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-316"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-317"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "68235000",
+                            "display": "Other diseases of nasal cavity and sinuses",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Other diseases of nasal cavity and sinuses"
+                },
+                "id": "smart-Condition-317",
+                "onsetDateTime": "2005-06-25",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other diseases of nasal cavity and sinuses</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-317"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-318"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "43116000",
+                            "display": "Contact dermatitis and other eczema, unspecified cause",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Contact dermatitis and other eczema, unspecified cause"
+                },
+                "id": "smart-Condition-318",
+                "onsetDateTime": "2005-09-25",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Contact dermatitis and other eczema, unspecified cause</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-318"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-319"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "170539009",
+                            "display": "Poliomyelitis vaccination",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Poliomyelitis vaccination"
+                },
+                "id": "smart-Condition-319",
+                "onsetDateTime": "2006-09-03",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Poliomyelitis vaccination</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-319"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-320"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "277843001",
+                            "display": "Disruptive behavior disorder",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Disruptive behavior disorder"
+                },
+                "id": "smart-Condition-320",
+                "onsetDateTime": "2008-12-31",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Disruptive behavior disorder</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-320"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-321"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "23560001",
+                            "display": "Other specified pervasive developmental disorders, current or active state",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Other specified pervasive developmental disorders, current or active state"
+                },
+                "id": "smart-Condition-321",
+                "onsetDateTime": "2009-02-04",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Other specified pervasive developmental disorders, current or active state</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-321"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-322"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "20301004",
+                            "display": "Disturbance in speech",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Disturbance in speech"
+                },
+                "id": "smart-Condition-322",
+                "onsetDateTime": "2009-04-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Disturbance in speech</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-322"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-3"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-11-26",
+                "id": "smart-smokingstatus-3",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-3"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-71482713"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Unknown if ever smoked</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "266927001",
+                            "display": "Unknown if ever smoked",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Unknown if ever smoked"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-30"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-30",
+                "patient": {
+                    "reference": "Patient/smart-1482713"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-30"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

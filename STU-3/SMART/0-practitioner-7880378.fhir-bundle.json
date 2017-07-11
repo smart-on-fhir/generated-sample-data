@@ -1,0 +1,80 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-7880378"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "35 Ridge StApt 13"
+                        ],
+                        "postalCode": "74117",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1989-12-08",
+                "gender": "female",
+                "id": "smart-Practitioner-7880378",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0007"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Fox",
+                        "given": [
+                            "Amy",
+                            "R"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "amy.lee@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amy Fox</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-7880378"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

@@ -1,0 +1,85 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-72080416"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "53 Sunset AveApt 9"
+                        ],
+                        "postalCode": "74126",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1963-12-14",
+                "gender": "male",
+                "id": "smart-Practitioner-72080416",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0004"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Nichols",
+                        "given": [
+                            "Joseph",
+                            "P"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-277-1993"
+                    },
+                    {
+                        "system": "email",
+                        "value": "joseph.shaw@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Joseph Nichols</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-72080416"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

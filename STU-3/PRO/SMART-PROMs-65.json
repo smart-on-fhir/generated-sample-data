@@ -1,0 +1,905 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-prom-patient-data-SMART-PROMs-65",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/SMART-PROMs-65"
+            },
+            "resource": {
+                "resourceType": "Patient",
+                "id": "SMART-PROMs-65",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Johnny Stewart</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/v2/0203",
+                                    "code": "MR",
+                                    "display": "Medical Record Number"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "SMART-PROMs-65"
+                    }
+                ],
+                "active": false,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Stewart",
+                        "given": [
+                            "Johnny"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(830) 476-3998"
+                    },
+                    {
+                        "system": "email",
+                        "value": "Johnny.Stewart@example.com"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1976-12-05",
+                "address": [
+                    {
+                        "line": [
+                            "7638 Summer Ridge Parkway"
+                        ],
+                        "city": "Littleton",
+                        "state": "Colorado",
+                        "postalCode": "80127"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/SMART-PROMs-65"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-65-ENC1"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-65-ENC1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Procedure (procedure) - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "outpatient"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "71388002",
+                                "display": "Procedure (procedure)"
+                            }
+                        ],
+                        "text": "Procedure (procedure)"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "period": {
+                    "start": "2015-09-25",
+                    "end": "2015-09-25"
+                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "274023003",
+                                "display": "Varicose vein operation (procedure)"
+                            }
+                        ],
+                        "text": "Varicose vein operation (procedure)"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-65-ENC1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-65-ENC2"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-65-ENC2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pre-surgery evaluation (procedure) - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "outpatient"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "110466009",
+                                "display": "Pre-surgery evaluation (procedure)"
+                            }
+                        ],
+                        "text": "Pre-surgery evaluation (procedure)"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "period": {
+                    "start": "2015-09-11",
+                    "end": "2015-09-11"
+                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "274023003",
+                                "display": "Varicose vein operation (procedure)"
+                            }
+                        ],
+                        "text": "Varicose vein operation (procedure)"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-65-ENC2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/SMART-PROMs-65-ENC3"
+            },
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "SMART-PROMs-65-ENC3",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Incoming mail processing (procedure) - finished</div>"
+                },
+                "status": "finished",
+                "class": {
+                    "code": "other"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "270431009",
+                                "display": "Incoming mail processing (procedure)"
+                            }
+                        ],
+                        "text": "Incoming mail processing (procedure)"
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "period": {
+                    "start": "2016-01-03",
+                    "end": "2016-01-03"
+                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info",
+                                "code": "274023003",
+                                "display": "Varicose vein operation (procedure)"
+                            }
+                        ],
+                        "text": "Varicose vein operation (procedure)"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/SMART-PROMs-65-ENC3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/SMART-PROMs-65-PRO1"
+            },
+            "resource": {
+                "id": "SMART-PROMs-65-PRO1",
+                "resourceType": "Procedure",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Varicose vein operation (procedure) - completed</div>"
+                },
+                "status": "completed",
+                "code": {
+                    "coding": {
+                        "system": "http://snomed.info",
+                        "code": "274023003",
+                        "display": "Varicose vein operation (procedure)"
+                    }
+                },
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-65-ENC1"
+                },
+                "performedDateTime": "2015-09-25",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Procedure/SMART-PROMs-65-PRO1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-65-QR1"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-65-QR1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Pre-Op Q1 PROMs General Health Questionnaire by Johnny Stewart - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE1",
+                    "display": "Pre-Op Q1 PROMs General Health Questionnaire"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-65-ENC2"
+                },
+                "item": [
+                    {
+                        "linkId": "Assisted",
+                        "text": "Is Anyone helping you fill in this questionnaire?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Assisted By",
+                        "text": "If Yes, give the relationship to you of the person assisting you",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "0"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Symptom Period",
+                        "text": "For how long have you had problems with the body part on which you are about to have surgery?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "4"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Previous Surgery",
+                        "text": "Indicates whether the patient has had previous surgery of the type they are going to undergo",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Living Arrangements",
+                        "text": "Which statement best describes your living arrangements?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Disability",
+                        "text": "Do you consider yourself to have a disability?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Heart Disease",
+                        "text": "Have you been told by a doctor that you have heart disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Blood Pressure",
+                        "text": "Have you been told by a doctor that you have high blood pressure?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Stroke",
+                        "text": "Have you been told by a doctor that you have problems caused by a stroke?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Circulation",
+                        "text": "Have you been told by a doctor that you have leg pain when walking due to poor circulation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Lung Disease",
+                        "text": "Have you been told by a doctor that you have lung disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Diabetes",
+                        "text": "Have you been told by a doctor that you have diabetes?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Kidney Disease",
+                        "text": "Have you been told by a doctor that you have kidney disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Nervous System",
+                        "text": "Have you been told by a doctor that you have diseases of the nervous system?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Liver Disease",
+                        "text": "Have you been told by a doctor that you have liver disease?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Cancer",
+                        "text": "Have you been told by a doctor that you have cancer?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Depression",
+                        "text": "Have you been told by a doctor that you have depression?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Arthritis",
+                        "text": "Have you been told by a doctor that you have arthritis?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-65-QR1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-65-QR4"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-65-QR4",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Post-Op Q2 PROMs General Health Questionnaire by Johnny Stewart - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE3",
+                    "display": "Post-Op Q2 PROMs General Health Questionnaire"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-65-ENC3"
+                },
+                "item": [
+                    {
+                        "linkId": "Assisted",
+                        "text": "Is Anyone helping you fill in this questionnaire?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Assisted By",
+                        "text": "If Yes, give the relationship to you of the person assisting you",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "9"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Living Arrangements",
+                        "text": "Which statement best describes your living arrangements?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Disability",
+                        "text": "Do you consider yourself to have a disability?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Satisfaction",
+                        "text": "How would you describe the results of your operation",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Success",
+                        "text": "Overall, how are your problems now, compared to before your operation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Allergy",
+                        "text": "Did you experience any of the following problems after your operation: Allergy or reaction to drug?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Bleeding",
+                        "text": "Did you experience any of the following problems after your operation: Bleeding?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Wound",
+                        "text": "Did you experience any of the following problems after your operation: Wound problems?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Urine",
+                        "text": "Did you experience any of the following problems after your operation: Urinary problems?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Further Surgery",
+                        "text": "Indicates whether the patient has had another operation on the affected area",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Readmitted",
+                        "text": "Have you been readmitted to the hospital since your operation?",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-65-QR4"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-65-QR2"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-65-QR2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Pre-Op EQ5D3L by Johnny Stewart - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE2",
+                    "display": "Pre-Op EQ5D3L"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-65-ENC2"
+                },
+                "item": [
+                    {
+                        "linkId": "Mobility",
+                        "text": "Problems in walking about",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Self-care",
+                        "text": "Problems washing or dressing myself",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual Activities",
+                        "text": "Problems with performing my usual activities",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Pain/Discomfort",
+                        "text": "Pain or Discomfort",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "2"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Anxiety/Depression",
+                        "text": "Anxiety or Depression",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "EQ-VAS",
+                        "text": "Indicate on the scale how good or bad your own health is today",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "60"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-65-QR2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "QuestionnaireResponse/SMART-PROMs-65-QR5"
+            },
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "SMART-PROMs-65-QR5",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire response for Pre-Op EQ5D3L by Johnny Stewart - completed</div>"
+                },
+                "questionnaire": {
+                    "reference": "Questionnaire/SMART-PROMs-QUE2",
+                    "display": "Pre-Op EQ5D3L"
+                },
+                "status": "completed",
+                "subject": {
+                    "reference": "Patient/SMART-PROMs-65",
+                    "display": "Johnny Stewart"
+                },
+                "context": {
+                    "reference": "Encounter/SMART-PROMs-65-ENC3"
+                },
+                "item": [
+                    {
+                        "linkId": "Mobility",
+                        "text": "Problems in walking about",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Self-care",
+                        "text": "Problems washing or dressing myself",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Usual Activities",
+                        "text": "Problems with performing my usual activities",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Pain/Discomfort",
+                        "text": "Pain or Discomfort",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "Anxiety/Depression",
+                        "text": "Anxiety or Depression",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "1"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "EQ-VAS",
+                        "text": "Indicate on the scale how good or bad your own health is today",
+                        "answer": [
+                            {
+                                "valueCoding": {
+                                    "code": "50"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/QuestionnaireResponse/SMART-PROMs-65-QR5"
+        }
+    ]
+}

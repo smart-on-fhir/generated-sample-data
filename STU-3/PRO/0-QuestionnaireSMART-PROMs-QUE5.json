@@ -1,0 +1,565 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-questionnaire-SMART-PROMs-QUE6",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS13"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS13",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "NoneToSevere"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "None"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Very Mild"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Mild"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Moderate"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Severe"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS13"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS14"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS14",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "PainNights"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "No nights"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Only 1 or 2 nights"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Some nights"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Most nights"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Every night"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS14"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS16"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS16",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "Limping"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "Rarely/never"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Sometimes or just at first"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Often, not just at first"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Most of the time"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "All of the time"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS16"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS17"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS17",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "Length"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "No pain for 30 minutes or more"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "16 to 30 minutes"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "5 to 15 minutes"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Around the house only"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Not at all"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS17"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS18"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS18",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "DifficultyLevel"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "Yes, easily"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "With little difficulty"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "With moderate difficulty"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "With extreme difficulty"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "No, impossible"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS18"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS19"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS19",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "Painful"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "Not at all painful"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Slightly painful"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Moderately painful"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Very painful"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Unbearable"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS19"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS20"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS20",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "Trouble"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "No trouble at all"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Very little trouble"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Moderate trouble"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Extreme difficulty"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Impossible to do"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS20"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS21"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS21",
+                "identifier": {
+                    "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                    "value": "Interference"
+                },
+                "status": "draft",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.orthopaedicscore.com/scorepages/oxford_hip_score.html",
+                            "concept": [
+                                {
+                                    "code": "4",
+                                    "display": "Not at all"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "A little bit"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Moderately"
+                                },
+                                {
+                                    "code": "1",
+                                    "display": "Greatly"
+                                },
+                                {
+                                    "code": "0",
+                                    "display": "Totally"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS21"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Questionnaire/SMART-PROMs-QUE5"
+            },
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "SMART-PROMs-QUE5",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The Oxford Knee Score (OKS)</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://innovation.ox.ac.uk/outcome-measures/oxford-hip-score-ohs/",
+                        "value": "The Oxford Knee Score (OKS)"
+                    }
+                ],
+                "status": "active",
+                "item": [
+                    {
+                        "linkId": "Usual pain",
+                        "text": "How would you describe the pain you usually have in your knee?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS13"
+                        }
+                    },
+                    {
+                        "linkId": "Night pain",
+                        "text": "Have you been troubled by pain from your knee in bed at night?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS14"
+                        }
+                    },
+                    {
+                        "linkId": "Washing",
+                        "text": "Have you had any trouble with washing and drying yourself (all over) because of your knee?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS20"
+                        }
+                    },
+                    {
+                        "linkId": "Transportation",
+                        "text": "Have you had any trouble getting in and out of a car or using public transportation because of your knee?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS20"
+                        }
+                    },
+                    {
+                        "linkId": "Walking",
+                        "text": "For how long have you been able to walk before the pain in your knee becomes severe (with or without a walking aid)?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS17"
+                        }
+                    },
+                    {
+                        "linkId": "Standing up",
+                        "text": "After a meal (sat at a table), how painful has it been for you to stand up from a chair because of your knee?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS19"
+                        }
+                    },
+                    {
+                        "linkId": "Limping",
+                        "text": "Have you been limping when walking because of your knee?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS16"
+                        }
+                    },
+                    {
+                        "linkId": "Kneeling",
+                        "text": "If you were to kneel down could you stand up afterwards?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS18"
+                        }
+                    },
+                    {
+                        "linkId": "Usual work",
+                        "text": "How much has pain from your knee interfered with your usual work, including housework?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS21"
+                        }
+                    },
+                    {
+                        "linkId": "Confidence",
+                        "text": "Have you felt that your knee might suddenly give way or let you down?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS16"
+                        }
+                    },
+                    {
+                        "linkId": "Shopping",
+                        "text": "Could you do the household shopping on your own?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS18"
+                        }
+                    },
+                    {
+                        "linkId": "Stairs",
+                        "text": "Have you been able to walk down a flight of stairs?",
+                        "type": "choice",
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS18"
+                        }
+                    },
+                    {
+                        "linkId": "Score",
+                        "text": "Your Oxford Knee Score is",
+                        "type": "integer"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Questionnaire/SMART-PROMs-QUE5"
+        }
+    ]
+}

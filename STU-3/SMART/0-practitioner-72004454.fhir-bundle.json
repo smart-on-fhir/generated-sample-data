@@ -1,0 +1,80 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-72004454"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Sand Springs",
+                        "country": "USA",
+                        "line": [
+                            "80 Mill StApt 21"
+                        ],
+                        "postalCode": "74063",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1997-07-15",
+                "gender": "male",
+                "id": "smart-Practitioner-72004454",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0001"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Schmidt",
+                        "given": [
+                            "Michelle",
+                            "H"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "kevin.lee@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Michelle Schmidt</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-72004454"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

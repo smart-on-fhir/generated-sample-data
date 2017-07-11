@@ -1,0 +1,3816 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6670-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-725"
+                },
+                "effectiveDateTime": "2003-10-17",
+                "id": "smart-6670-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6670-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-10-17: weight = 72.6655 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 72.6655
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6670-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6671-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-725"
+                },
+                "effectiveDateTime": "2003-10-17",
+                "id": "smart-6671-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6671-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-10-17: bmi = 20.1 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 20.1
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6671-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6672-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-725"
+                },
+                "effectiveDateTime": "2003-10-17",
+                "id": "smart-6672-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6672-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-10-17: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6672-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6673-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6673-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6673-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: height = 190.246 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 190.246
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6673-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6674-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6674-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6674-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: heart_rate = 79.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 79
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6674-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6675-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6675-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6675-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: respiratory_rate = 8.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 8
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6675-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6676-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6676-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6676-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: temperature = 37.27778 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.27778
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6676-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6677-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6677-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6677-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: weight = 75.20561 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 75.20561
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6677-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6678-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6678-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6678-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: bmi = 20.8 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 20.8
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6678-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6679-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-726"
+                },
+                "effectiveDateTime": "2003-12-12",
+                "id": "smart-6679-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6679-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2003-12-12: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6679-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6680-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6680-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6680-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: height = 188.214 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 188.214
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6680-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6681-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6681-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6681-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: heart_rate = 75.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 75
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6681-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6682-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6682-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6682-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: respiratory_rate = 13.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 13
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6682-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6683-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6683-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6683-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: temperature = 37.27778 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.27778
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6683-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6684-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6684-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6684-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: weight = 67.04095 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 67.04095
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6684-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6685-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6685-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6685-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: bmi = 18.9 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 18.9
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6685-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6686-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-727"
+                },
+                "effectiveDateTime": "2004-03-30",
+                "id": "smart-6686-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6686-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-03-30: oxygen_saturation = 99.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 99
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6686-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6687-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6687-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6687-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: height = 188.468 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 188.468
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6687-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6688-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6688-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6688-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: heart_rate = 80.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 80
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6688-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6689-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6689-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6689-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: respiratory_rate = 13.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 13
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6689-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6690-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6690-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6690-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: temperature = 37.33333 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.33333
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6690-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6691-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6691-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6691-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: weight = 75.20561 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 75.20561
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6691-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6692-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6692-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6692-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: bmi = 21.2 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 21.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6692-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6693-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-728"
+                },
+                "effectiveDateTime": "2004-06-03",
+                "id": "smart-6693-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6693-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-03: oxygen_saturation = 99.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 99
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6693-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6694-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6694-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6694-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: height = 188.976 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 188.976
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6694-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6695-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6695-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6695-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: heart_rate = 78.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 78
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6695-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6696-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6696-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6696-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: respiratory_rate = 13.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 13
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6696-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6697-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6697-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6697-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: temperature = 37.33333 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.33333
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6697-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6698-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6698-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6698-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: weight = 71.214 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 71.214
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6698-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6699-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6699-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6699-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: bmi = 20.0 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 20
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6699-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6700-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-729"
+                },
+                "effectiveDateTime": "2004-06-04",
+                "id": "smart-6700-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6700-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2004-06-04: oxygen_saturation = 99.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 99
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6700-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6701-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6701-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6701-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: height = 186.69 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 186.69
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6701-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6702-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6702-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6702-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: heart_rate = 81.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 81
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6702-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6703-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6703-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6703-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: respiratory_rate = 13.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 13
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6703-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6704-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6704-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6704-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: temperature = 37.27778 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.27778
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6704-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6705-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6705-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6705-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: weight = 73.34589 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 73.34589
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6705-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6706-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6706-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6706-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: bmi = 21.1 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 21.1
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6706-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6707-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-730"
+                },
+                "effectiveDateTime": "2005-01-12",
+                "id": "smart-6707-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6707-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2005-01-12: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6707-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6708-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6708-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6708-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: height = 185.42 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 185.42
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6708-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6709-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6709-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6709-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: heart_rate = 78.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 78
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6709-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6710-respiratoryrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "display": "respiratory_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "respiratory_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6710-respiratoryrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6710-respiratoryrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: respiratory_rate = 10.0 {breaths}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "9279-1",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{breaths}/min",
+                    "value": 10
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6710-respiratoryrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6711-temperature"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "display": "temperature",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "temperature"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6711-temperature",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6711-temperature"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: temperature = 37.38889 Cel</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8310-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "Cel",
+                    "value": 37.38889
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6711-temperature"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6712-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6712-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6712-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: weight = 71.07792 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 71.07792
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6712-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6713-bmi"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "39156-5",
+                            "display": "bmi",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "bmi"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6713-bmi",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6713-bmi"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: bmi = 20.7 kg/m2</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "39156-5",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg/m2",
+                    "value": 20.7
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6713-bmi"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6714-oxygensaturation"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2710-2",
+                            "display": "oxygen_saturation",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "oxygen_saturation"
+                },
+                "context": {
+                    "reference": "Encounter/smart-731"
+                },
+                "effectiveDateTime": "2008-02-26",
+                "id": "smart-6714-oxygensaturation",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-6714-oxygensaturation"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-02-26: oxygen_saturation = 100.0 %{HemoglobinSaturation}</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "2710-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "%{HemoglobinSaturation}",
+                    "value": 100
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6714-oxygensaturation"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-522"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "40930008",
+                            "display": "Hypothyroidism",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Hypothyroidism"
+                },
+                "id": "smart-Condition-522",
+                "onsetDateTime": "2007-10-01",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypothyroidism</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-522"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-523"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "84229001",
+                            "display": "Malaise and fatigue",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Malaise and fatigue"
+                },
+                "id": "smart-Condition-523",
+                "onsetDateTime": "2007-10-07",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Malaise and fatigue</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-523"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-524"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30989003",
+                            "display": "Arthralgia of the lower leg",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Arthralgia of the lower leg"
+                },
+                "id": "smart-Condition-524",
+                "onsetDateTime": "2007-10-13",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Arthralgia of the lower leg</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-524"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-525"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "312894000",
+                            "display": "Disorder of bone and articular cartilage",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Disorder of bone and articular cartilage"
+                },
+                "id": "smart-Condition-525",
+                "onsetDateTime": "2007-10-13",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Disorder of bone and articular cartilage</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-525"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-526"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "168734001",
+                            "display": "Nonspecific abnormal findings on radiological and other examination of musculoskeletal system",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Nonspecific abnormal findings on radiological and other examination of musculoskeletal system"
+                },
+                "id": "smart-Condition-526",
+                "onsetDateTime": "2007-10-21",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nonspecific abnormal findings on radiological and other examination of musculoskeletal system</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-526"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-527"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "218218000",
+                            "display": "Overexertion and strenuous movements",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Overexertion and strenuous movements"
+                },
+                "id": "smart-Condition-527",
+                "onsetDateTime": "2007-10-22",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Overexertion and strenuous movements</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-527"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-528"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "43878008",
+                            "display": "Streptococcal sore throat",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Streptococcal sore throat"
+                },
+                "id": "smart-Condition-528",
+                "onsetDateTime": "2007-10-27",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Streptococcal sore throat</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-528"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-529"
+            },
+            "resource": {
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "201836008",
+                            "display": "Localized, primary osteoarthritis of the lower leg",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Localized, primary osteoarthritis of the lower leg"
+                },
+                "id": "smart-Condition-529",
+                "onsetDateTime": "2007-10-28",
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Localized, primary osteoarthritis of the lower leg</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Condition/smart-Condition-529"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-1"
+            },
+            "resource": {
+                "bornDate": "1902-01-07",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "44054006",
+                                "display": "Diabetes mellitus type 2",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Diabetes mellitus type 2"
+                        }
+                    }
+                ],
+                "deceasedDate": "1975-09-07",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 183
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-1",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "GRFTH",
+                            "display": "grandfather",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Grandfather"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Grand-father</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-1"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-2"
+            },
+            "resource": {
+                "bornDate": "1904-05-11",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "46635009",
+                                "display": "Diabetes mellitus type 1",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Diabetes mellitus type 1"
+                        }
+                    }
+                ],
+                "deceasedDate": "1977-02-03",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 174
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-2",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "GRMTH",
+                            "display": "grandmother",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Grandmother"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Grand-mother</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-2"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-3"
+            },
+            "resource": {
+                "bornDate": "1932-01-07",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "56265001",
+                                "display": "Heart disease",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Heart disease"
+                        }
+                    }
+                ],
+                "deceasedDate": "2001-09-07",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 181
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-3",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "FTH",
+                            "display": "father",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Father"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Father</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-3"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-4"
+            },
+            "resource": {
+                "bornDate": "1934-05-11",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "363358000",
+                                "display": "Malignant tumor of lung",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Malignant tumor of lung"
+                        }
+                    }
+                ],
+                "deceasedDate": "2003-02-03",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 173
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-4",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "MTH",
+                            "display": "mother",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Mother"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Mother</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-4"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-5"
+            },
+            "resource": {
+                "bornDate": "1970-08-01",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "37796009",
+                                "display": "Migraine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Migraine"
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 182
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-5",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "BRO",
+                            "display": "brother",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Brother"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Brother</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-5"
+        },
+        {
+            "relationship": {},
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/smart-FamilyMemberHistory-6"
+            },
+            "resource": {
+                "bornDate": "1972-03-15",
+                "condition": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "254837009",
+                                "display": "Malignant tumor of breast",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "Malignant tumor of breast"
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height",
+                        "valueQuantity": {
+                            "code": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "centimeters",
+                            "value": 175
+                        }
+                    }
+                ],
+                "id": "smart-FamilyMemberHistory-6",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "relationship": {
+                    "coding": [
+                        {
+                            "code": "SIS",
+                            "display": "sister",
+                            "system": "http://hl7.org/fhir/v3/RoleCode"
+                        }
+                    ],
+                    "text": "Sister"
+                },
+                "resourceType": "FamilyMemberHistory",
+                "status": "completed",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Data on patient's Sister</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/FamilyMemberHistory/smart-FamilyMemberHistory-6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-smokingstatus-49"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "social-history",
+                            "display": "Social History",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Social History"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "effectiveDateTime": "2016-09-10",
+                "id": "smart-smokingstatus-49",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-49"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-72080416"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-613876"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Current some day smoker</div>",
+                    "status": "generated"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "428041000124106",
+                            "display": "Current some day smoker",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-smokingstatus-49"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "AllergyIntolerance/smart-AllergyIntolerance-1"
+            },
+            "resource": {
+                "assertedDate": "2000",
+                "clinicalStatus": "active",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "716186003",
+                            "display": "No known allergies",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "No known allergies"
+                },
+                "id": "smart-AllergyIntolerance-1",
+                "patient": {
+                    "reference": "Patient/smart-613876"
+                },
+                "resourceType": "AllergyIntolerance",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known allergies</div>",
+                    "status": "generated"
+                },
+                "verificationStatus": "confirmed",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/AllergyIntolerance/smart-AllergyIntolerance-1"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

@@ -1,0 +1,85 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-71482713"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "52 Highland St"
+                        ],
+                        "postalCode": "74116",
+                        "state": "MA",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1970-12-27",
+                "gender": "female",
+                "id": "smart-Practitioner-71482713",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0003"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Clark",
+                        "given": [
+                            "Susan",
+                            "A"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-576-9327"
+                    },
+                    {
+                        "system": "email",
+                        "value": "susan.clark@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Susan Clark</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-71482713"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

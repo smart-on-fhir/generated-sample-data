@@ -1,0 +1,3947 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-9995679"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "country": "USA",
+                        "postalCode": "2155",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1989-10-26",
+                "gender": "male",
+                "generalPractitioner": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "id": "smart-9995679",
+                "identifier": [
+                    {
+                        "system": "http://hospital.smarthealthit.org",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MR",
+                                    "display": "Medical Record Number",
+                                    "system": "http://hl7.org/fhir/v2/0203"
+                                }
+                            ],
+                            "text": "Medical Record Number"
+                        },
+                        "use": "official",
+                        "value": "smart-9995679"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Alexis",
+                        "given": [
+                            "Aaron"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Patient",
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aaron Alexis</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Patient/smart-9995679"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-1"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-1",
+                "period": {
+                    "end": "2006-12-28T04:59:59Z",
+                    "start": "2006-12-27T15:53:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-12-27T15:53:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-1"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-2"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-2",
+                "period": {
+                    "end": "2007-04-19T04:59:59Z",
+                    "start": "2007-04-18T13:32:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-04-18T13:32:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-3"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-3",
+                "period": {
+                    "end": "2007-07-19T04:59:59Z",
+                    "start": "2007-07-18T12:49:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-18T12:49:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-4"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-4",
+                "period": {
+                    "end": "2008-01-17T04:59:59Z",
+                    "start": "2008-01-16T13:03:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-01-16T13:03:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-4"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-5"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-5",
+                "period": {
+                    "end": "2008-06-26T04:59:59Z",
+                    "start": "2008-06-25T15:45:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25T15:45:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-5"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-7"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-7",
+                "period": {
+                    "end": "2009-06-11T04:59:59Z",
+                    "start": "2009-06-10T12:39:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-06-10T12:39:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-7"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-9"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-9",
+                "period": {
+                    "end": "2009-12-24T04:59:59Z",
+                    "start": "2009-12-23T12:54:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23T12:54:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-9"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/smart-15"
+            },
+            "resource": {
+                "class": {
+                    "code": "ambulatory"
+                },
+                "id": "smart-15",
+                "period": {
+                    "end": "2010-12-23T04:59:59Z",
+                    "start": "2010-12-22T17:23:00Z"
+                },
+                "resourceType": "Encounter",
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-22T17:23:00Z: ambulatory encounter</div>",
+                    "status": "generated"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "code": "270427003",
+                                "display": "Patient-initiated encounter",
+                                "system": "http://snomed.info"
+                            }
+                        ],
+                        "text": "Patient-initiated ambulatory encounter"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Encounter/smart-15"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-2"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 121
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 62
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-2"
+                },
+                "effectiveDateTime": "2007-04-18",
+                "id": "smart-2",
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-04-18: Blood pressure 121/62 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-2"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-3"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 116
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 64
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-3"
+                },
+                "effectiveDateTime": "2007-07-18",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-3",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-18: Blood pressure 116/64 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-3"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-4"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 120
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 58
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-4"
+                },
+                "effectiveDateTime": "2008-01-16",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-4",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-01-16: Blood pressure 120/58 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-4"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-5"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368208006",
+                        "display": "left arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "left arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 121
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 73
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "33586001",
+                                "display": "sitting",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "sitting"
+                        }
+                    }
+                ],
+                "id": "smart-5",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: Blood pressure 121/73 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-5"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-6"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368208006",
+                        "display": "left arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "left arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 119
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 70
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "33586001",
+                                "display": "sitting",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "sitting"
+                        }
+                    }
+                ],
+                "id": "smart-6",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: Blood pressure 119/70 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-6"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-7"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 137
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 68
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-7"
+                },
+                "effectiveDateTime": "2009-06-10",
+                "id": "smart-7",
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-06-10: Blood pressure 137/68 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-7"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-8"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "61396006",
+                        "display": "left thigh",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "left thigh"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 168
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 86
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-7"
+                },
+                "effectiveDateTime": "2009-06-10",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-8",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-06-10: Blood pressure 168/86 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-8"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-9"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368208006",
+                        "display": "left arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "left arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 122
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 66
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-9",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 122/66 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-9"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-10"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 121
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 65
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-10",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 121/65 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-10"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-11"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 119
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 60
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-11",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 119/60 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-11"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-12"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 121
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 57
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-12",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 121/57 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-12"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-13"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 131
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 71
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-13",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 131/71 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-13"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-14"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 123
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 58
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "40199007",
+                                "display": "supine",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "supine"
+                        }
+                    }
+                ],
+                "id": "smart-14",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: Blood pressure 123/58 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-14"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-15"
+            },
+            "resource": {
+                "bodySite": {
+                    "coding": {
+                        "code": "368209003",
+                        "display": "right arm",
+                        "system": "http://snomed.info/sct"
+                    },
+                    "text": "right arm"
+                },
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": {
+                        "code": "55284-4",
+                        "display": "Blood pressure",
+                        "system": "http://loinc.org"
+                    },
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8480-6",
+                                "display": "Systolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 123
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": {
+                                "code": "8462-4",
+                                "display": "Diastolic blood pressure",
+                                "system": "http://loinc.org"
+                            },
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "code": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmHg",
+                            "value": 59
+                        }
+                    }
+                ],
+                "context": {
+                    "reference": "Encounter/smart-15"
+                },
+                "effectiveDateTime": "2010-12-22",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+                        "valueCodeableConcept": {
+                            "coding": {
+                                "code": "33586001",
+                                "display": "sitting",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "text": "sitting"
+                        }
+                    }
+                ],
+                "id": "smart-15",
+                "method": {
+                    "coding": {
+                        "code": "machine",
+                        "display": "machine",
+                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                    },
+                    "text": "machine"
+                },
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-22: Blood pressure 123/59 mmHg</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-15"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1082-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-1"
+                },
+                "effectiveDateTime": "2006-12-27",
+                "id": "smart-1082-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1082-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-12-27: height = 198.0 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 198
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1082-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1083-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-1"
+                },
+                "effectiveDateTime": "2006-12-27",
+                "id": "smart-1083-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1083-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-12-27: heart_rate = 54.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 54
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1083-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1084-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-1"
+                },
+                "effectiveDateTime": "2006-12-27",
+                "id": "smart-1084-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1084-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2006-12-27: weight = 86.0 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 86
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1084-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1085-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-2"
+                },
+                "effectiveDateTime": "2007-04-18",
+                "id": "smart-1085-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1085-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-04-18: height = 197.5 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1085-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1086-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-2"
+                },
+                "effectiveDateTime": "2007-04-18",
+                "id": "smart-1086-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1086-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-04-18: heart_rate = 60.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 60
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1086-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1087-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-2"
+                },
+                "effectiveDateTime": "2007-04-18",
+                "id": "smart-1087-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1087-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-04-18: weight = 87.0 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 87
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1087-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1088-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-3"
+                },
+                "effectiveDateTime": "2007-07-18",
+                "id": "smart-1088-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1088-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-18: height = 197.0 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1088-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1089-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-3"
+                },
+                "effectiveDateTime": "2007-07-18",
+                "id": "smart-1089-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1089-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-18: heart_rate = 80.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 80
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1089-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1090-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-3"
+                },
+                "effectiveDateTime": "2007-07-18",
+                "id": "smart-1090-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1090-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2007-07-18: weight = 90.2 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 90.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1090-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1091-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-4"
+                },
+                "effectiveDateTime": "2008-01-16",
+                "id": "smart-1091-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1091-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-01-16: height = 197.5 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1091-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1092-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-4"
+                },
+                "effectiveDateTime": "2008-01-16",
+                "id": "smart-1092-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1092-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-01-16: heart_rate = 47.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 47
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1092-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1093-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-4"
+                },
+                "effectiveDateTime": "2008-01-16",
+                "id": "smart-1093-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1093-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-01-16: weight = 89.4 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 89.4
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1093-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1094-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "id": "smart-1094-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1094-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: height = 197.5 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1094-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1095-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "id": "smart-1095-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1095-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: heart_rate = 47.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 47
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1095-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1096-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "id": "smart-1096-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1096-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: weight = 90.2 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 90.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1096-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1097-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-5"
+                },
+                "effectiveDateTime": "2008-06-25",
+                "id": "smart-1097-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1097-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2008-06-25: heart_rate = 50.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 50
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1097-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1098-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-7"
+                },
+                "effectiveDateTime": "2009-06-10",
+                "id": "smart-1098-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1098-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-06-10: height = 198.0 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 198
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1098-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1099-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-7"
+                },
+                "effectiveDateTime": "2009-06-10",
+                "id": "smart-1099-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1099-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-06-10: weight = 94.7 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 94.7
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1099-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1100-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1100-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1100-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: height = 197.5 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197.5
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1100-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1101-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1101-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1101-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 50.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 50
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1101-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1102-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1102-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1102-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: weight = 92.2 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 92.2
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1102-weight"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1103-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1103-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1103-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 50.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 50
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1103-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1104-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1104-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1104-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 49.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 49
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1104-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1105-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1105-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1105-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 53.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 53
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1105-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1106-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1106-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1106-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 48.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 48
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1106-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1107-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-9"
+                },
+                "effectiveDateTime": "2009-12-23",
+                "id": "smart-1107-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1107-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2009-12-23: heart_rate = 52.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 52
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1107-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1108-height"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "display": "height",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "height"
+                },
+                "context": {
+                    "reference": "Encounter/smart-15"
+                },
+                "effectiveDateTime": "2010-12-22",
+                "id": "smart-1108-height",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1108-height"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-22: height = 197.0 cm</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8302-2",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "cm",
+                    "value": 197
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1108-height"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1109-heartrate"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "display": "heart_rate",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "heart_rate"
+                },
+                "context": {
+                    "reference": "Encounter/smart-15"
+                },
+                "effectiveDateTime": "2010-12-22",
+                "id": "smart-1109-heartrate",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1109-heartrate"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-22: heart_rate = 52.0 {beats}/min</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "8867-4",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "{beats}/min",
+                    "value": 52
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1109-heartrate"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-1110-weight"
+            },
+            "resource": {
+                "category": [
+                    {
+                        "coding": {
+                            "code": "vital-signs",
+                            "display": "Vital Signs",
+                            "system": "http://hl7.org/fhir/observation-category"
+                        },
+                        "text": "Vital Signs"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "3141-9",
+                            "display": "weight",
+                            "system": "http://loinc.org"
+                        }
+                    ],
+                    "text": "weight"
+                },
+                "context": {
+                    "reference": "Encounter/smart-15"
+                },
+                "effectiveDateTime": "2010-12-22",
+                "id": "smart-1110-weight",
+                "identifier": [
+                    {
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "use": "official",
+                        "value": "smart-1110-weight"
+                    }
+                ],
+                "performer": {
+                    "reference": "Practitioner/smart-Practitioner-7880378"
+                },
+                "resourceType": "Observation",
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/smart-9995679"
+                },
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2010-12-22: weight = 92.3 kg</div>",
+                    "status": "generated"
+                },
+                "valueQuantity": {
+                    "code": "3141-9",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "kg",
+                    "value": 92.3
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Observation/smart-1110-weight"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

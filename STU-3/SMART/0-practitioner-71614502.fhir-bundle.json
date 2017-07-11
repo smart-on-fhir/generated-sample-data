@@ -1,0 +1,90 @@
+{
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/smart-Practitioner-71614502"
+            },
+            "resource": {
+                "active": true,
+                "address": [
+                    {
+                        "city": "Tulsa",
+                        "country": "USA",
+                        "line": [
+                            "27 South Ave"
+                        ],
+                        "postalCode": "74126",
+                        "state": "OK",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1996-11-22",
+                "gender": "female",
+                "id": "smart-Practitioner-71614502",
+                "identifier": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/us-ssn",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "SB",
+                                    "display": "Social Beneficiary Identifier",
+                                    "system": "http://hl7.org/fhir/identifier-type"
+                                }
+                            ],
+                            "text": "US Social Security Number"
+                        },
+                        "use": "official",
+                        "value": "000-00-0002"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Williams",
+                        "given": [
+                            "Ward",
+                            "N"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ],
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "home",
+                        "value": "800-651-2242"
+                    },
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "800-471-8810"
+                    },
+                    {
+                        "system": "email",
+                        "value": "susan.williams@example.com"
+                    }
+                ],
+                "text": {
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ward Williams</div>",
+                    "status": "generated"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "smart-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Practitioner/smart-Practitioner-71614502"
+        }
+    ],
+    "resourceType": "Bundle",
+    "type": "transaction"
+}

@@ -1,0 +1,182 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-request-insert-questionnaire-SMART-PROMs-QUE2",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS11"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS11",
+                "identifier": {
+                    "system": "http://www.euroqol.org/eq-5d-products/eq-5d-3l.html",
+                    "value": "EQ-5D-3L"
+                },
+                "status": "active",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.euroqol.org/eq-5d-products/eq-5d-3l.html",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "Not At All"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Somewhat"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Cannot do"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS11"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "ValueSet/SMART-PROMs-VS12"
+            },
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "SMART-PROMs-VS12",
+                "identifier": {
+                    "system": "http://www.euroqol.org/eq-5d-products/eq-5d-3l.html",
+                    "value": "EQ-5D-3L"
+                },
+                "status": "active",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "http://www.euroqol.org/eq-5d-products/eq-5d-3l.html",
+                            "concept": [
+                                {
+                                    "code": "1",
+                                    "display": "None"
+                                },
+                                {
+                                    "code": "2",
+                                    "display": "Moderate"
+                                },
+                                {
+                                    "code": "3",
+                                    "display": "Severe"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/ValueSet/SMART-PROMs-VS12"
+        },
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Questionnaire/SMART-PROMs-QUE2"
+            },
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "SMART-PROMs-QUE2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Questionnaire SMART-PROMs-QUE2 - Version 14DEC2016</div>"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "http://www.euroqol.org/eq-5d-products/eq-5d-3l.html",
+                        "value": "EQ-5D-3L"
+                    }
+                ],
+                "version": "Version 14DEC2016",
+                "status": "active",
+                "item": [
+                    {
+                        "linkId": "Mobility",
+                        "text": "Problems in walking about",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS11"
+                        }
+                    },
+                    {
+                        "linkId": "Self-care",
+                        "text": "Problems washing or dressing myself",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS11"
+                        }
+                    },
+                    {
+                        "linkId": "Usual Activities",
+                        "text": "Problems with performing my usual activities",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS11"
+                        }
+                    },
+                    {
+                        "linkId": "Pain/Discomfort",
+                        "text": "Pain or discomfort",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS12"
+                        }
+                    },
+                    {
+                        "linkId": "Anxiety/Depression",
+                        "text": "Anxiety or depression",
+                        "type": "choice",
+                        "required": true,
+                        "options": {
+                            "reference": "ValueSet/SMART-PROMs-VS12"
+                        }
+                    },
+                    {
+                        "linkId": "EQ-VAS",
+                        "text": "Indicate on the scale how good or bad your own health is today",
+                        "type": "integer",
+                        "required": true
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "https://smarthealthit.org/tags",
+                            "code": "pro-7-2017"
+                        }
+                    ]
+                }
+            },
+            "fullUrl": "/Questionnaire/SMART-PROMs-QUE2"
+        }
+    ]
+}
