@@ -1,0 +1,1962 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "DDME",
+        "name": [
+          {
+            "family": [
+              "Diabetes"
+            ],
+            "given": [
+              "Dan"
+            ]
+          }
+        ],
+        "birthDate": "1991-01-04",
+        "gender": "male",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+            "valueDateTime": "1991-01-04T00:00:00"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/DDME"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "LDME",
+        "name": [
+          {
+            "family": [
+              "Diabetes"
+            ],
+            "given": [
+              "Lucie"
+            ]
+          }
+        ],
+        "birthDate": "1980-01-04",
+        "gender": "female",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+            "valueDateTime": "1980-01-04T00:00:00"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/LDME"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "CDME",
+        "name": [
+          {
+            "family": [
+              "Diabetes"
+            ],
+            "given": [
+              "Chris"
+            ]
+          }
+        ],
+        "birthDate": "1980-02-04",
+        "gender": "male",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+            "valueDateTime": "1980-02-04T00:00:00"
+          }
+        ],
+        "active": true
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/CDME"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS1",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14957-5",
+              "display": "Microalbumin [Mass/volume] in Urine"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 20,
+          "unit": "mg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS1",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Microalbumin/Creatinine [Mass Ratio] in Urine"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 50,
+          "unit": "mcg/mg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mcg/mg"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS1",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "58448-2",
+              "display": "Microalbumin mg/min [Mass/time] in 24 hour Urine"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 250,
+          "unit": "mcg/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "mcg/min"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS2",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 90,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS2",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 92,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS2",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8306-3",
+              "display": "Body Height - Lying"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 94,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS3",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3141-9",
+              "display": "Body Weight Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 180,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS3",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3141-9",
+              "display": "Body Weight Measured"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 70,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS3",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 75,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS4",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Creatinine [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 1.1,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS4",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2161-8",
+              "display": "Creatinine [Mass/volume] in Urine"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 1,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS4",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine [Mass/volume] in Urine"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 0.9,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS5",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood, %"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 5.5,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS5",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood, %"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 6.7,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS5",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood, %"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 7,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS10",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "valueCodeableConcept": {
+          "text": "Current Heavy tobacco smoker",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "428071000124103",
+              "display": "Current Heavy tobacco smoker"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS10",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "valueCodeableConcept": {
+          "text": "Tobacco\nsmoking consumption unknown (finding)",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266927001",
+              "display": "Tobacco smoking consumption unknown (finding)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS10",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "valueCodeableConcept": {
+          "text": "Never\nsmoked tobacco (finding)",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoked tobacco (finding)"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "social-history",
+              "display": "Social History"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS9",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11428-0",
+              "display": "Physical Findings of Foot (Nominal)"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "A",
+              "display": "Abnormal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS9",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11428-0",
+              "display": "Physical Findings of Foot (Nominal)"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS9",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11397-7",
+              "display": "Physical Findings of Foot Narrative"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS8",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8699-1",
+              "display": "Physical Findings of Eye (Nominal)"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS8",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10197-2",
+              "display": "Physical Findings of Eye Narrative"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "N",
+              "display": "Normal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS8",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10197-2",
+              "display": "Physical Findings of Eye Narrative"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "A",
+              "display": "Abnormal"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "exam",
+              "display": "Exam"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS6",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "13457-7",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 80,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS6",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 120,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS6",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "13457-7",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 165,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dl"
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "laboratory",
+              "display": "Laboratory"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DDME-OBS7",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic & diastolic"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 115,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 85,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/DDME-OBS7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LDME-OBS7",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic & diastolic"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 120,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 80,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/LDME-OBS7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CDME-OBS7",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic & diastolic"
+            }
+          ]
+        },
+        "effectiveDateTime": "2016-01-04T14:00:00",
+        "status": "final",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 125,
+              "unit": "mmHg"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg"
+            }
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CDME-OBS7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "DDME-ALG1",
+        "category": "medication",
+        "status": "confirmed",
+        "substance": {
+          "text": "Penicillin",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Penicillin",
+              "code": "70618"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Penicillin -class of antibiotic- (substance)",
+              "code": "373270004"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/DDME-ALG1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "CDME-ALG1",
+        "category": "medication",
+        "status": "active",
+        "substance": {
+          "text": "Fosinopril"
+        },
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/CDME-ALG1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "LDME-ALG2",
+        "status": "active",
+        "substance": {
+          "text": "Tylenol",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Tylenol",
+              "code": "202433"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/LDME-ALG2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "DDME-ALG2",
+        "category": "environment",
+        "status": "entered-in-error",
+        "substance": {
+          "text": "Ragweed"
+        },
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/DDME-ALG2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "DDME-ALG3",
+        "category": "food",
+        "status": "inactive",
+        "substance": {
+          "text": "Strawberries"
+        },
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/DDME-ALG3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "LDME-ALG1",
+        "category": "food",
+        "status": "active",
+        "substance": {
+          "text": "Shellfish"
+        },
+        "patient": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/LDME-ALG1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "CDME-ALG2",
+        "category": "other",
+        "status": "refuted",
+        "substance": {
+          "text": "OAuth2"
+        },
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/CDME-ALG2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "DDME-CON1",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "text": "Diabetes mellitus type 1",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Diabetes mellitus type 1",
+              "code": "46635009"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org/extension-codes",
+              "display": "Problem",
+              "code": "problem"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/DDME-CON1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "DDME-CON2",
+        "clinicalStatus": "resolved",
+        "verificationStatus": "confirmed",
+        "code": {
+          "text": "Dizzyness",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Dizzyness",
+              "code": "404640003"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org/extension-codes",
+              "display": "Problem",
+              "code": "problem"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/DDME-CON2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "LDME-CON1",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "text": "Diabetes mellitus type 2",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Diabetes mellitus type 2",
+              "code": "44054006"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org/extension-codes",
+              "display": "Problem",
+              "code": "problem"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/LDME-CON1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CDME-CON1",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "text": "Diabetes mellitus type 1",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Diabetes mellitus type 1",
+              "code": "46635009"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org/extension-codes",
+              "display": "Problem",
+              "code": "problem"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/CDME-CON1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "CDME-CON2",
+        "clinicalStatus": "relapse",
+        "verificationStatus": "confirmed",
+        "code": {
+          "text": "Low back pain",
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Low back pain",
+              "code": "279039007"
+            }
+          ]
+        },
+        "category": {
+          "coding": [
+            {
+              "system": "http://argonaut.hl7.org/extension-codes",
+              "display": "Problem",
+              "code": "problem"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/CDME-CON2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "DDME-MED1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+              "code": "1362081"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "12345",
+            "code": {
+              "text": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+                  "code": "1362081"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#12345",
+          "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]"
+        },
+        "dosage": [
+          {
+            "text": "500.0 mg, Caudal, BID, PRN, anaphylaxis, 0 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/DDME-MED1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "LDME-MED1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Aspirin/ Dipyridamole Oral Capsule [Aggrenox]",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+              "code": "1362081"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "12345",
+            "code": {
+              "text": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]",
+                  "code": "1362081"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#12345",
+          "display": "Aspirin / Dipyridamole Oral Capsule [Aggrenox]"
+        },
+        "dosage": [
+          {
+            "text": "60.0 mg, Nasal, PRN, 30 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/LDME-MED1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "DDME-MED2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 MG [Lipitor]",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Atorvastatin 20 MG [Lipitor]",
+              "code": "617317"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "123456",
+            "code": {
+              "text": "Atorvastatin 20 MG [Lipitor]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Atorvastatin 20 MG [Lipitor]",
+                  "code": "617317"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#123456",
+          "display": "Atorvastatin 20 MG [Lipitor]"
+        },
+        "dosage": [
+          {
+            "text": "12.0 mg, Oral, Twice Daily, 2 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/DDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/DDME-MED2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "CDME-MED1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 MG [Lipitor]",
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Atorvastatin 20 MG [Lipitor]",
+              "code": "617317"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "123456",
+            "code": {
+              "text": "Atorvastatin 20 MG [Lipitor]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Atorvastatin 20 MG [Lipitor]",
+                  "code": "617317"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#123456",
+          "display": "Atorvastatin 20 MG [Lipitor]"
+        },
+        "dosage": [
+          {
+            "text": "70 mg, Oral, Once every 6 hrs, 0 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/CDME-MED1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "CDME-MED2",
+        "status": "active",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "1234567",
+            "code": {
+              "text": "Captopril 25 MG Oral Tablet [Capoten]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Captopril 25 MG Oral Tablet [Capoten]",
+                  "code": "201372"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#1234567",
+          "display": "Captopril 25 MG Oral Tablet [Capoten]"
+        },
+        "dosage": [
+          {
+            "text": "99 mg, Percutaneous, PRN, 0 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/CDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/CDME-MED2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "LDME-MED2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Captopril 25 MG Oral Tablet [Capoten]"
+        },
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "1234567",
+            "code": {
+              "text": "Captopril 25 MG Oral Tablet [Capoten]",
+              "coding": [
+                {
+                  "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                  "display": "Captopril 25 MG Oral Tablet [Capoten]",
+                  "code": "201372"
+                }
+              ]
+            }
+          }
+        ],
+        "medicationReference": {
+          "reference": "#1234567",
+          "display": "Captopril 25 MG Oral Tablet [Capoten]"
+        },
+        "dosage": [
+          {
+            "text": ".01 mg, Caudal, PRN, 2 Refill(s)"
+          }
+        ],
+        "patient": {
+          "reference": "Patient/LDME"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationStatement/LDME-MED2"
+      }
+    }
+  ]
+}
