@@ -1,0 +1,463 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-1032702",
+                "text": {
+                    "div": "<div><p>Amy Shaw</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "1032702"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Shaw"
+                        ],
+                        "given": [
+                            "Amy",
+                            "V."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-782-6765",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "amy.shaw@example.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "2007-03-20",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "49 Meadow St"
+                        ],
+                        "city": "Mounds",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1032702"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-101",
+                "text": {
+                    "div": "<div>\n      Nizatidine 15 MG/ML Oral Solution [Axid] (rxnorm: 582620)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-05"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "10 mL bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-101"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-119",
+                "text": {
+                    "div": "<div>Single liveborn, born in hospital, delivered without mention of cesarean section</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "442311008",
+                            "display": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                        }
+                    ],
+                    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-12-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-119"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-120",
+                "text": {
+                    "div": "<div>Abnormal weight loss</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "267024001",
+                            "display": "Abnormal weight loss"
+                        }
+                    ],
+                    "text": "Abnormal weight loss"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-12-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-120"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-121",
+                "text": {
+                    "div": "<div>Follow-up encounter</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "310249008",
+                            "display": "Follow-up encounter"
+                        }
+                    ],
+                    "text": "Follow-up encounter"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-12-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-121"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-122",
+                "text": {
+                    "div": "<div>Gastroesophageal reflux disease</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "235595009",
+                            "display": "Gastroesophageal reflux disease"
+                        }
+                    ],
+                    "text": "Gastroesophageal reflux disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-04-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-122"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-123",
+                "text": {
+                    "div": "<div>Needs influenza immunization</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "185903001",
+                            "display": "Needs influenza immunization"
+                        }
+                    ],
+                    "text": "Needs influenza immunization"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-06-29"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-123"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-1",
+                "text": {
+                    "div": "<div>DTaP-hepatitis B and poliovirus vaccine</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "date": "2007-09-27",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "110",
+                            "display": "DTaP-hepatitis B and poliovirus vaccine"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-2",
+                "text": {
+                    "div": "<div>poliovirus vaccine, unspecified formulation</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "date": "2011-01-27",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "89",
+                            "display": "poliovirus vaccine, unspecified formulation"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-3",
+                "text": {
+                    "div": "<div>poliovirus vaccine, unspecified formulation</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "date": "2011-05-27",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "89",
+                            "display": "poliovirus vaccine, unspecified formulation"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-4",
+                "text": {
+                    "div": "<div>rotavirus, live, pentavalent vaccine</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "date": "2007-05-24",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "116",
+                            "display": "rotavirus, live, pentavalent vaccine"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-5-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Current some day smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "428041000124106",
+                            "display": "Current some day smoker"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-5-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-19",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-1032702"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-19"
+            }
+        }
+    ]
+}

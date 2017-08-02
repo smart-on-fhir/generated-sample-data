@@ -1,0 +1,3253 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-1157764",
+                "text": {
+                    "div": "<div><p>Carol Hughes</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "1157764"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Hughes"
+                        ],
+                        "given": [
+                            "Carol",
+                            "U."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-971-5389",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "carol.hughes@example.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1949-11-04",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "36 South St"
+                        ],
+                        "city": "Tulsa",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1157764"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1842-lab",
+                "text": {
+                    "div": "<div>2004-07-23: LDLc SerPl Calc-mCnc = 101 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13457-7",
+                            "display": "LDLc SerPl Calc-mCnc"
+                        }
+                    ],
+                    "text": "LDLc SerPl Calc-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 101,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1842-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1843-lab",
+                "text": {
+                    "div": "<div>2004-07-23: TSH SerPl DL&lt;=0.005 mU/L-aCnc = 3.548 mcU/mL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11580-8",
+                            "display": "TSH SerPl DL<=0.005 mU/L-aCnc"
+                        }
+                    ],
+                    "text": "TSH SerPl DL<=0.005 mU/L-aCnc"
+                },
+                "valueQuantity": {
+                    "value": 3.548,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1843-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1844-lab",
+                "text": {
+                    "div": "<div>2004-07-23: HDLc SerPl-mCnc = 66 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2085-9",
+                            "display": "HDLc SerPl-mCnc"
+                        }
+                    ],
+                    "text": "HDLc SerPl-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 66,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1844-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1845-lab",
+                "text": {
+                    "div": "<div>2004-07-23: Trigl SerPl-mCnc = 72 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2571-8",
+                            "display": "Trigl SerPl-mCnc"
+                        }
+                    ],
+                    "text": "Trigl SerPl-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 72,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1845-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1846-lab",
+                "text": {
+                    "div": "<div>2004-07-23: Cholest SerPl-mCnc = 181 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2093-3",
+                            "display": "Cholest SerPl-mCnc"
+                        }
+                    ],
+                    "text": "Cholest SerPl-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 181,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1846-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1847-lab",
+                "text": {
+                    "div": "<div>2006-10-30: pH Ur Strip = 5 [pH]</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5803-2",
+                            "display": "pH Ur Strip"
+                        }
+                    ],
+                    "text": "pH Ur Strip"
+                },
+                "valueQuantity": {
+                    "value": 5,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1847-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1848-lab",
+                "text": {
+                    "div": "<div>2006-10-30: Prot Ur Strip-mCnc = 0 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5804-0",
+                            "display": "Prot Ur Strip-mCnc"
+                        }
+                    ],
+                    "text": "Prot Ur Strip-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 0,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1848-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1849-lab",
+                "text": {
+                    "div": "<div>2006-10-30: RBC #/area UrnS HPF = 1 /[HPF]</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13945-1",
+                            "display": "RBC #/area UrnS HPF"
+                        }
+                    ],
+                    "text": "RBC #/area UrnS HPF"
+                },
+                "valueQuantity": {
+                    "value": 1,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1849-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1850-lab",
+                "text": {
+                    "div": "<div>2006-10-30: WBC #/area UrnS HPF = 1 /[HPF]</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5821-4",
+                            "display": "WBC #/area UrnS HPF"
+                        }
+                    ],
+                    "text": "WBC #/area UrnS HPF"
+                },
+                "valueQuantity": {
+                    "value": 1,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1850-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1851-lab",
+                "text": {
+                    "div": "<div>2006-10-30: Bacteria #/area UrnS HPF = 44 /[HPF]</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5769-5",
+                            "display": "Bacteria #/area UrnS HPF"
+                        }
+                    ],
+                    "text": "Bacteria #/area UrnS HPF"
+                },
+                "valueQuantity": {
+                    "value": 44,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1851-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1852-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['None', 'Few', 'Many']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2006-10-30: Squamous UrnS Ql HPF = None </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "12258-0",
+                            "display": "Squamous UrnS Ql HPF"
+                        }
+                    ],
+                    "text": "Squamous UrnS Ql HPF"
+                },
+                "valueString": "None",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1852-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1853-lab",
+                "text": {
+                    "div": "<div>2006-10-30: Sp Gr Ur Strip = 1.001 </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5811-5",
+                            "display": "Sp Gr Ur Strip"
+                        }
+                    ],
+                    "text": "Sp Gr Ur Strip"
+                },
+                "valueQuantity": {
+                    "value": 1.001,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1853-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1854-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['Negative', 'Positive']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2006-10-30: Nitrite Ur Ql Strip = Negative </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5802-4",
+                            "display": "Nitrite Ur Ql Strip"
+                        }
+                    ],
+                    "text": "Nitrite Ur Ql Strip"
+                },
+                "valueString": "Negative",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1854-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1855-lab",
+                "text": {
+                    "div": "<div>2006-10-30: Appearance Ur = Clear </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5767-9",
+                            "display": "Appearance Ur"
+                        }
+                    ],
+                    "text": "Appearance Ur"
+                },
+                "valueString": "Clear",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1855-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1856-lab",
+                "text": {
+                    "div": "<div>2004-07-23: CRP SerPl HS-mCnc = 2.2 mg/L</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "30522-7",
+                            "display": "CRP SerPl HS-mCnc"
+                        }
+                    ],
+                    "text": "CRP SerPl HS-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 2.2,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1856-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-128",
+                "text": {
+                    "div": "<div>\n      anastrozole 1 MG Oral Tablet [Arimidex] (rxnorm: 151124)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2003-10-23"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-128"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-928",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-07-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-928"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-913",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-01-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-913"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-936",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-03-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-936"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-925",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-07"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-925"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-920",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-09-26"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-920"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-924",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-03-09"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-924"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-927",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-06-05"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-927"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-930",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-09-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-930"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-912",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-12-21"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-912"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-917",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-06-29"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-917"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-931",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-10-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-931"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-921",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-10-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-921"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-911",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-11-21"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-911"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-934",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-01-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-934"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-915",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-03-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-915"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-916",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-04-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-916"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-926",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-05-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-926"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-933",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-12-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-933"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-923",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-923"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-919",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-08-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-919"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-918",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-07-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-918"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-932",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-11-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-932"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-922",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-25"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-922"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-910",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-10-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-910"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-914",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-02-18"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-914"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-929",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-08-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-929"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-935",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of anastrozole 1 MG Oral Tablet [Arimidex]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-128"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-01-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-935"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-129",
+                "text": {
+                    "div": "<div>\n      {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35] (rxnorm: 877300)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2003-11-02"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "wk"
+                            }
+                        },
+                        "text": "1 weekly"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 4,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-129"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-898",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-898"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-889",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-06-09"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-889"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-908",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-12-25"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-908"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-890",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-07-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-890"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-891",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-08-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-891"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-902",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-06-08"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-902"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-899",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-03-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-899"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-884",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-01-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-884"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-892",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-09-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-892"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-905",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-09-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-905"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-886",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-03-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-886"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-904",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-08-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-904"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-882",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-11-30"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-882"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-885",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-02-18"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-885"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-901",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-05-15"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-901"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-896",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-12-26"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-896"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-895",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-25"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-895"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-883",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-12-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-883"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-893",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-09-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-893"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-907",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-11-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-907"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-888",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-05-10"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-888"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-887",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-04-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-887"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-897",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-01-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-897"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-906",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-10-30"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-906"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-903",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-07-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-903"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-909",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-01-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-909"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-894",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-10-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-894"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-881",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2003-11-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-881"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-900",
+                "text": {
+                    "div": "<div>\n      Dispensed 4 tablets = 30 day supply of {4 (Risedronate 35 MG Oral Tablet [Actonel]) } Pack [Actonel 35]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-129"
+                    }
+                ],
+                "quantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-900"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-130",
+                "text": {
+                    "div": "<div>\n      Nitrofurantoin 100 MG Oral Capsule (rxnorm: 311992)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2006-10-31"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 60,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-130"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-880",
+                "text": {
+                    "div": "<div>\n      Dispensed 60 tablets = 30 day supply of Nitrofurantoin 100 MG Oral Capsule\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-130"
+                    }
+                ],
+                "quantity": {
+                    "value": 60,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-10-31"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-880"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-131",
+                "text": {
+                    "div": "<div>\n      bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan] (rxnorm: 285128)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2009-08-22"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 gtt daily in OD"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 2,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "[drp]"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 20,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-131"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-937",
+                "text": {
+                    "div": "<div>\n      Dispensed 2 tablets = 20 day supply of bimatoprost 0.3 MG/ML Ophthalmic Solution [Lumigan]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-131"
+                    }
+                ],
+                "quantity": {
+                    "value": 2,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 20,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2009-08-22"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-937"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-379",
+                "text": {
+                    "div": "<div>Primary malignant neoplasm of female breast</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "254837009",
+                            "display": "Primary malignant neoplasm of female breast"
+                        }
+                    ],
+                    "text": "Primary malignant neoplasm of female breast"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2003-12-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-379"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-380",
+                "text": {
+                    "div": "<div>Adjustment disorder</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "17226007",
+                            "display": "Adjustment disorder"
+                        }
+                    ],
+                    "text": "Adjustment disorder"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-09-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-380"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-381",
+                "text": {
+                    "div": "<div>Crohn's disease of large bowel</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "7620006",
+                            "display": "Crohn's disease of large bowel"
+                        }
+                    ],
+                    "text": "Crohn's disease of large bowel"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-11-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-381"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-382",
+                "text": {
+                    "div": "<div>Recurrent major depressive episodes, moderate</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "18818009",
+                            "display": "Recurrent major depressive episodes, moderate"
+                        }
+                    ],
+                    "text": "Recurrent major depressive episodes, moderate"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-11-15"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-382"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-383",
+                "text": {
+                    "div": "<div>Acute sinusitis</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "36971009",
+                            "display": "Acute sinusitis"
+                        }
+                    ],
+                    "text": "Acute sinusitis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2006-09-26"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-383"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-384",
+                "text": {
+                    "div": "<div>Hematuria syndrome</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "53298000",
+                            "display": "Hematuria syndrome"
+                        }
+                    ],
+                    "text": "Hematuria syndrome"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2006-10-30"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-384"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-385",
+                "text": {
+                    "div": "<div>Primary malignant neoplasm of central portion of female breast</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "372064008",
+                            "display": "Primary malignant neoplasm of central portion of female breast"
+                        }
+                    ],
+                    "text": "Primary malignant neoplasm of central portion of female breast"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-10-21"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-385"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-386",
+                "text": {
+                    "div": "<div>Primary open angle glaucoma</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "77075001",
+                            "display": "Primary open angle glaucoma"
+                        }
+                    ],
+                    "text": "Primary open angle glaucoma"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-05-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-386"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-387",
+                "text": {
+                    "div": "<div>Low tension glaucoma</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "50485007",
+                            "display": "Low tension glaucoma"
+                        }
+                    ],
+                    "text": "Low tension glaucoma"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-07-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-387"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-46-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Current every day smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "449868002",
+                            "display": "Current every day smoker"
+                        }
+                    ],
+                    "text": "Current every day smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-46-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1157764-gestage",
+                "text": {
+                    "div": "<div>1949-11-04: Gestational age at birth = 38.3 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 38.3,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1157764-gestage"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-24",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-1157764"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-24"
+            }
+        }
+    ]
+}

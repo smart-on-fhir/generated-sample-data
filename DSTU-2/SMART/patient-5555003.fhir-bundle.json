@@ -1,0 +1,862 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-5555003",
+                "text": {
+                    "div": "<div><p>Mildred Hoffman</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "5555003"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Hoffman"
+                        ],
+                        "given": [
+                            "Mildred",
+                            "E."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "mildred.hoffman@example.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1952-05-12",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "2001 Airport Road"
+                        ],
+                        "city": "Morrisville",
+                        "state": "NC",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-5555003"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-335",
+                "text": {
+                    "div": "<div>\n      Carvedilol Tablet 25mg (rxnorm: 200033)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-04-23"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 60,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-335"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-336",
+                "text": {
+                    "div": "<div>\n      Irbesartan Tablet 300mg (rxnorm: 200096)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-05-24"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-336"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-337",
+                "text": {
+                    "div": "<div>\n      losartan Tablet 100mg (rxnorm: 979480)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-07-23",
+                                    "end": "2014-05-24"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-337"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-338",
+                "text": {
+                    "div": "<div>\n      Aspirin Tablet 81mg (rxnorm: 243670)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-11-02"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-338"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-339",
+                "text": {
+                    "div": "<div>\n      Brilinta Tablet 90mg (rxnorm: 1116639)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-11-01",
+                                    "end": "2014-05-14"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-339"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-340",
+                "text": {
+                    "div": "<div>\n      Omeprazole Delayed Release Tablet 20mg (rxnorm: 402014)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-05-02"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-340"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-341",
+                "text": {
+                    "div": "<div>\n      Synthroid Tablet 50mcg (rxnorm: 966247)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-11"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-341"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-342",
+                "text": {
+                    "div": "<div>\n      Synthroid Tablet 25mcg (rxnorm: 966158)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-08-11",
+                                    "end": "2014-05-03"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-342"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-343",
+                "text": {
+                    "div": "<div>\n      Systane ophthalmic solution (rxnorm: 707566)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-10-17"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 drop OU bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "[drp]"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-343"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-344",
+                "text": {
+                    "div": "<div>\n      ProAir HFA (rxnorm: 745752)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "text": "2 puffs every 4 hrs for asthma"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-344"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-345",
+                "text": {
+                    "div": "<div>\n      Flovent 100mcg/inh (rxnorm: 896031)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "text": "1 puff every 12 hrs"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-345"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-346",
+                "text": {
+                    "div": "<div>\n      Advair 100/50 (rxnorm: 896185)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "text": "1 puff every 12 hrs for asthma"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-346"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-347",
+                "text": {
+                    "div": "<div>\n      Zetia Tablet 10mg (rxnorm: 352304)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-03-19"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-347"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-348",
+                "text": {
+                    "div": "<div>\n      Crestor Tablet 10mg (rxnorm: 859749)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-02-01",
+                                    "end": "2014-03-19"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qhs"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-348"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-349",
+                "text": {
+                    "div": "<div>\n      Fish Oil Capsule 1000mg (rxnorm: 577208)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2012-04-12"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "2 caps qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 60,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-349"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-350",
+                "text": {
+                    "div": "<div>\n      Metamucil Sugar-Free (rxnorm: 880853)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2011-09-11"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tsp. tid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "tsp"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-350"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-351",
+                "text": {
+                    "div": "<div>\n      Vitamin D3 Capsule 5000 iu (rxnorm: 240029)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2015-01-03"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 cap qd"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-351"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-352",
+                "text": {
+                    "div": "<div>\n      Ergocalciferol Capsule 50,000 iu (rxnorm: 1367410)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-5555003"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2014-09-05",
+                                    "end": "2014-12-23"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "wk"
+                            }
+                        },
+                        "text": "1 cap once a week"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 12,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 84,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-352"
+            }
+        }
+    ]
+}

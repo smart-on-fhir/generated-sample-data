@@ -1,0 +1,663 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-2004454",
+                "text": {
+                    "div": "<div><p>Kevin Lee</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "2004454"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Lee"
+                        ],
+                        "given": [
+                            "Kevin",
+                            "H."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "kevin.lee@example.com"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "2007-07-15",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "80 Mill StApt 21"
+                        ],
+                        "city": "Sand Springs",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-2004454"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1836-lab",
+                "text": {
+                    "div": "<div>2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose Bld-mCnc"
+                        }
+                    ],
+                    "text": "Glucose Bld-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 60,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1836-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1837-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['Normal', 'Abnormal']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2008-07-11: Biotinidase DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "38478-4",
+                            "display": "Biotinidase DBS Ql"
+                        }
+                    ],
+                    "text": "Biotinidase DBS Ql"
+                },
+                "valueString": "Normal",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1837-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1838-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['Normal', 'Abnormal']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2008-07-11: Phe DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29571-7",
+                            "display": "Phe DBS Ql"
+                        }
+                    ],
+                    "text": "Phe DBS Ql"
+                },
+                "valueString": "Normal",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1838-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1839-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['Normal', 'Abnormal']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2008-08-01: Phe DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29571-7",
+                            "display": "Phe DBS Ql"
+                        }
+                    ],
+                    "text": "Phe DBS Ql"
+                },
+                "valueString": "Normal",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1839-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1840-lab",
+                "text": {
+                    "div": "<div>2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "49220-7",
+                            "display": "Prolactin SerPl 3rd IS-mCnc"
+                        }
+                    ],
+                    "text": "Prolactin SerPl 3rd IS-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 86.5,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1840-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1841-lab",
+                "extension": [
+                    {
+                        "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range",
+                        "valueString": "['Normal', 'Abnormal']"
+                    }
+                ],
+                "text": {
+                    "div": "<div>2008-08-01: Biotinidase DBS Ql = Normal </div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "38478-4",
+                            "display": "Biotinidase DBS Ql"
+                        }
+                    ],
+                    "text": "Biotinidase DBS Ql"
+                },
+                "valueString": "Normal",
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1841-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-295",
+                "text": {
+                    "div": "<div>Single liveborn, born in hospital, delivered without mention of cesarean section</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "442311008",
+                            "display": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                        }
+                    ],
+                    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-07-09"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-295"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-296",
+                "text": {
+                    "div": "<div>Abnormal weight loss</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "267024001",
+                            "display": "Abnormal weight loss"
+                        }
+                    ],
+                    "text": "Abnormal weight loss"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-07-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-296"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-297",
+                "text": {
+                    "div": "<div>Diaper rash</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "91487003",
+                            "display": "Diaper rash"
+                        }
+                    ],
+                    "text": "Diaper rash"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-08-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-297"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-298",
+                "text": {
+                    "div": "<div>Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-03-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-298"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-299",
+                "text": {
+                    "div": "<div>Otitis media</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "65363002",
+                            "display": "Otitis media"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-03-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-299"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-300",
+                "text": {
+                    "div": "<div>Nausea and vomiting</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16932000",
+                            "display": "Nausea and vomiting"
+                        }
+                    ],
+                    "text": "Nausea and vomiting"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-08-07"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-300"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-301",
+                "text": {
+                    "div": "<div>Viral disease</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "34014006",
+                            "display": "Viral disease"
+                        }
+                    ],
+                    "text": "Viral disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2009-08-07"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-301"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Current some day smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "428041000124106",
+                            "display": "Current some day smoker"
+                        }
+                    ],
+                    "text": "Current some day smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-2004454-gestage",
+                "text": {
+                    "div": "<div>2007-07-15: Gestational age at birth = 30.6 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 30.6,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-2004454-gestage"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-45",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-2004454"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-45"
+            }
+        }
+    ]
+}

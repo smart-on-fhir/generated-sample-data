@@ -1,0 +1,2980 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-731673",
+                "text": {
+                    "div": "<div><p>Sarah Graham</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "731673"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Graham"
+                        ],
+                        "given": [
+                            "Sarah",
+                            "Y."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-534-9017",
+                        "use": "home"
+                    },
+                    {
+                        "system": "email",
+                        "value": "sarah.graham@example.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1949-09-22",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "92 Pine Ave"
+                        ],
+                        "city": "Bixby",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-731673"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-13",
+                "text": {
+                    "div": "<div>\n      Cetirizine 10 MG Oral Tablet [Zyrtec] (rxnorm: 210596)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-10-28"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-13"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-181",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Cetirizine 10 MG Oral Tablet [Zyrtec]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-13"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-181"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-14",
+                "text": {
+                    "div": "<div>\n      Levofloxacin 500 MG Oral Tablet [Levaquin] (rxnorm: 211816)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-10-28"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-14"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-182",
+                "text": {
+                    "div": "<div>\n      Dispensed 10 tablets = 10 day supply of Levofloxacin 500 MG Oral Tablet [Levaquin]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-14"
+                    }
+                ],
+                "quantity": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-182"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-15",
+                "text": {
+                    "div": "<div>\n      Promethazine 25 MG Oral Tablet (rxnorm: 312664)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-10-28"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "1 qid prn nausea"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 20,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 5,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-15"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-180",
+                "text": {
+                    "div": "<div>\n      Dispensed 20 tablets = 5 day supply of Promethazine 25 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-15"
+                    }
+                ],
+                "quantity": {
+                    "value": 20,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 5,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-180"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-16",
+                "text": {
+                    "div": "<div>\n      Trazodone 50 MG Oral Tablet (rxnorm: 856377)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-03"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 qhs"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-16"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-138",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-03-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-138"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-153",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-06-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-153"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-151",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-04-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-151"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-149",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-01-29"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-149"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-142",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-07-24"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-142"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-147",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-11-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-147"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-148",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-12-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-148"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-136",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-01-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-136"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-143",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-07-25"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-143"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-134",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-134"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-140",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-05-17"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-140"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-145",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-09-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-145"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-144",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-08-26"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-144"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-152",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-04-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-152"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-139",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-139"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-146",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-146"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-141",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-06-24"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-141"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-135",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-12-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-135"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-137",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-137"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-150",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Trazodone 50 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-16"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-02-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-150"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-17",
+                "text": {
+                    "div": "<div>\n      montelukast 10 MG Oral Tablet [Singulair] (rxnorm: 153892)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-08"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-17"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-169",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of montelukast 10 MG Oral Tablet [Singulair]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-17"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-08"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-169"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-18",
+                "text": {
+                    "div": "<div>\n      valdecoxib 20 MG Oral Tablet [Bextra] (rxnorm: 352063)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-08"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "1 daily prn pain"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-18"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-185",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-18"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-08"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-185"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-186",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of valdecoxib 20 MG Oral Tablet [Bextra]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-18"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-01-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-186"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-19",
+                "text": {
+                    "div": "<div>\n      Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet (rxnorm: 310812)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-18"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-19"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-167",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-06-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-167"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-160",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-18"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-160"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-165",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-11-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-165"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-164",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-09-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-164"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-163",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-06-24"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-163"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-161",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-161"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-162",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-162"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-166",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Hydrochlorothiazide 25 MG / Triamterene 37.5 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-19"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-03-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-166"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-20",
+                "text": {
+                    "div": "<div>\n      Lisinopril 20 MG Oral Tablet (rxnorm: 314077)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-18"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-20"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-172",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-18"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-172"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-176",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-09-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-176"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-178",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-03-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-178"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-177",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-11-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-177"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-173",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-04"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-173"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-174",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-174"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-175",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-06-24"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-175"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-179",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of Lisinopril 20 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-20"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-06-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-179"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-21",
+                "text": {
+                    "div": "<div>\n      duloxetine 60 MG Enteric Coated Capsule [Cymbalta] (rxnorm: 615186)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-02-17"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 daily"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-21"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-154",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-21"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-17"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-154"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-156",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-21"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-24"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-156"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-157",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-21"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-07-17"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-157"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-158",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-21"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2006-02-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-158"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-155",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 30 day supply of duloxetine 60 MG Enteric Coated Capsule [Cymbalta]\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-21"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-22"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-155"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-22",
+                "text": {
+                    "div": "<div>\n      Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet (rxnorm: 828576)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-02-17"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "1 q6h prn pain"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 40,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-22"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-159",
+                "text": {
+                    "div": "<div>\n      Dispensed 40 tablets = 10 day supply of Acetaminophen 650 MG / propoxyphene napsylate 100 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-22"
+                    }
+                ],
+                "quantity": {
+                    "value": 40,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-02-17"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-159"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-23",
+                "text": {
+                    "div": "<div>\n      Meclizine 25 MG Oral Tablet (rxnorm: 311470)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-04-16"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "1 bid prn dizziness"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 14,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 7,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-23"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-183",
+                "text": {
+                    "div": "<div>\n      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-23"
+                    }
+                ],
+                "quantity": {
+                    "value": 14,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-04-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-183"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-184",
+                "text": {
+                    "div": "<div>\n      Dispensed 14 tablets = 7 day supply of Meclizine 25 MG Oral Tablet\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-23"
+                    }
+                ],
+                "quantity": {
+                    "value": 14,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-184"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-24",
+                "text": {
+                    "div": "<div>\n      Nitrofurantoin 100 MG Oral Capsule (rxnorm: 311992)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-05-12"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 20,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-24"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-168",
+                "text": {
+                    "div": "<div>\n      Dispensed 20 tablets = 10 day supply of Nitrofurantoin 100 MG Oral Capsule\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-24"
+                    }
+                ],
+                "quantity": {
+                    "value": 20,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2005-05-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-168"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-25",
+                "text": {
+                    "div": "<div>\n      120 ACTUAT Triamcinolone 0.055 MG/ACTUAT Nasal Inhaler [Nasacort] (rxnorm: 752370)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2005-09-09"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "2 puffs bid"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{puff}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-25"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-104",
+                "text": {
+                    "div": "<div>Acute sinusitis</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "36971009",
+                            "display": "Acute sinusitis"
+                        }
+                    ],
+                    "text": "Acute sinusitis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-104"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-105",
+                "text": {
+                    "div": "<div>Allergic rhinitis</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "61582004",
+                            "display": "Allergic rhinitis"
+                        }
+                    ],
+                    "text": "Allergic rhinitis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-105"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-106",
+                "text": {
+                    "div": "<div>Dizziness and giddiness</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "404640003",
+                            "display": "Dizziness and giddiness"
+                        }
+                    ],
+                    "text": "Dizziness and giddiness"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-106"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-107",
+                "text": {
+                    "div": "<div>Other diseases of nasal cavity and sinuses</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "68235000",
+                            "display": "Other diseases of nasal cavity and sinuses"
+                        }
+                    ],
+                    "text": "Other diseases of nasal cavity and sinuses"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-10-29"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-107"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-108",
+                "text": {
+                    "div": "<div>Arthropathy</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "3723001",
+                            "display": "Arthropathy"
+                        }
+                    ],
+                    "text": "Arthropathy"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-02-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-108"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-109",
+                "text": {
+                    "div": "<div>Myalgia and myositis, unspecified</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "68962001",
+                            "display": "Myalgia and myositis, unspecified"
+                        }
+                    ],
+                    "text": "Myalgia and myositis, unspecified"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-02-16"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-109"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-110",
+                "text": {
+                    "div": "<div>Anxiety</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "48694002",
+                            "display": "Anxiety"
+                        }
+                    ],
+                    "text": "Anxiety"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-03-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-110"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-111",
+                "text": {
+                    "div": "<div>Benign essential hypertension</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1201005",
+                            "display": "Benign essential hypertension"
+                        }
+                    ],
+                    "text": "Benign essential hypertension"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-03-27"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-111"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-112",
+                "text": {
+                    "div": "<div>Depressive disorder</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "35489007",
+                            "display": "Depressive disorder"
+                        }
+                    ],
+                    "text": "Depressive disorder"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-05-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-112"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-113",
+                "text": {
+                    "div": "<div>Urinary tract infectious disease</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "68566005",
+                            "display": "Urinary tract infectious disease"
+                        }
+                    ],
+                    "text": "Urinary tract infectious disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-05-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-113"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-114",
+                "text": {
+                    "div": "<div>Headache</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "25064002",
+                            "display": "Headache"
+                        }
+                    ],
+                    "text": "Headache"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-06-18"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-114"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-115",
+                "text": {
+                    "div": "<div>Essential hypertension</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "38341003",
+                            "display": "Essential hypertension"
+                        }
+                    ],
+                    "text": "Essential hypertension"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-06-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-115"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-116",
+                "text": {
+                    "div": "<div>Hyperlipidemia</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "55822004",
+                            "display": "Hyperlipidemia"
+                        }
+                    ],
+                    "text": "Hyperlipidemia"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-06-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-116"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-117",
+                "text": {
+                    "div": "<div>Peripheral vertigo</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "50438001",
+                            "display": "Peripheral vertigo"
+                        }
+                    ],
+                    "text": "Peripheral vertigo"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-07-07"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-117"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-118",
+                "text": {
+                    "div": "<div>Sensorineural hearing loss</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-731673"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "60700002",
+                            "display": "Sensorineural hearing loss"
+                        }
+                    ],
+                    "text": "Sensorineural hearing loss"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-07-07"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-118"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-13-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Never smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "266919005",
+                            "display": "Never smoker"
+                        }
+                    ],
+                    "text": "Never smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-731673"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-13-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-731673-gestage",
+                "text": {
+                    "div": "<div>1949-09-22: Gestational age at birth = 39.2 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 39.2,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-731673"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-731673-gestage"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-9",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-731673"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-9"
+            }
+        }
+    ]
+}

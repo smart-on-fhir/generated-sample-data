@@ -1,0 +1,163 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-6666001",
+                "text": {
+                    "div": "<div><p>Sophia Reynolds</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "6666001"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Reynolds"
+                        ],
+                        "given": [
+                            "Sophia"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "demoally@hspc.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "2010-12-16",
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-6666001"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-353",
+                "text": {
+                    "div": "<div>\n      Albuterol 0.09 MG/ACTUAT [Proventil] (rxnorm: 573621)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "asNeededBoolean": true,
+                        "text": "prn"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-353"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-354",
+                "text": {
+                    "div": "<div>\n      60 ACTUAT Fluticasone propionate 0.045 MG/ACTUAT / salmeterol 0.021 MG/ACTUAT Metered Dose Inhaler [Advair] (rxnorm: 896235)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2015-01-01"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 puff bid"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-354"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-355",
+                "text": {
+                    "div": "<div>\n      Prednisone Oral Tablet (rxnorm: 373585)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "asNeededBoolean": true,
+                        "text": "prn"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-355"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-356",
+                "text": {
+                    "div": "<div>\n      Singulair Pill (rxnorm: 1183694)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-6666001"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2015-01-01"
+                                },
+                                "frequency": 1,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1 tab qd"
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-356"
+            }
+        }
+    ]
+}

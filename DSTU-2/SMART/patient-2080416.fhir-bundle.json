@@ -1,0 +1,739 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-2080416",
+                "text": {
+                    "div": "<div><p>Joseph Shaw</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "2080416"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Shaw"
+                        ],
+                        "given": [
+                            "Joseph",
+                            "P."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-277-1993",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "joseph.shaw@example.com"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "2003-12-14",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "53 Sunset AveApt 9"
+                        ],
+                        "city": "Tulsa",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-2080416"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-219",
+                "text": {
+                    "div": "<div>\n      Erythromycin 0.005 MG/MG Ophthalmic Ointment (rxnorm: 310149)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-05-09"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "1/4 inch in eye bid x5 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 3,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "[in_us]"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 5,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-219"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-89",
+                "text": {
+                    "div": "<div>\n      Dispensed 3 tablets = 5 day supply of Erythromycin 0.005 MG/MG Ophthalmic Ointment\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-219"
+                    }
+                ],
+                "quantity": {
+                    "value": 3,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 5,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-05-09"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-89"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-220",
+                "text": {
+                    "div": "<div>\n      Amoxicillin 50 MG/ML Oral Suspension (rxnorm: 239191)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2004-11-06"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "10 mL bid x 10 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-220"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-92",
+                "text": {
+                    "div": "<div>\n      Dispensed 150 tablets = 10 day supply of Amoxicillin 50 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-220"
+                    }
+                ],
+                "quantity": {
+                    "value": 150,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2004-11-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-92"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-221",
+                "text": {
+                    "div": "<div>\n      Albuterol 0.83 MG/ML Inhalant Solution (rxnorm: 630208)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-08-19"
+                                },
+                                "frequency": 6,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "1 nev q4h prn"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 75,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{dose}"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 4,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-221"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-91",
+                "text": {
+                    "div": "<div>\n      Dispensed 75 tablets = 4 day supply of Albuterol 0.83 MG/ML Inhalant Solution\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-221"
+                    }
+                ],
+                "quantity": {
+                    "value": 75,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2009-05-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-91"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-90",
+                "text": {
+                    "div": "<div>\n      Dispensed 75 tablets = 4 day supply of Albuterol 0.83 MG/ML Inhalant Solution\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-221"
+                    }
+                ],
+                "quantity": {
+                    "value": 75,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-08-19"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-90"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-57",
+                "text": {
+                    "div": "<div>Vomiting</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "422400008",
+                            "display": "Vomiting"
+                        }
+                    ],
+                    "text": "Vomiting"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-03-23"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-57"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-58",
+                "text": {
+                    "div": "<div>Feeding difficulties and mismanagement</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "78164000",
+                            "display": "Feeding difficulties and mismanagement"
+                        }
+                    ],
+                    "text": "Feeding difficulties and mismanagement"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-03-26"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-58"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-59",
+                "text": {
+                    "div": "<div>Feeding problems in newborn</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "72552008",
+                            "display": "Feeding problems in newborn"
+                        }
+                    ],
+                    "text": "Feeding problems in newborn"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-04-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-59"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-60",
+                "text": {
+                    "div": "<div>Cough</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "49727002",
+                            "display": "Cough"
+                        }
+                    ],
+                    "text": "Cough"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-05-10"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-60"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-61",
+                "text": {
+                    "div": "<div>Finding of head and neck region</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "274667000",
+                            "display": "Finding of head and neck region"
+                        }
+                    ],
+                    "text": "Finding of head and neck region"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-05-10"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-61"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-62",
+                "text": {
+                    "div": "<div>Apnea</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1023001",
+                            "display": "Apnea"
+                        }
+                    ],
+                    "text": "Apnea"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-09-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-62"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-63",
+                "text": {
+                    "div": "<div>Acute secretory otitis media</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "35183001",
+                            "display": "Acute secretory otitis media"
+                        }
+                    ],
+                    "text": "Acute secretory otitis media"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2004-11-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-63"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-64",
+                "text": {
+                    "div": "<div>Fever and other physiologic disturbances of temperature regulation</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "386661006",
+                            "display": "Fever and other physiologic disturbances of temperature regulation"
+                        }
+                    ],
+                    "text": "Fever and other physiologic disturbances of temperature regulation"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-03-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-64"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-65",
+                "text": {
+                    "div": "<div>Otitis media</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "65363002",
+                            "display": "Otitis media"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2005-03-06"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-65"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-4-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Former smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "8517006",
+                            "display": "Former smoker"
+                        }
+                    ],
+                    "text": "Former smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2080416"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-4-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-2080416-gestage",
+                "text": {
+                    "div": "<div>2003-12-14: Gestational age at birth = 36.7 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 36.7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-2080416"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-2080416-gestage"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-47",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-2080416"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-47"
+            }
+        }
+    ]
+}

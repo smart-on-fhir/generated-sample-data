@@ -1,0 +1,354 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-7321938",
+                "text": {
+                    "div": "<div><p>Billie Himston</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "7321938"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Himston"
+                        ],
+                        "given": [
+                            "Billie",
+                            "H."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "billi.himston@example.com"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "2010-12-16",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "80 Mill StApt 21"
+                        ],
+                        "city": "Sand Springs",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-7321938"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3508-lab",
+                "text": {
+                    "div": "<div>2010-12-16T06:39:00: Bilirub Skin-mCnc = 4 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 4,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3508-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3509-lab",
+                "text": {
+                    "div": "<div>2010-12-17T06:39:00: Bilirub Skin-mCnc = 14 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 14,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3509-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3510-lab",
+                "text": {
+                    "div": "<div>2010-12-17T12:39:00: Bilirub Skin-mCnc = 13.2 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 13.2,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3510-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3511-lab",
+                "text": {
+                    "div": "<div>2010-12-17T18:39:00: Bilirub Skin-mCnc = 12 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 12,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3511-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3512-lab",
+                "text": {
+                    "div": "<div>2010-12-18T18:39:00: Bilirub Skin-mCnc = 11 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 11,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3512-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-3513-lab",
+                "text": {
+                    "div": "<div>2010-12-20T18:39:00: Bilirub Skin-mCnc = 8 mg/dL</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        }
+                    ],
+                    "text": "Laboratory"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58941-6",
+                            "display": "Bilirub Skin-mCnc"
+                        }
+                    ],
+                    "text": "Bilirub Skin-mCnc"
+                },
+                "valueQuantity": {
+                    "value": 8,
+                    "system": "http://unitsofmeasure.org"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-3513-lab"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-7321938-gestage",
+                "text": {
+                    "div": "<div>2010-12-16: Gestational age at birth = 30.6 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 30.6,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-7321938"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-7321938-gestage"
+            }
+        }
+    ]
+}

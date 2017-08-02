@@ -1,0 +1,1183 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "smart-1614502",
+                "text": {
+                    "div": "<div><p>Susan Williams</p></div>",
+                    "status": "generated"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "http://hospital.smarthealthit.org",
+                        "value": "1614502"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": [
+                            "Williams"
+                        ],
+                        "given": [
+                            "Susan",
+                            "N."
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "800-651-2242",
+                        "use": "home"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "800-471-8810",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "susan.williams@example.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "2006-11-22",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "27 South Ave"
+                        ],
+                        "city": "Tulsa",
+                        "state": "OK",
+                        "country": "USA"
+                    }
+                ],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/smart-1614502"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-172",
+                "text": {
+                    "div": "<div>\n      Amoxicillin 40 MG/ML Oral Suspension (rxnorm: 313850)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-09-14"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "15 mL bid x 10 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-172"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-101",
+                "text": {
+                    "div": "<div>\n      Dispensed 200 tablets = 10 day supply of Amoxicillin 40 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-172"
+                    }
+                ],
+                "quantity": {
+                    "value": 200,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2007-09-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-101"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-173",
+                "text": {
+                    "div": "<div>\n      Clotrimazole 10 MG/ML Topical Cream (rxnorm: 309367)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-10-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "apply bid to affected area"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-173"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-100",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 7 day supply of Clotrimazole 10 MG/ML Topical Cream\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-173"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-04-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-100"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-98",
+                "text": {
+                    "div": "<div>\n      Dispensed 30 tablets = 10 day supply of Clotrimazole 10 MG/ML Topical Cream\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-173"
+                    }
+                ],
+                "quantity": {
+                    "value": 30,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2007-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-98"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-174",
+                "text": {
+                    "div": "<div>\n      Amoxicillin 25 MG/ML Oral Suspension (rxnorm: 313797)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-10-28"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "10 mL bid x 10 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-174"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-94",
+                "text": {
+                    "div": "<div>\n      Dispensed 150 tablets = 10 day supply of Amoxicillin 25 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-174"
+                    }
+                ],
+                "quantity": {
+                    "value": 150,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2007-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-94"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-175",
+                "text": {
+                    "div": "<div>\n      cefdinir 25 MG/ML Oral Suspension (rxnorm: 309054)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2007-12-02"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "7 mL bid x 10 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-175"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-109",
+                "text": {
+                    "div": "<div>\n      Dispensed 60 tablets = 10 day supply of cefdinir 25 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-175"
+                    }
+                ],
+                "quantity": {
+                    "value": 60,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2007-12-02"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-109"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-176",
+                "text": {
+                    "div": "<div>\n      Ibuprofen 20 MG/ML Oral Suspension (rxnorm: 197803)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-03"
+                                },
+                                "frequency": 4,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "asNeededBoolean": true,
+                        "text": "7 mL q6h prn"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 30,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-176"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-111",
+                "text": {
+                    "div": "<div>\n      Dispensed 120 tablets = 6 day supply of Ibuprofen 20 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-176"
+                    }
+                ],
+                "quantity": {
+                    "value": 120,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 6,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-04-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-111"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-177",
+                "text": {
+                    "div": "<div>\n      Amoxicillin 80 MG/ML Oral Suspension (rxnorm: 308189)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {
+                            "repeat": {
+                                "boundsPeriod": {
+                                    "start": "2008-04-03"
+                                },
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnits": "d"
+                            }
+                        },
+                        "text": "7 mL bid x 10 days"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 10,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-177"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-107",
+                "text": {
+                    "div": "<div>\n      Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-177"
+                    }
+                ],
+                "quantity": {
+                    "value": 150,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-11-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-107"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-105",
+                "text": {
+                    "div": "<div>\n      Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-177"
+                    }
+                ],
+                "quantity": {
+                    "value": 150,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-07-11"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-105"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-103",
+                "text": {
+                    "div": "<div>\n      Dispensed 150 tablets = 10 day supply of Amoxicillin 80 MG/ML Oral Suspension\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-177"
+                    }
+                ],
+                "quantity": {
+                    "value": 150,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 10,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2008-04-03"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-103"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "smart-MedicationOrder-178",
+                "text": {
+                    "div": "<div>\n      Permethrin 10 MG/ML Topical Lotion (rxnorm: 312320)\n    </div>",
+                    "status": "generated"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "dosageInstruction": [
+                    {
+                        "timing": {},
+                        "text": "apply x1 as directed"
+                    }
+                ],
+                "dispenseRequest": {
+                    "numberOfRepeatsAllowed": "1",
+                    "quantity": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org"
+                    },
+                    "expectedSupplyDuration": {
+                        "value": 1,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/smart-MedicationOrder-178"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-95",
+                "text": {
+                    "div": "<div>\n      Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-178"
+                    }
+                ],
+                "quantity": {
+                    "value": 59,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2009-05-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-95"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "id": "smart-MedicationDispense-96",
+                "text": {
+                    "div": "<div>\n      Dispensed 59 tablets = 7 day supply of Permethrin 10 MG/ML Topical Lotion\n    </div>",
+                    "status": "generated"
+                },
+                "status": "completed",
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationOrder/smart-MedicationOrder-178"
+                    }
+                ],
+                "quantity": {
+                    "value": 59,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tablets}"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenHandedOver": "2009-05-09"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationDispense/smart-MedicationDispense-96"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-66",
+                "text": {
+                    "div": "<div>Cervicitis and endocervicitis</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "237084006",
+                            "display": "Cervicitis and endocervicitis"
+                        }
+                    ],
+                    "text": "Cervicitis and endocervicitis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-66"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-67",
+                "text": {
+                    "div": "<div>Diaper rash</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "91487003",
+                            "display": "Diaper rash"
+                        }
+                    ],
+                    "text": "Diaper rash"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-67"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-68",
+                "text": {
+                    "div": "<div>Otitis media</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "65363002",
+                            "display": "Otitis media"
+                        }
+                    ],
+                    "text": "Otitis media"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-10-28"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-68"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-69",
+                "text": {
+                    "div": "<div>Foreign body in larynx</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "425229001",
+                            "display": "Foreign body in larynx"
+                        }
+                    ],
+                    "text": "Foreign body in larynx"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-12-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-69"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-70",
+                "text": {
+                    "div": "<div>Vomiting</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "422400008",
+                            "display": "Vomiting"
+                        }
+                    ],
+                    "text": "Vomiting"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2007-12-01"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-70"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-71",
+                "text": {
+                    "div": "<div>Acute upper respiratory infection</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "54150009",
+                            "display": "Acute upper respiratory infection"
+                        }
+                    ],
+                    "text": "Acute upper respiratory infection"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-02-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-71"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-72",
+                "text": {
+                    "div": "<div>General well-being finding</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "81302005",
+                            "display": "General well-being finding"
+                        }
+                    ],
+                    "text": "General well-being finding"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-02-14"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-72"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "smart-Condition-73",
+                "text": {
+                    "div": "<div>Other and unspecified noninfectious gastroenteritis and colitis</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "25374005",
+                            "display": "Other and unspecified noninfectious gastroenteritis and colitis"
+                        }
+                    ],
+                    "text": "Other and unspecified noninfectious gastroenteritis and colitis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "onsetDateTime": "2008-12-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/smart-Condition-73"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-5",
+                "text": {
+                    "div": "<div>measles, mumps and rubella virus vaccine</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "date": "2010-03-11",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "03",
+                            "display": "measles, mumps and rubella virus vaccine"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "smart-Immunization-6",
+                "text": {
+                    "div": "<div>measles, mumps and rubella virus vaccine</div>",
+                    "status": "generated"
+                },
+                "patient": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "date": "2010-06-11",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx",
+                            "code": "03",
+                            "display": "measles, mumps and rubella virus vaccine"
+                        }
+                    ]
+                },
+                "reported": "false",
+                "wasNotGiven": "false"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization/smart-Immunization-6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-2-smokingstatus",
+                "text": {
+                    "div": "<div>Tobacco smoking status: Former smoker</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "social-history",
+                            "display": "Social History"
+                        }
+                    ],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status"
+                        }
+                    ],
+                    "text": "Tobacco smoking status"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "8517006",
+                            "display": "Former smoker"
+                        }
+                    ],
+                    "text": "Former smoker"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-2-smokingstatus"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smart-Observation-1614502-gestage",
+                "text": {
+                    "div": "<div>2006-11-22: Gestational age at birth = 45.2 weeks</div>",
+                    "status": "generated"
+                },
+                "category": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/observation-category",
+                            "code": "exam",
+                            "display": "Exam"
+                        }
+                    ],
+                    "text": "Exam"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18185-9",
+                            "display": "Gestational age at birth"
+                        }
+                    ],
+                    "text": "Gestational age at birth"
+                },
+                "valueQuantity": {
+                    "value": 45.2,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "wk"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/smart-Observation-1614502-gestage"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "List",
+                "id": "smart-List-36",
+                "text": {
+                    "div": "<div>No known allergies</div>",
+                    "status": "generated"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org/",
+                            "code": "52473-6",
+                            "display": "Allergy"
+                        }
+                    ],
+                    "text": "Allergy"
+                },
+                "subject": {
+                    "reference": "Patient/smart-1614502"
+                },
+                "date": "2000",
+                "mode": "snapshot",
+                "emptyReason": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/list-empty-reason",
+                            "code": "nilknown",
+                            "display": "Nil Known"
+                        }
+                    ],
+                    "text": "Nil Known"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "List/smart-List-36"
+            }
+        }
+    ]
+}
