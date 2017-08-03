@@ -8,3 +8,4 @@ You can read it's documentation for usage instructions, but the very basic examp
 cd path/to/fhir-uploader
 node . -d my/input/directory -S http://my.fhir/server
 ```
+Just make sure that the `STU-3` directory is uploaded to stu3 server and the `DSTU-2` goes to dstu2 one.
