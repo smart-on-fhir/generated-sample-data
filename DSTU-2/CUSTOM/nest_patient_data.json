@@ -1,0 +1,2223 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [{
+            "resource": {
+                "resourceType": "Patient",
+                "id": "nest-patient-1",
+                "name": [{
+                    "family": [
+                        "Tomy"
+                    ],
+                    "given": [
+                        "Francis"
+                    ]
+                }],
+                "birthDate": "1940-01-04",
+                "gender": "male",
+                "address": [{
+                    "use": "home",
+                    "text": "1 Main Street\nBloomsburg, PA 17815\nUSA",
+                    "line": [
+                        "1 Main Street"
+                    ],
+                    "city": "Bloomsburg",
+                    "state": "PA",
+                    "postalCode": "17815",
+                    "country": "USA"
+                }],
+                "extension": [{
+                    "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalTrial",
+                    "extension": [{
+                            "url": "NCT",
+                            "valueString": "123456789"
+                        },
+                        {
+                            "url": "period",
+                            "valuePeriod": {
+                                "start": "2009-03-14"
+                            }
+                        },
+                        {
+                            "url": "reason",
+                            "valueCodeableConcept": {
+                                "coding": [{
+                                    "system": "http://acme.org/codes/general",
+                                    "code": "2028-9",
+                                    "display": "Asian"
+                                }]
+                            }
+                        }
+                    ]
+                }],
+                "active": true
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/nest-patient-1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS1",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Respiratory rate (observable entity)"
+                    }],
+                    "text": "Respiratory Rate"
+                },
+                "valueQuantity": {
+                    "value": 32,
+                    "unit": "br/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{Breaths}/min"
+                },
+                "effectiveDateTime": "2016-01-04T14:00:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS2",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Systolic blood pressure"
+                    }],
+                    "text": "Systolic Blood Pressure"
+                },
+                "valueQuantity": {
+                    "value": 150,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "effectiveDateTime": "2016-01-04T08:12:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS3",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Diastolic blood pressure"
+                    }],
+                    "text": "Diastolic blood pressure"
+                },
+                "valueQuantity": {
+                    "value": 70,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                },
+                "effectiveDateTime": "2016-01-06T08:06:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS4",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "UREA NITROGEN:MCNC:PT:SER/PLAS:QN:"
+                    }],
+                    "text": "BUN"
+                },
+                "valueQuantity": {
+                    "value": 50,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "effectiveDateTime": "2016-01-04T17:06:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS5",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "SODIUM:SCNC:PT:SER/PLAS:QN:"
+                    }],
+                    "text": "Sodium Lvl"
+                },
+                "valueQuantity": {
+                    "value": 140,
+                    "unit": "mEq/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "meq/dL"
+                },
+                "effectiveDateTime": "2016-01-05T06:36:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS6",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "HEART BEAT:NRAT:PT:CARDIAC APEX:QN:AUSCULTATION"
+                    }],
+                    "text": "Apical Heart Rate"
+                },
+                "valueQuantity": {
+                    "value": 123,
+                    "unit": "bpm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{Beats}/min"
+                },
+                "effectiveDateTime": "2016-01-05T12:48:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS7",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Vital Capacity"
+                    }],
+                    "text": "Vital Capacity"
+                },
+                "valueQuantity": {
+                    "value": 81,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "effectiveDateTime": "2016-01-05T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS7"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS8",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "FEV1"
+                    }],
+                    "text": "FEV1"
+                },
+                "valueQuantity": {
+                    "value": 39,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS8"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS9",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Left ventricular ejection fraction"
+                    }],
+                    "text": "Left ventricular ejection fraction"
+                },
+                "valueQuantity": {
+                    "value": 80,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS9"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS10",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Serum BNP"
+                    }],
+                    "text": "Serum BNP"
+                },
+                "valueQuantity": {
+                    "value": 80,
+                    "unit": "pmol/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "pmol/L"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS10"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS11",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "six minute walk distance"
+                    }],
+                    "text": "six minute walk distance"
+                },
+                "valueQuantity": {
+                    "value": 200,
+                    "unit": "feet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "feet"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS11"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS12",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Hemoglobin"
+                    }],
+                    "text": "Hgb"
+                },
+                "valueQuantity": {
+                    "value": 8,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS12"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS13",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Body Weight"
+                    }],
+                    "text": "Body Weight"
+                },
+                "valueQuantity": {
+                    "value": 70,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS13"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS14",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Body Height"
+                    }],
+                    "text": "Body Height"
+                },
+                "valueQuantity": {
+                    "value": 5.6,
+                    "unit": "inch",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[in_i]"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS14"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS15",
+                "meta": {
+                    "versionId": "334",
+                    "lastUpdated": "2016-03-09T15:29:52.905+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Tobacco smoking status: Former smoker</div>"
+                },
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "social-history",
+                        "display": "Social History"
+                    }],
+                    "text": "Social History"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "72166-2",
+                        "display": "Tobacco smoking status"
+                    }],
+                    "text": "Tobacco smoking status"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "valueCodeableConcept": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "8517006",
+                        "display": "Former smoker"
+                    }],
+                    "text": "Former smoker"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS15"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS16",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Waist Circumference"
+                    }],
+                    "text": "Waist Circumference"
+                },
+                "valueQuantity": {
+                    "value": 100,
+                    "unit": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS16"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS17",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Serum HDL cholesterol"
+                    }],
+                    "text": "Serum HDL cholesterol"
+                },
+                "valueQuantity": {
+                    "value": 35,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS17"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "nest-patient-1-OBS18",
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "58941-6",
+                        "display": "Serum triglyceride"
+                    }],
+                    "text": "Serum triglyceride"
+                },
+                "valueQuantity": {
+                    "value": 160,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "effectiveDateTime": "2016-01-06T20:18:00",
+                "status": "final",
+                "category": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/observation-category",
+                        "code": "procedure",
+                        "display": "Procedure"
+                    }]
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/nest-patient-1-OBS18"
+            }
+        },
+
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND1",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Cerebrovascular disease"
+                    }],
+                    "text": "Cerebrovascular disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND2",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Dementia"
+                    }],
+                    "text": "Dementia"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND3",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Chronic obstructive pulmonary disease"
+                    }],
+                    "text": "Chronic obstructive pulmonary disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND4",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Hepatic cirrhosis"
+                    }],
+                    "text": "Hepatic cirrhosis"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND5",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Cancer"
+                    }],
+                    "text": "Cancer"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                },
+                "stage": {
+                    "fhir_comments": [
+                        "  After the nine days of inpatient admission, the problem went in remission  "
+                    ],
+                    "summary": {
+                        "fhir_comments": [
+                            "  The problem is temporary and will not become permanent renal insufficiency  "
+                        ],
+                        "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "14803004",
+                            "display": "Metastatic"
+                        }]
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND6",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Coronary artery disease"
+                    }],
+                    "text": "Coronary artery disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND7",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Diabetes mellitus"
+                    }],
+                    "text": "Diabetes mellitus"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND7"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND8",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Left ventricular hypertrophy"
+                    }],
+                    "text": "Left ventricular hypertrophy"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND8"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND9",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Atrial fibrillation"
+                    }],
+                    "text": "Atrial fibrillation"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND9"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND10",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Complicated diabetes mellitus"
+                    }],
+                    "text": "Complicated diabetes mellitus"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND10"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND11",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Valvular heart failure"
+                    }],
+                    "text": "Valvular heart failure"
+                },
+                "severity": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "MI",
+                        "display": "Mild"
+                    }],
+                    "text": "Mild"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND11"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND12",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Anemia"
+                    }],
+                    "text": "Anemia"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND12"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND13",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Renal dysfunction"
+                    }],
+                    "text": "Renal dysfunction"
+                },
+                "severity": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "SE",
+                        "display": "Severe"
+                    }],
+                    "text": "Severe"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND13"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND14",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Atrial fibrillation"
+                    }],
+                    "text": "Atrial fibrillation"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND14"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND15",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Hypertension"
+                    }],
+                    "text": "Hypertension"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND15"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND16",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Ischemic heart disease"
+                    }],
+                    "text": "Ischemic heart disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND16"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND17",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Valvular heart disease"
+                    }],
+                    "text": "Valvular heart disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND17"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND18",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Diabetes mellitus"
+                    }],
+                    "text": "Diabetes mellitus"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND18"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND19",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Renal disease"
+                    }],
+                    "text": "Renal disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND19"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND20",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Chronic lung disease"
+                    }],
+                    "text": "Chronic lung disease"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND20"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND21",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "Idiopathic cardiomyopathy"
+                    }],
+                    "text": "Idiopathic cardiomyopathy"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND21"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "nest-patient-1-CND22",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "399935008",
+                        "display": "high blood glucose"
+                    }],
+                    "text": "high blood glucose"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/nest-patient-1-CND22"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "nest-patient-1-ENC1",
+                "meta": {
+                    "versionId": "44663",
+                    "lastUpdated": "2016-03-09T15:31:34.415+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>2009-04-24: ambulatory encounter</div>"
+                },
+                "status": "finished",
+                "class": "inpatient",
+                "patient": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "period": {
+                    "start": "2009-04-24",
+                    "end": "2009-04-24"
+                },
+                "hospitalization": {
+                    "preAdmissionIdentifier": {
+                        "use": "official",
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/pre-admissions",
+                        "value": "93042"
+                    },
+                    "admitSource": {
+                        "fhir_comments": [
+                            "       <preAdmissionTest>\n            <coding>\n                <system value=\"http://snomed.info/sct\"/>\n                <code value=\"168719007\"/>\n                <display value=\"Neck soft tissue X-ray\"/>\n            </coding>\n            <coding>\n                <system value=\"http://snomed.info/sct\"/>\n                <code value=\"396550006\"/>\n                <display value=\"Blood test\"/>\n            </coding>\n        </preAdmissionTest>   "
+                        ],
+                        "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "305956004",
+                            "display": "Referral by physician"
+                        }]
+                    },
+                    "dischargeDisposition": {
+                        "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "home",
+                            "display": "Home"
+                        }],
+                        "text": "Home"
+                    }
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Encounter/nest-patient-1-ENC1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO1",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "CPR"
+                    }],
+                    "text": "CPR"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO2",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "mechanical ventilation"
+                    }],
+                    "text": "mechanical ventilation"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO3",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "Telemetry"
+                    }],
+                    "text": "Telemetry"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO4",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "echocardiography"
+                    }],
+                    "text": "echocardiography"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO5",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "cardiac catheterization"
+                    }],
+                    "text": "cardiac catheterization"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "nest-patient-1-PRO6",
+                "meta": {
+                    "versionId": "19880",
+                    "lastUpdated": "2016-03-09T15:30:49.571+00:00"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Smoking cessation assistance</div>"
+                },
+                "subject": {
+                    "reference": "Patient/nest-patient-1"
+                },
+                "status": "completed",
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "384742004",
+                        "display": "Cardiac Surgery"
+                    }],
+                    "text": "Cardiac Surgery"
+                },
+                "performedDateTime": "2000-02-12"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/nest-patient-1-PRO6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Coverage",
+                "id": "nest-patient-1-COV1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div>!-- Snipped for Brevity --></div>"
+                },
+                "period": {
+                    "start": "2011-03-17",
+                    "end": "2012-03-17"
+                },
+                "type": {
+                    "system": "http://hl7.org/fhir/v3/ActCode",
+                    "code": "EHCPOL",
+                    "display": "extended healthcare"
+                },
+                "identifier": [{
+                    "system": "http://xyz.com/codes/identifier",
+                    "value": "AB9876"
+                }],
+                "plan": "Medicare",
+                "subPlan": "D15C9",
+                "dependent": 1,
+                "subscriber": {
+                    "reference": "Patient/nest-patient-1"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Coverage/nest-patient-1-COV1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED1",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "beta Blocker Therapy"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED2",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "ARB Therapy"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED3",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "Diuretic"
+                },
+                "dosageInstruction": [{
+                    "doseQuantity": {
+                        "value": 245,
+                        "unit": "mg",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mg"
+                    }
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED3"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED4",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "antihypertensive medication"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED5",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "corticosteroid therapy"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "nest-patient-1-MED6",
+                "meta": {
+                    "versionId": "204322",
+                    "lastUpdated": "2016-03-09T15:35:54.326+00:00"
+                },
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "encounter": {
+                    "reference": "Encounter/nest-patient-1-ENC1"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "Blood Pressure"
+                },
+                "reasonCodeableConcept": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "13645005",
+                        "display": "Blood Pressure"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/nest-patient-1-MED6"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "nest-patient-1-FAM1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Father died of a heart attack aged 74</div>"
+                },
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "date": "2011-03-18",
+                "status": "completed",
+                "relationship": {
+                    "coding": [{
+                            "system": "http://hl7.org/fhir/familial-relationship",
+                            "code": "PRN",
+                            "display": "parent"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/familial-relationship",
+                            "code": "SIB",
+                            "display": "sibling"
+                        }
+                    ]
+                },
+                "condition": [{
+                    "code": {
+                        "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "315619001",
+                            "display": "diabetes mellitus"
+                        }],
+                        "text": "diabetes mellitus"
+                    }
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/nest-patient-1-FAM1"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "FamilyMemberHistory",
+                "id": "nest-patient-1-FAM2",
+                "text": {
+                    "status": "generated",
+                    "div": "<div>Father died of a heart attack aged 74</div>"
+                },
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "date": "2011-03-18",
+                "status": "completed",
+                "relationship": {
+                    "coding": [{
+                            "system": "http://hl7.org/fhir/familial-relationship",
+                            "code": "FTH",
+                            "display": "father"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/familial-relationship",
+                            "code": "MTH",
+                            "display": "mother"
+                        }
+                    ]
+                },
+                "condition": [{
+                    "code": {
+                        "coding": [{
+                            "system": "http://snomed.info/sct",
+                            "code": "315619001",
+                            "display": "diabetes"
+                        }],
+                        "text": "diabetes"
+                    }
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "FamilyMemberHistory/nest-patient-1-FAM2"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "NutritionOrder",
+                "id": "nest-patient-1-NUTR1",
+                "text": {
+                    "status": "generated",
+                    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: texturemodified</p><p><b>patient</b>: <a>Peter Chalmers</a></p><p><b>orderer</b>: <a>Dr Adam Careful</a></p><p><b>identifier</b>: 123</p><p><b>dateTime</b>: 17/09/2014</p><p><b>status</b>: active</p><blockquote><p><b>oralDiet</b></p><p><b>type</b>: Texture modified diet <span>(Details : {SNOMED CT code '435801000124108' = '435801000124108', given as 'Texture modified diet'}; {http://goodhealthhospital.org/diet-type-codes code '1010' = '??', given as 'Texture modified diet'})</span></p><p><b>schedule</b>: Starting 10/02/2015, Do 3 per 1 days</p><h3>Textures</h3><table><tr><td>-</td><td><b>Modifier</b></td><td><b>FoodType</b></td></tr><tr><td>*</td><td>Regular, Chopped Meat <span>(Details : {SNOMED CT code '228049004' = '228049004', given as 'Chopped food'})</span></td><td>Regular, Chopped Meat <span>(Details : {SNOMED CT code '28647000' = '28647000', given as 'Meat'})</span></td></tr></table></blockquote></div>"
+                },
+                "patient": {
+                    "reference": "Patient/nest-patient-1",
+                    "display": "Tomy Francis"
+                },
+                "orderer": {
+                    "display": "Dr Adam Careful"
+                },
+                "identifier": [{
+                    "system": "http://goodhealthhospital.org/nutrition-orders",
+                    "value": "123"
+                }],
+                "dateTime": "2014-09-17",
+                "status": "active",
+                "oralDiet": {
+                    "fhir_comments": [
+                        "   EH: use oral Diet element   "
+                    ],
+                    "type": [{
+                        "fhir_comments": [
+                            "   EH:  list type of diet showing standard code and local codes   "
+                        ],
+                        "coding": [{
+                                "system": "http://snomed.info/sct",
+                                "code": "435801000124108",
+                                "display": "Texture modified diet"
+                            },
+                            {
+                                "system": "http://goodhealthhospital.org/diet-type-codes",
+                                "code": "1010",
+                                "display": "Texture modified diet"
+                            }
+                        ],
+                        "text": "Texture modified diet"
+                    }],
+                    "schedule": [{
+                        "fhir_comments": [
+                            "   EH example of three times a day starting on 2/10   "
+                        ],
+                        "repeat": {
+                            "boundsPeriod": {
+                                "start": "2015-02-10"
+                            },
+                            "frequency": 3,
+                            "period": 1,
+                            "periodUnits": "d"
+                        }
+                    }],
+                    "texture": [{
+                        "modifier": {
+                            "coding": [{
+                                "system": "http://snomed.info/sct",
+                                "code": "228049004",
+                                "display": "Chopped food"
+                            }],
+                            "text": "Regular, Chopped Meat"
+                        },
+                        "foodType": {
+                            "coding": [{
+                                "system": "http://snomed.info/sct",
+                                "code": "22836000",
+                                "display": "Vegetable"
+                            }],
+                            "text": "Regular, Chopped Meat"
+                        }
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "NutritionOrder/nest-patient-1-NUTR1"
+            }
+        }
+    ]
+}

@@ -1,0 +1,327 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [{
+            "resource": {
+                "resourceType": "Patient",
+                "id": "hca-pat-77",
+                "identifier": [{
+                    "use": "usual",
+                    "type": {
+                        "coding": [{
+                            "system": "http://hl7.org/fhir/v2/0203",
+                            "code": "MR",
+                            "display": "Medical record number"
+                        }],
+                        "text": "Medical record number"
+                    },
+                    "system": "http://hospital.smarthealthit.org",
+                    "value": "hca-pat-77"
+                }],
+                "active": true,
+                "name": [{
+                    "family": ["Chen"],
+                    "given": ["Shae"]
+                }],
+                "gender": "female",
+                "birthDate": "1961-11-04",
+                "address": [{
+                    "use": "home",
+                    "line": ["One Park Plaza"],
+                    "city": "Nashville",
+                    "postalCode": "37203",
+                    "state": "TN",
+                    "country": "USA"
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/hca-pat-77"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "hca-con-fff27f452bb4",
+                "patient": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "448952004",
+                        "display": "Infiltrating duct carcinoma of female breast"
+                    }],
+                    "text": "IDC"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/hca-con-fff27f452bb4"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-a65fbad509b6",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-fff27f452bb4",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3430",
+                        "display": "erb-b2 receptor tyrosine kinase 2"
+                    }],
+                    "text": "Her2Neu FISH"
+                },
+                "valueString": "equivocal",
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "IND",
+                        "display": "Indeterminate"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-a65fbad509b6"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-9941bc9374fc",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-fff27f452bb4",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3467",
+                        "display": "estrogen receptor 1"
+                    }],
+                    "text": "ER Pct"
+                },
+                "valueQuantity": {
+                    "value": 44,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-9941bc9374fc"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-f22ab356f0b5",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-fff27f452bb4",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:8910",
+                        "display": "progesterone receptor"
+                    }],
+                    "text": "PR Pct"
+                },
+                "valueQuantity": {
+                    "value": 30,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-f22ab356f0b5"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-c70c421ee0e5",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26499-4",
+                        "display": "Neutrophils [#/volume] in Blood"
+                    }],
+                    "text": "Abs Neutrophil Count (x10*3/uL)"
+                },
+                "valueQuantity": {
+                    "value": 5.7,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-c70c421ee0e5"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-98d5b3fc9835",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26515-7",
+                        "display": "Platelets [#/volume] in Blood"
+                    }],
+                    "text": "Platelets (x10*3)"
+                },
+                "valueQuantity": {
+                    "value": 350,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-98d5b3fc9835"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-4d02130ef3ea",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "69405-9",
+                        "display": "Glomerular filtration rate/1.73 sq M.predicted"
+                    }],
+                    "text": "eGFR (ml/min)"
+                },
+                "valueRange": {
+                    "low": {
+                        "value": 60,
+                        "unit": "mL/min",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/min"
+                    }
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-4d02130ef3ea"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "hca-pro-75e1b4349bde",
+                "subject": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "status": "completed",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "406505007",
+                        "display": "Modified radical mastectomy"
+                    }],
+                    "text": "Modified Radical Mastectomy"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/hca-pro-75e1b4349bde"
+            }
+        }, {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-c7eb7d2cf69b",
+                "patient": {
+                    "reference": "Patient/hca-pat-77",
+                    "display": "Chen Shae"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "258494",
+                        "display": "Exemestane [BN]"
+                    }],
+                    "text": "Exemestane (Aromasin)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-c7eb7d2cf69b"
+            }
+        }
+    ]
+}

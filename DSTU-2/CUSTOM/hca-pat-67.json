@@ -1,0 +1,351 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [{
+            "resource": {
+                "resourceType": "Patient",
+                "id": "hca-pat-67",
+                "identifier": [{
+                    "use": "usual",
+                    "type": {
+                        "coding": [{
+                            "system": "http://hl7.org/fhir/v2/0203",
+                            "code": "MR",
+                            "display": "Medical record number"
+                        }],
+                        "text": "Medical record number"
+                    },
+                    "system": "http://hospital.smarthealthit.org",
+                    "value": "hca-pat-67"
+                }],
+                "active": true,
+                "name": [{
+                    "family": ["Ackerman"],
+                    "given": ["Brittany"]
+                }],
+                "gender": "female",
+                "birthDate": "1942-11-09",
+                "address": [{
+                    "use": "home",
+                    "line": ["One Park Plaza"],
+                    "city": "Nashville",
+                    "postalCode": "37203",
+                    "state": "TN",
+                    "country": "USA"
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/hca-pat-67"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "hca-con-1c5e373a1052",
+                "patient": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "448952004",
+                        "display": "Infiltrating duct carcinoma of female breast"
+                    }],
+                    "text": "IDC"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/hca-con-1c5e373a1052"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-3fb3f88e40ce",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-1c5e373a1052",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3430",
+                        "display": "erb-b2 receptor tyrosine kinase 2"
+                    }],
+                    "text": "Her2Neu FISH"
+                },
+                "valueString": "positive",
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-3fb3f88e40ce"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-827f38d1448e",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-1c5e373a1052",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3467",
+                        "display": "estrogen receptor 1"
+                    }],
+                    "text": "ER Pct"
+                },
+                "valueQuantity": {
+                    "value": 88,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-827f38d1448e"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-28a7df4290d7",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-1c5e373a1052",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:8910",
+                        "display": "progesterone receptor"
+                    }],
+                    "text": "PR Pct"
+                },
+                "valueQuantity": {
+                    "value": 8,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-28a7df4290d7"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-93c40e9babb3",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26499-4",
+                        "display": "Neutrophils [#/volume] in Blood"
+                    }],
+                    "text": "Abs Neutrophil Count (x10*3/uL)"
+                },
+                "valueQuantity": {
+                    "value": 1.0,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-93c40e9babb3"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-74d9f1be74ef",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26515-7",
+                        "display": "Platelets [#/volume] in Blood"
+                    }],
+                    "text": "Platelets (x10*3)"
+                },
+                "valueQuantity": {
+                    "value": 361,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-74d9f1be74ef"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-8eaf3eeb3764",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "69405-9",
+                        "display": "Glomerular filtration rate/1.73 sq M.predicted"
+                    }],
+                    "text": "eGFR (ml/min)"
+                },
+                "valueRange": {
+                    "low": {
+                        "value": 60,
+                        "unit": "mL/min",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/min"
+                    }
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-8eaf3eeb3764"
+            }
+        }, {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "hca-pro-e985602f6749",
+                "subject": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "status": "completed",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "392021009",
+                        "display": "Lumpectomy of breast"
+                    }],
+                    "text": "Lumpectomy w/ SN"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/hca-pro-e985602f6749"
+            }
+        }, {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-7f416fa79b87",
+                "patient": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "40048",
+                        "display": "Carboplatin [BN]"
+                    }],
+                    "text": "Carboplatin (Paraplatin)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-7f416fa79b87"
+            }
+        }, {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-ee7e509ca034",
+                "patient": {
+                    "reference": "Patient/hca-pat-67",
+                    "display": "Ackerman Brittany"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "258494",
+                        "display": "Exemestane [BN]"
+                    }],
+                    "text": "Exemestane (Aromasin)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-ee7e509ca034"
+            }
+        }
+    ]
+}

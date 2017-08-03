@@ -1,0 +1,403 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [{
+            "resource": {
+                "resourceType": "Patient",
+                "id": "hca-pat-64",
+                "identifier": [{
+                    "use": "usual",
+                    "type": {
+                        "coding": [{
+                            "system": "http://hl7.org/fhir/v2/0203",
+                            "code": "MR",
+                            "display": "Medical record number"
+                        }],
+                        "text": "Medical record number"
+                    },
+                    "system": "http://hospital.smarthealthit.org",
+                    "value": "hca-pat-64"
+                }],
+                "active": true,
+                "name": [{
+                    "family": ["Chen"],
+                    "given": ["Joseph"]
+                }],
+                "gender": "male",
+                "birthDate": "1990-06-29",
+                "address": [{
+                    "use": "home",
+                    "line": ["One Park Plaza"],
+                    "city": "Nashville",
+                    "postalCode": "37203",
+                    "state": "TN",
+                    "country": "USA"
+                }]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/hca-pat-64"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "hca-con-5eea1abb748f",
+                "patient": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "onsetDateTime": "2014-01-01",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "448952004",
+                        "display": "Infiltrating duct carcinoma of female breast"
+                    }],
+                    "text": "IDC"
+                },
+                "clinicalStatus": "active",
+                "verificationStatus": "confirmed",
+                "category": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "39154008",
+                        "display": "Clinical diagnosis"
+                    }]
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Condition/hca-con-5eea1abb748f"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-65251ac78939",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-5eea1abb748f",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3430",
+                        "display": "erb-b2 receptor tyrosine kinase 2"
+                    }],
+                    "text": "Her2Neu FISH"
+                },
+                "valueString": "negative",
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "NEG",
+                        "display": "Negative"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-65251ac78939"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-7e90050764aa",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-5eea1abb748f",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:3467",
+                        "display": "estrogen receptor 1"
+                    }],
+                    "text": "ER Pct"
+                },
+                "valueQuantity": {
+                    "value": 97,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-7e90050764aa"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-1c48907ac760",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "modifierExtension": [{
+                    "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/gene-expression-in",
+                    "valueReference": {
+                        "reference": "Condition/hca-con-5eea1abb748f",
+                        "display": "IDC"
+                    }
+                }],
+                "code": {
+                    "coding": [{
+                        "system": "http://www.genenames.org",
+                        "code": "HGNC:8910",
+                        "display": "progesterone receptor"
+                    }],
+                    "text": "PR Pct"
+                },
+                "valueQuantity": {
+                    "value": 64,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "interpretation": {
+                    "coding": [{
+                        "system": "http://hl7.org/fhir/v2/0078",
+                        "code": "POS",
+                        "display": "Positive"
+                    }]
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-1c48907ac760"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-a348d1f0fa70",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26499-4",
+                        "display": "Neutrophils [#/volume] in Blood"
+                    }],
+                    "text": "Abs Neutrophil Count (x10*3/uL)"
+                },
+                "valueQuantity": {
+                    "value": 5.0,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-a348d1f0fa70"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-6d3c49f29de5",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "26515-7",
+                        "display": "Platelets [#/volume] in Blood"
+                    }],
+                    "text": "Platelets (x10*3)"
+                },
+                "valueQuantity": {
+                    "value": 313,
+                    "unit": "10*3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-6d3c49f29de5"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hca-obs-0f04562cdbce",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "code": {
+                    "coding": [{
+                        "system": "http://loinc.org",
+                        "code": "69405-9",
+                        "display": "Glomerular filtration rate/1.73 sq M.predicted"
+                    }],
+                    "text": "eGFR (ml/min)"
+                },
+                "valueRange": {
+                    "high": {
+                        "value": 30,
+                        "unit": "mL/min",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/min"
+                    }
+                },
+                "status": "final"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Observation/hca-obs-0f04562cdbce"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "hca-pro-c6f05f5b053f",
+                "subject": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "status": "completed",
+                "code": {
+                    "coding": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "392021009",
+                        "display": "Lumpectomy of breast"
+                    }],
+                    "text": "Lumpectomy w/ SN"
+                }
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Procedure/hca-pro-c6f05f5b053f"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-0dffcd228144",
+                "patient": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3639",
+                        "display": "3639 [BN]"
+                    }],
+                    "text": "Doxorubicin"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-0dffcd228144"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-acc1d1729221",
+                "patient": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "3002",
+                        "display": "Cyclophosphamide [BN]"
+                    }],
+                    "text": "Cyclophosphamide (Cytoxan)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-acc1d1729221"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-0d1d0613563f",
+                "patient": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "56946",
+                        "display": "Paclitaxel [BN]"
+                    }],
+                    "text": "Paclitaxel (Taxol)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-0d1d0613563f"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationOrder",
+                "id": "hca-mpr-d4d6fddf05d0",
+                "patient": {
+                    "reference": "Patient/hca-pat-64",
+                    "display": "Chen Joseph"
+                },
+                "medicationCodeableConcept": {
+                    "coding": [{
+                        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                        "code": "258494",
+                        "display": "Exemestane [BN]"
+                    }],
+                    "text": "Exemestane (Aromasin)"
+                },
+                "status": "active"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationOrder/hca-mpr-d4d6fddf05d0"
+            }
+        }
+    ]
+}
