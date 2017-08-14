@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-1098667"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Robert Hill</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="1098667"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Hill"/>
+      <given value="Robert"/>
+      <given value="P."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="robert.hill@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1953-10-27" />
+    <address>
+      <use value="home"/>
+      <line value="42 Park St"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <postalCode value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-1098667"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-109"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin] (rxnorm: 150840)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="150840"/>
+        <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+    </coding>
+    <text value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-01-13"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-109"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-570"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 30 day supply of Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-109"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="30" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="150840"/>
+        <display value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+    </coding>
+    <text value="Estrogens, Conjugated (USP) 0.625 MG Oral Tablet [Premarin]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-01-13"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-570"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-110"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 300 MG / Codeine 30 MG Oral Tablet (rxnorm: 309462)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309462"/>
+        <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+    </coding>
+    <text value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-07-30"/>
+        </boundsPeriod>
+        <frequency value="4"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 q6h prn pain"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="24"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="6"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-110"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-565"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 24 tablets = 6 day supply of Acetaminophen 300 MG / Codeine 30 MG Oral Tablet
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-110"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="24"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="6" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="309462"/>
+        <display value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+    </coding>
+    <text value="Acetaminophen 300 MG / Codeine 30 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-07-30"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-565"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-111"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      fexofenadine 180 MG Oral Tablet (rxnorm: 310333)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2008-09-10"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 daily"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="90"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="90"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-111"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-567"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-111"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-01-07"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-567"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-566"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-111"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2008-09-10"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-566"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-569"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-111"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-08-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-569"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-568"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 90 tablets = 90 day supply of fexofenadine 180 MG Oral Tablet
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-111"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="90"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="90" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310333"/>
+        <display value="fexofenadine 180 MG Oral Tablet"/>
+    </coding>
+    <text value="fexofenadine 180 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-05-02"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-568"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-112"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC] (rxnorm: 351396)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="351396"/>
+        <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2008-09-12"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-112"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-572"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 30 tablets = 10 day supply of Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-112"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="30"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="351396"/>
+        <display value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML Rectal Cream [Proctozone HC]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2008-09-12"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-572"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-113"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream (rxnorm: 310893)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310893"/>
+        <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2009-04-23"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <text value="Apply bid x7 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="28"/>
+        <unit value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="28"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-113"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-571"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 28 tablets = 28 day supply of Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1098667"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-113"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="28"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="28" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="310893"/>
+        <display value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Hydrocortisone 25 MG/ML / pramoxine 10 MG/ML Topical Cream"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-04-23"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-571"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-272"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute maxillary sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68272006"/>
+        <display value="Acute maxillary sinusitis"/>
+      </coding>
+      <text value="Acute maxillary sinusitis"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-01"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-272"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-273"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-24"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-273"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-274"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Headache</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25064002"/>
+        <display value="Headache"/>
+      </coding>
+      <text value="Headache"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-24"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-274"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-275"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Migraine without aura</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="56097005"/>
+        <display value="Migraine without aura"/>
+      </coding>
+      <text value="Migraine without aura"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-03-17"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-275"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-276"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hyperlipidemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="55822004"/>
+        <display value="Hyperlipidemia"/>
+      </coding>
+      <text value="Hyperlipidemia"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-09"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-276"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-277"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Blood chemistry abnormal</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="80394007"/>
+        <display value="Blood chemistry abnormal"/>
+      </coding>
+      <text value="Blood chemistry abnormal"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-22"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-277"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-278"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hemangioma</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="400210000"/>
+        <display value="Hemangioma"/>
+      </coding>
+      <text value="Hemangioma"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-278"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-279"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Pure hypercholesterolemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267432004"/>
+        <display value="Pure hypercholesterolemia"/>
+      </coding>
+      <text value="Pure hypercholesterolemia"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-04-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-279"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-280"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Family history of malignant neoplasm of gastrointestinal tract</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="312824007"/>
+        <display value="Family history of malignant neoplasm of gastrointestinal tract"/>
+      </coding>
+      <text value="Family history of malignant neoplasm of gastrointestinal tract"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-08-26"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-280"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-281"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">History of polyp of colon</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="429047008"/>
+        <display value="History of polyp of colon"/>
+      </coding>
+      <text value="History of polyp of colon"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-08-26"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-281"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-282"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of face</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92359006"/>
+        <display value="Benign neoplasm of skin of face"/>
+      </coding>
+      <text value="Benign neoplasm of skin of face"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-10-15"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-282"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-283"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Benign neoplasm of skin of trunk</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1098667"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="92380000"/>
+        <display value="Benign neoplasm of skin of trunk"/>
+      </coding>
+      <text value="Benign neoplasm of skin of trunk"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-10-15"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-283"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="smart-Observation-18-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Unknown if ever smoked</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="social-history"/>
+          <display value="Social History"/>
+      </coding>
+      <text value="Social History"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+      <text value="Tobacco smoking status"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266927001"/>
+        <display value="Unknown if ever smoked"/>
+      </coding>
+      <text value="Unknown if ever smoked"/>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1098667"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-18-smokingstatus"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1098667-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">1953-10-27: Gestational age at birth = 43.4 weeks</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="exam"/>
+          <display value="Exam"/>
+      </coding>
+      <text value="Exam"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+      <text value="Gestational age at birth"/>
+    </code>
+    <valueQuantity>
+      <value value="43.4"/>
+      <unit value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="1953-10-27"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1098667"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1098667-gestage"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-List-21"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+            <text value="Allergy"/>
+        </code>
+        <subject>
+          <reference value="Patient/smart-1098667"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+            <text value="Nil Known"/>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="List/smart-List-21"/>
+  </request>
+</entry>
+
+</Bundle>

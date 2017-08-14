@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-5555001"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Penny Love</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="5555001"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Love"/>
+      <given value="Penny"/>
+      <given value="M."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="penny.love@example.com"/>
+    </telecom>
+    <gender value="female" />
+    <birthDate value="1958-05-13" />
+    <address>
+      <use value="home"/>
+      <line value="54 9th Street"/>
+      <city value="Durham"/>
+      <state value="NC"/>
+      <postalCode value="27701"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-5555001"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-297"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Levemir Flexpen (rxnorm: 847241)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="847241"/>
+        <display value="Levemir Flexpen"/>
+    </coding>
+    <text value="Levemir Flexpen"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-11-02"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="50"/>
+      <unit value="units"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="units"/>
+    </doseQuantity>
+    
+    <text value="50 units SQ once daily"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="units"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="units"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="45"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-297"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-298"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Levemir Flexpen (rxnorm: 847241)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="847241"/>
+        <display value="Levemir Flexpen"/>
+    </coding>
+    <text value="Levemir Flexpen"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2013-03-06"/>
+          <end value="2014-11-01"/>
+          
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="40"/>
+      <unit value="units"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="units"/>
+    </doseQuantity>
+    
+    <text value="40 units SQ once daily"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="units"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="units"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="45"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-298"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-299"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Novolog Flexpen (rxnorm: 847265)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="847265"/>
+        <display value="Novolog Flexpen"/>
+    </coding>
+    <text value="Novolog Flexpen"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+    </timing>
+    <asNeededBoolean value="true"/>
+    
+    <text value="sliding scale prn"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="60"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-299"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-300"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Escitalopram Tablet 20mg (rxnorm: 351250)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="351250"/>
+        <display value="Escitalopram Tablet 20mg"/>
+    </coding>
+    <text value="Escitalopram Tablet 20mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-10-04"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-300"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-301"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Escitalopram Tablet 10mg (rxnorm: 349332)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="349332"/>
+        <display value="Escitalopram Tablet 10mg"/>
+    </coding>
+    <text value="Escitalopram Tablet 10mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2012-09-06"/>
+          <end value="2014-10-06"/>
+          
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-301"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-302"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Bumetanide Tablet 1 mg (rxnorm: 197418)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197418"/>
+        <display value="Bumetanide Tablet 1 mg"/>
+    </coding>
+    <text value="Bumetanide Tablet 1 mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-10-16"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="2"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="2 tabs bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="120"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-302"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-303"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Bumetanide Tablet 1 mg (rxnorm: 197418)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197418"/>
+        <display value="Bumetanide Tablet 1 mg"/>
+    </coding>
+    <text value="Bumetanide Tablet 1 mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2013-10-13"/>
+          <end value="2014-10-02"/>
+          
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="60"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-303"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-304"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Losartan Tablet 100mg (rxnorm: 979480)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="979480"/>
+        <display value="Losartan Tablet 100mg"/>
+    </coding>
+    <text value="Losartan Tablet 100mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2012-02-01"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-304"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-305"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Carvedilol Tablet 25mg (rxnorm: 200033)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="200033"/>
+        <display value="Carvedilol Tablet 25mg"/>
+    </coding>
+    <text value="Carvedilol Tablet 25mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2013-05-12"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="60"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-305"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-306"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Minoxidil Tablet 2.5mg (rxnorm: 197987)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197987"/>
+        <display value="Minoxidil Tablet 2.5mg"/>
+    </coding>
+    <text value="Minoxidil Tablet 2.5mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-08-01"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="60"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-306"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-307"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Clonidine HCl Tablet 0.1 mg (rxnorm: 884173)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="884173"/>
+        <display value="Clonidine HCl Tablet 0.1 mg"/>
+    </coding>
+    <text value="Clonidine HCl Tablet 0.1 mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-11-01"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="2"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="2 tabs bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="120"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-307"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-308"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Allopurinol Tablet 300mg (rxnorm: 197320)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197320"/>
+        <display value="Allopurinol Tablet 300mg"/>
+    </coding>
+    <text value="Allopurinol Tablet 300mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-01-02"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-308"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-309"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Simcor (simvastatin/niacinER) Tablet 40/500mg (rxnorm: 999946)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="999946"/>
+        <display value="Simcor (simvastatin/niacinER) Tablet 40/500mg"/>
+    </coding>
+    <text value="Simcor (simvastatin/niacinER) Tablet 40/500mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-08-01"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qhs"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-309"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-310"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Simvastatin Tablet 40mg (rxnorm: 198211)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="198211"/>
+        <display value="Simvastatin Tablet 40mg"/>
+    </coding>
+    <text value="Simvastatin Tablet 40mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-01-01"/>
+          <end value="2014-08-08"/>
+          
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-310"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-311"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Ergocalciferol Capsule 50,000 iu (rxnorm: 1367410)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1367410"/>
+        <display value="Ergocalciferol Capsule 50,000 iu"/>
+    </coding>
+    <text value="Ergocalciferol Capsule 50,000 iu"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-05-03"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="wk"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="2"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 cap once a week"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="12"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="84"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-311"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-312"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Ergocalciferol Capsule 50,000 iu (rxnorm: 1367410)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1367410"/>
+        <display value="Ergocalciferol Capsule 50,000 iu"/>
+    </coding>
+    <text value="Ergocalciferol Capsule 50,000 iu"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-02-04"/>
+          <end value="2014-05-02"/>
+          
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="wk"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 cap 2x/week"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="24"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="84"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-312"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-313"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Aspirin Tablet 81mg (rxnorm: 243670)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="243670"/>
+        <display value="Aspirin Tablet 81mg"/>
+    </coding>
+    <text value="Aspirin Tablet 81mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-08-05"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="30"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-313"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-314"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Clonazepam Tablet 0.5mg (rxnorm: 197527)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-5555001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="197527"/>
+        <display value="Clonazepam Tablet 0.5mg"/>
+    </coding>
+    <text value="Clonazepam Tablet 0.5mg"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-10-03"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 tab bid prn anxiety"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="60"/>
+        <unit value="{tablet}"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="{tablet}"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-314"/>
+  </request>
+</entry>
+
+</Bundle>

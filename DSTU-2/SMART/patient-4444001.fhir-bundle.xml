@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-4444001"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Christopher Sherman</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="4444001"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Sherman"/>
+      <given value="Christopher"/>
+      <given value="T."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="ChristopherTSherman@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1932-06-15" />
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-4444001"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-357"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Acetaminophen 325 MG [Tylenol] (rxnorm: 569998)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="569998"/>
+        <display value="Acetaminophen 325 MG [Tylenol]"/>
+    </coding>
+    <text value="Acetaminophen 325 MG [Tylenol]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-06-21"/>
+        </boundsPeriod>
+        <frequency value="6"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <asNeededBoolean value="true"/>
+    
+    <text value="1 tab q4h prn"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-357"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-358"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Aspirin 81 MG [Ecotrin] (rxnorm: 1189780)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1189780"/>
+        <display value="Aspirin 81 MG [Ecotrin]"/>
+    </coding>
+    <text value="Aspirin 81 MG [Ecotrin]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-06-21"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-358"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-359"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren] (rxnorm: 855635)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="855635"/>
+        <display value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+    </coding>
+    <text value="Diclofenac Sodium 0.01 MG/MG Topical Gel [Voltaren]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2015-01-27"/>
+          <end value="2016-01-27"/>
+          
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <text value="bid"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-359"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-360"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      ferrous sulfate 325 MG [Feosol] (rxnorm: 635969)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="635969"/>
+        <display value="ferrous sulfate 325 MG [Feosol]"/>
+    </coding>
+    <text value="ferrous sulfate 325 MG [Feosol]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2012-04-13"/>
+        </boundsPeriod>
+        <frequency value="3"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab tid"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-360"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-361"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Lisinopril 5 MG [Prinivil] (rxnorm: 567575)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="567575"/>
+        <display value="Lisinopril 5 MG [Prinivil]"/>
+    </coding>
+    <text value="Lisinopril 5 MG [Prinivil]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2015-02-07"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-361"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-362"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metformin hydrochloride 500 MG [Glucophage] (rxnorm: 860976)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="860976"/>
+        <display value="Metformin hydrochloride 500 MG [Glucophage]"/>
+    </coding>
+    <text value="Metformin hydrochloride 500 MG [Glucophage]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2015-01-27"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab bid wf"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-362"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-363"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      metoprolol succinate 25 MG [Toprol] (rxnorm: 1370507)
+    </div>
+  </text>
+
+  <status value="completed" />
+  <patient>
+    <reference value="Patient/smart-4444001"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="1370507"/>
+        <display value="metoprolol succinate 25 MG [Toprol]"/>
+    </coding>
+    <text value="metoprolol succinate 25 MG [Toprol]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2014-08-18"/>
+          <end value="2015-08-18"/>
+          
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="{tablet}"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablet}"/>
+    </doseQuantity>
+    
+    <text value="1 tab qd"/>
+  </dosageInstruction>
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-363"/>
+  </request>
+</entry>
+
+</Bundle>

@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-1081332"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Joseph Ross</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="1081332"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Ross"/>
+      <given value="Joseph"/>
+      <given value="I."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-960-9294"/>
+      <use value="mobile"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="joseph.ross@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="2003-10-02" />
+    <address>
+      <use value="home"/>
+      <line value="19 Church StApt 29"/>
+      <city value="Tulsa"/>
+      <state value="OK"/>
+      <postalCode value="74108"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-1081332"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-102"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 80 MG/ML Oral Suspension (rxnorm: 308189)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2004-07-13"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="7"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="7 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-102"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1229"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 75 tablets = 7 day supply of Amoxicillin 80 MG/ML Oral Suspension
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-102"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="75"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="7" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2004-07-13"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1229"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-103"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension (rxnorm: 617993)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617993"/>
+        <display value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-01-04"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="5"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="5 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-103"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1236"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 75 tablets = 10 day supply of Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-103"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="75"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617993"/>
+        <display value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-01-04"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1236"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1237"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 125 tablets = 10 day supply of Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-103"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="125"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617993"/>
+        <display value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-02-07"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1237"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-104"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Azithromycin 20 MG/ML Oral Suspension [Zithromax] (rxnorm: 211307)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="211307"/>
+        <display value="Azithromycin 20 MG/ML Oral Suspension [Zithromax]"/>
+    </coding>
+    <text value="Azithromycin 20 MG/ML Oral Suspension [Zithromax]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-01-18"/>
+        </boundsPeriod>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="15"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="15 mL daily x 3 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="3"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-104"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1231"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 15 tablets = 5 day supply of Azithromycin 20 MG/ML Oral Suspension [Zithromax]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-104"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="15"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="5" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="211307"/>
+        <display value="Azithromycin 20 MG/ML Oral Suspension [Zithromax]"/>
+    </coding>
+    <text value="Azithromycin 20 MG/ML Oral Suspension [Zithromax]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-01-18"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1231"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-105"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      cefdinir 25 MG/ML Oral Suspension [Omnicef] (rxnorm: 261091)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="261091"/>
+        <display value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+    </coding>
+    <text value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-01-28"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="7"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="7 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-105"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1227"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 60 tablets = 10 day supply of cefdinir 25 MG/ML Oral Suspension [Omnicef]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-105"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="60"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="261091"/>
+        <display value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+    </coding>
+    <text value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-01-28"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1227"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1228"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 60 tablets = 7 day supply of cefdinir 25 MG/ML Oral Suspension [Omnicef]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-105"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="60"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="7" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="261091"/>
+        <display value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+    </coding>
+    <text value="cefdinir 25 MG/ML Oral Suspension [Omnicef]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-03-11"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1228"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-106"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex] (rxnorm: 404630)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="404630"/>
+        <display value="Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"/>
+    </coding>
+    <text value="Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-03-11"/>
+        </boundsPeriod>
+        <frequency value="3"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="4"/>
+      <unit value="[drp]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="[drp]"/>
+    </doseQuantity>
+    
+    <text value="4 gtt in ear bid x7 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="[drp]"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[drp]"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="7"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-106"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-1230"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 7 tablets = 7 day supply of Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-106"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="7"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="7" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="404630"/>
+        <display value="Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"/>
+    </coding>
+    <text value="Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2005-03-11"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-1230"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-107"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 50 MG/ML Oral Suspension (rxnorm: 239191)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="239191"/>
+        <display value="Amoxicillin 50 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 50 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2007-06-06"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="10"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="10 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-107"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-108"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim] (rxnorm: 208406)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1081332"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="208406"/>
+        <display value="Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim]"/>
+    </coding>
+    <text value="Sulfamethoxazole 40 MG/ML / Trimethoprim 8 MG/ML Oral Suspension [Sulfatrim]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2007-08-28"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="5"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="5 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-108"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-448"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-04-12"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-448"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-449"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54150009"/>
+        <display value="Acute upper respiratory infection"/>
+      </coding>
+      <text value="Acute upper respiratory infection"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-06-15"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-449"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-450"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65363002"/>
+        <display value="Otitis media"/>
+      </coding>
+      <text value="Otitis media"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-07-13"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-450"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-451"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Other diseases of nasal cavity and sinuses</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68235000"/>
+        <display value="Other diseases of nasal cavity and sinuses"/>
+      </coding>
+      <text value="Other diseases of nasal cavity and sinuses"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-10-29"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-451"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-452"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Other and unspecified noninfectious gastroenteritis and colitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25374005"/>
+        <display value="Other and unspecified noninfectious gastroenteritis and colitis"/>
+      </coding>
+      <text value="Other and unspecified noninfectious gastroenteritis and colitis"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-05"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-452"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-453"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Diarrhea</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="62315008"/>
+        <display value="Diarrhea"/>
+      </coding>
+      <text value="Diarrhea"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-453"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-454"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Fever and other physiologic disturbances of temperature regulation</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386661006"/>
+        <display value="Fever and other physiologic disturbances of temperature regulation"/>
+      </coding>
+      <text value="Fever and other physiologic disturbances of temperature regulation"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-454"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-455"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Hypovolemia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34095006"/>
+        <display value="Hypovolemia"/>
+      </coding>
+      <text value="Hypovolemia"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-455"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-456"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Pneumonia</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="233604007"/>
+        <display value="Pneumonia"/>
+      </coding>
+      <text value="Pneumonia"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-456"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-457"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Vomiting</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="422400008"/>
+        <display value="Vomiting"/>
+      </coding>
+      <text value="Vomiting"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2004-12-08"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-457"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-458"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Chronic serous otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="81564005"/>
+        <display value="Chronic serous otitis media"/>
+      </coding>
+      <text value="Chronic serous otitis media"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-02-22"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-458"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-459"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute secretory otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1081332"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="35183001"/>
+        <display value="Acute secretory otitis media"/>
+      </coding>
+      <text value="Acute secretory otitis media"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2007-06-20"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-459"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="smart-Observation-6-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Former smoker</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="social-history"/>
+          <display value="Social History"/>
+      </coding>
+      <text value="Social History"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+      <text value="Tobacco smoking status"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="8517006"/>
+        <display value="Former smoker"/>
+      </coding>
+      <text value="Former smoker"/>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1081332"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-6-smokingstatus"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-List-20"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+            <text value="Allergy"/>
+        </code>
+        <subject>
+          <reference value="Patient/smart-1081332"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+            <text value="Nil Known"/>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="List/smart-List-20"/>
+  </request>
+</entry>
+
+</Bundle>

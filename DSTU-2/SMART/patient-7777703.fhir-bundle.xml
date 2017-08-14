@@ -1,0 +1,2655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-7777703"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Paul Luttrell</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="7777703"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Luttrell"/>
+      <given value="Paul"/>
+    </name>
+    <gender value="male" />
+    <birthDate value="2003-08-01" />
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-7777703"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-997"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2005-08-08"/>
+       <end value="2005-08-08"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-997"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-998"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2006-04-21"/>
+       <end value="2006-04-21"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-998"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-999"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2006-08-08"/>
+       <end value="2006-08-08"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-999"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1000"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2007-08-08"/>
+       <end value="2007-08-08"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1000"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1001"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2008-08-07"/>
+       <end value="2008-08-07"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1001"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1002"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2010-02-06"/>
+       <end value="2010-02-06"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1002"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1003"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2010-08-07"/>
+       <end value="2010-08-07"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1003"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1004"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2011-03-14"/>
+       <end value="2011-03-14"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1004"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1005"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2011-08-07"/>
+       <end value="2011-08-07"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1005"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1006"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2012-03-13"/>
+       <end value="2012-03-13"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1006"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1007"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2012-09-12"/>
+       <end value="2012-09-12"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1007"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Encounter>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+      <id value="smart-Encounter-1008"/>
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: ambulatory encounter</div>
+      </text>
+      <status value="finished"/>
+      <class value="ambulatory"/>
+      <patient>
+        <reference value="Patient/smart-7777703"/>
+      </patient>
+      <period>
+       <start value="2013-02-05"/>
+       <end value="2013-02-05"/>
+      </period>
+    </Encounter>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Encounter/smart-Encounter-1008"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-997-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: height = 81.8 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="81.8"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-997"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-997-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-997-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: weight = 11.1 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="11.1"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-997"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-997-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-997-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-08-08: bmi = 16.2 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="16.2"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-997"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-997-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-998-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: height = 86.4 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="86.4"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-04-21"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-998"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-998-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-998-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: weight = 11.4 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="11.4"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-04-21"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-998"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-998-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-998-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-04-21: bmi = 15.2 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.2"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-04-21"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-998"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-998-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-999-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: height = 87.6 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="87.6"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-999"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-999-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-999-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: weight = 12.1 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="12.1"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-999"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-999-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-999-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2006-08-08: bmi = 15.5 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.5"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2006-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-999"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-999-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1000-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: height = 95.0 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="95.0"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2007-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1000"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1000-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1000-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: weight = 13.7 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="13.7"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2007-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1000"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1000-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1000-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-08-08: bmi = 15.0 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.0"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2007-08-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1000"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1000-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1001-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: height = 100.2 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="100.2"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2008-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1001"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1001-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1001-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: weight = 15.1 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="15.1"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2008-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1001"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1001-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1001-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-07: bmi = 15.0 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.0"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2008-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1001"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1001-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1002-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: height = 108.2 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="108.2"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-02-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1002"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1002-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1002-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: weight = 17.9 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="17.9"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-02-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1002"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1002-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1002-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-02-06: bmi = 15.1 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.1"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-02-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1002"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1002-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1003-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: height = 111.1 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="111.1"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1003"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1003-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1003-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: weight = 18.7 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="18.7"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1003"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1003-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1003-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-08-07: bmi = 15.1 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.1"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1003"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1003-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1004-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: height = 114.0 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="114.0"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-03-14"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1004"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1004-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1004-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: weight = 20.3 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="20.3"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-03-14"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1004"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1004-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1004-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-03-14: bmi = 15.6 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.6"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-03-14"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1004"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1004-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1005-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: height = 118.1 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="118.1"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1005"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1005-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1005-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: weight = 21.7 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="21.7"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1005"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1005-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1005-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: bmi = 15.4 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.4"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1005"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1005-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1006-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: height = 119.6 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="119.6"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-03-13"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1006"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1006-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1006-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: weight = 23.6 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="23.6"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-03-13"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1006"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1006-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1006-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-03-13: bmi = 16.5 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="16.5"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-03-13"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1006"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1006-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1007-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: height = 122.3 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="122.3"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-09-12"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1007"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1007-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1007-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: weight = 24.2 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="24.2"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-09-12"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1007"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1007-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1007-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2012-09-12: bmi = 16.2 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="16.2"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2012-09-12"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1007"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1007-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1008-height"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: height = 123.9 cm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8302-2"/>
+        <display value="height"/>
+      </coding>
+      <text value="height"/>
+    </code>
+    <valueQuantity>
+      <value value="123.9"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2013-02-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1008"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1008-height"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1008-weight"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: weight = 24.4 kg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3141-9"/>
+        <display value="weight"/>
+      </coding>
+      <text value="weight"/>
+    </code>
+    <valueQuantity>
+      <value value="24.4"/>
+      <unit value="kg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2013-02-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1008"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1008-weight"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1008-bmi"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: bmi = 15.8 kg/m2</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+      </coding>
+      <text value="Vital Signs"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="39156-5"/>
+        <display value="bmi"/>
+      </coding>
+      <text value="bmi"/>
+    </code>
+    <valueQuantity>
+      <value value="15.8"/>
+      <unit value="kg/m2"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="kg/m2"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2013-02-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+    <encounter>
+      <reference value="Encounter/smart-Encounter-1008"/>
+    </encounter>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1008-bmi"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3503-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2011-08-07: Bones XR Bone Age = 121 mo</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="37362-1"/>
+        <display value="Bones XR Bone Age"/>
+      </coding>
+      <text value="Bones XR Bone Age"/>
+    </code>
+    <valueQuantity>
+      <value value="121.0"/>
+      <unit value="mo"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2011-08-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3503-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3504-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2013-02-05: Bones XR Bone Age = 162 mo</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="37362-1"/>
+        <display value="Bones XR Bone Age"/>
+      </coding>
+      <text value="Bones XR Bone Age"/>
+    </code>
+    <valueQuantity>
+      <value value="162.0"/>
+      <unit value="mo"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2013-02-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7777703"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3504-lab"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <FamilyMemberHistory>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+  <id value="smart-FamilyMemberHistory-11"/>
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
+        <valueQuantity>
+          <value value="182"/>
+          <unit value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Father</div>
+      </text>
+      <patient>
+         <reference value="Patient/smart-7777703"/>
+      </patient>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="FTH"/>
+            <display value="father"/>
+          </coding>
+        </relationship>
+    </FamilyMemberHistory>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="FamilyMemberHistory/smart-FamilyMemberHistory-11"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <FamilyMemberHistory>
+      <meta>
+          <tag>
+              <system value="https://smarthealthit.org/tags"/>
+              <code value="smart-8-2017"/>
+          </tag>
+      </meta>
+  <id value="smart-FamilyMemberHistory-12"/>
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/family-history#height">
+        <valueQuantity>
+          <value value="163"/>
+          <unit value="centimeters"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="cm"/>
+        </valueQuantity>
+      </extension>
+      
+      <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Data on patient's Mother</div>
+      </text>
+      <patient>
+         <reference value="Patient/smart-7777703"/>
+      </patient>
+        <relationship>
+          <coding>
+            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+            <code value="MTH"/>
+            <display value="mother"/>
+          </coding>
+        </relationship>
+    </FamilyMemberHistory>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="FamilyMemberHistory/smart-FamilyMemberHistory-12"/>
+  </request>
+</entry>
+
+</Bundle>

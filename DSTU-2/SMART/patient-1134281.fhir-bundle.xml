@@ -1,0 +1,6257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-1134281"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Patrick Taylor</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="1134281"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Taylor"/>
+      <given value="Patrick"/>
+      <given value="G."/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="800-539-3986"/>
+      <use value="home"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="patrick.taylor@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="2004-10-15" />
+    <address>
+      <use value="home"/>
+      <line value="24 Pine RdApt 3"/>
+      <city value="Bixby"/>
+      <state value="OK"/>
+      <postalCode value="74008"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-1134281"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1681-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Base excess Bld-sCnc = -6 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11555-0"/>
+        <display value="Base excess Bld-sCnc"/>
+      </coding>
+      <text value="Base excess Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="-6.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1681-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1682-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: CO2 Bld-sCnc = 24 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="20565-8"/>
+        <display value="CO2 Bld-sCnc"/>
+      </coding>
+      <text value="CO2 Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="24.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1682-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1683-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: SaO2% from pO2 Bld = 92 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2713-6"/>
+        <display value="SaO2% from pO2 Bld"/>
+      </coding>
+      <text value="SaO2% from pO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="92.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="95.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="98.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1683-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1684-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: SaO2% from pO2 Bld = 89 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2713-6"/>
+        <display value="SaO2% from pO2 Bld"/>
+      </coding>
+      <text value="SaO2% from pO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="89.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="95.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="98.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1684-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1685-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Glucose Bld-mCnc = 71 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="71.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1685-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1686-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Glucose Bld-mCnc = 109 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="109.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1686-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1687-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pH Bld = 7.36 [pH]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11558-4"/>
+        <display value="pH Bld"/>
+      </coding>
+      <text value="pH Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="7.36"/>
+      <unit value="[pH]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="7.35"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.45"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1687-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1688-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pH Bld = 7.22 [pH]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11558-4"/>
+        <display value="pH Bld"/>
+      </coding>
+      <text value="pH Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="7.22"/>
+      <unit value="[pH]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="7.35"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.45"/>
+        <unit value="[pH]"/>
+        <code value="[pH]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1688-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1689-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pCO2 Bld = 56 mm[Hg]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11557-6"/>
+        <display value="pCO2 Bld"/>
+      </coding>
+      <text value="pCO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="56.0"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="35.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="45.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1689-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1690-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pCO2 Bld = 40 mm[Hg]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11557-6"/>
+        <display value="pCO2 Bld"/>
+      </coding>
+      <text value="pCO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="40.0"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="35.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="45.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1690-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1691-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pO2 Bld = 79 mm[Hg]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11556-8"/>
+        <display value="pO2 Bld"/>
+      </coding>
+      <text value="pO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="79.0"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="80.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="110.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1691-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1692-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: pO2 Bld = 60 mm[Hg]</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11556-8"/>
+        <display value="pO2 Bld"/>
+      </coding>
+      <text value="pO2 Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="60.0"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="80.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="110.0"/>
+        <unit value="mm[Hg]"/>
+        <code value="mm[Hg]"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1692-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1693-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: HCO3 Bld-sCnc = 23.1 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1959-6"/>
+        <display value="HCO3 Bld-sCnc"/>
+      </coding>
+      <text value="HCO3 Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="23.1"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1693-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1694-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: HCO3 Bld-sCnc = 22.8 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1959-6"/>
+        <display value="HCO3 Bld-sCnc"/>
+      </coding>
+      <text value="HCO3 Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="22.8"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1694-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1695-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: CO2 Bld-sCnc = 25 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="20565-8"/>
+        <display value="CO2 Bld-sCnc"/>
+      </coding>
+      <text value="CO2 Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="25.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1695-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1696-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-04: Base excess Bld-sCnc = -3 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11555-0"/>
+        <display value="Base excess Bld-sCnc"/>
+      </coding>
+      <text value="Base excess Bld-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="-3.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-04"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1696-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1697-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Microcytes Bld Ql Smear = Few </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="741-9"/>
+        <display value="Microcytes Bld Ql Smear"/>
+      </coding>
+      <text value="Microcytes Bld Ql Smear"/>
+    </code>
+    <valueString value="Few"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1697-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1698-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Macrocytes Bld Ql Smear = Moderate </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="738-5"/>
+        <display value="Macrocytes Bld Ql Smear"/>
+      </coding>
+      <text value="Macrocytes Bld Ql Smear"/>
+    </code>
+    <valueString value="Moderate"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1698-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1699-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: TB Wheal 3D p 5 TU Diam = 1.4 mm</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1648-5"/>
+        <display value="TB Wheal 3D p 5 TU Diam"/>
+      </coding>
+      <text value="TB Wheal 3D p 5 TU Diam"/>
+    </code>
+    <valueQuantity>
+      <value value="1.4"/>
+      <unit value="mm"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.1"/>
+        <unit value="mm"/>
+        <code value="mm"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="4.4"/>
+        <unit value="mm"/>
+        <code value="mm"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1699-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1700-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Platelet # Bld = 248 10*3/uL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26515-7"/>
+        <display value="Platelet # Bld"/>
+      </coding>
+      <text value="Platelet # Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="248.0"/>
+      <unit value="10*3/uL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="150.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="450.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1700-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1701-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCV RBC = 107 fL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30428-7"/>
+        <display value="MCV RBC"/>
+      </coding>
+      <text value="MCV RBC"/>
+    </code>
+    <valueQuantity>
+      <value value="107.0"/>
+      <unit value="fL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="95.0"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="125.0"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1701-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1702-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCH RBC Qn Auto = 37.2 pg</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="785-6"/>
+        <display value="MCH RBC Qn Auto"/>
+      </coding>
+      <text value="MCH RBC Qn Auto"/>
+    </code>
+    <valueQuantity>
+      <value value="37.2"/>
+      <unit value="pg"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="30.0"/>
+        <unit value="pg"/>
+        <code value="pg"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="42.0"/>
+        <unit value="pg"/>
+        <code value="pg"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1702-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1703-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: MCHC RBC Auto-mCnc = 34.7 g/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="786-4"/>
+        <display value="MCHC RBC Auto-mCnc"/>
+      </coding>
+      <text value="MCHC RBC Auto-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="34.7"/>
+      <unit value="g/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="30.0"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="34.0"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1703-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1704-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Low&#39;, &#39;Adequate&#39;, &#39;High&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Platelet Bld Ql Smear = Adequate </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="9317-9"/>
+        <display value="Platelet Bld Ql Smear"/>
+      </coding>
+      <text value="Platelet Bld Ql Smear"/>
+    </code>
+    <valueString value="Adequate"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1704-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1705-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Calcium SerPl-mCnc = 7.7 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="17861-6"/>
+        <display value="Calcium SerPl-mCnc"/>
+      </coding>
+      <text value="Calcium SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="7.7"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="8.5"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="10.5"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1705-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1706-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Sodium SerPl-sCnc = 137 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2951-2"/>
+        <display value="Sodium SerPl-sCnc"/>
+      </coding>
+      <text value="Sodium SerPl-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="137.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="135.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="145.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1706-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1707-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Creat SerPl-mCnc = 1 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2160-0"/>
+        <display value="Creat SerPl-mCnc"/>
+      </coding>
+      <text value="Creat SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="1.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.2"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.6"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1707-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1708-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Potassium SerPl-sCnc = 5.4 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2823-3"/>
+        <display value="Potassium SerPl-sCnc"/>
+      </coding>
+      <text value="Potassium SerPl-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="5.4"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="3.5"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="5.5"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1708-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1709-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Chloride SerPl-sCnc = 105 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2075-0"/>
+        <display value="Chloride SerPl-sCnc"/>
+      </coding>
+      <text value="Chloride SerPl-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="105.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="95.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="105.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1709-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1710-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: CO2 SerPl-sCnc = 24 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2028-9"/>
+        <display value="CO2 SerPl-sCnc"/>
+      </coding>
+      <text value="CO2 SerPl-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="24.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="22.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="29.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1710-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1711-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Myelocytes NFr Bld = 1 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26498-6"/>
+        <display value="Myelocytes NFr Bld"/>
+      </coding>
+      <text value="Myelocytes NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="1.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1711-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1712-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Neuts Band NFr Bld = 2 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26508-2"/>
+        <display value="Neuts Band NFr Bld"/>
+      </coding>
+      <text value="Neuts Band NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="2.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="4.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="14.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1712-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1713-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Lymphocytes NFr Bld = 43 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26478-8"/>
+        <display value="Lymphocytes NFr Bld"/>
+      </coding>
+      <text value="Lymphocytes NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="43.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="18.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="38.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1713-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1714-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Monocytes NFr Bld = 8 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26485-3"/>
+        <display value="Monocytes NFr Bld"/>
+      </coding>
+      <text value="Monocytes NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="8.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="1.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="12.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1714-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1715-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Eosinophil NFr Bld = 3 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26450-7"/>
+        <display value="Eosinophil NFr Bld"/>
+      </coding>
+      <text value="Eosinophil NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="3.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="4.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1715-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1716-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Basophils NFr Bld = 0 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30180-4"/>
+        <display value="Basophils NFr Bld"/>
+      </coding>
+      <text value="Basophils NFr Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="0.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="2.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1716-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1717-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Hgb Bld-mCnc = 17 g/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="718-7"/>
+        <display value="Hgb Bld-mCnc"/>
+      </coding>
+      <text value="Hgb Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="17.0"/>
+      <unit value="g/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="16.5"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="21.5"/>
+        <unit value="g/dL"/>
+        <code value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1717-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1718-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Anion Gap3 SerPl-sCnc = 8 mmol/L</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10466-1"/>
+        <display value="Anion Gap3 SerPl-sCnc"/>
+      </coding>
+      <text value="Anion Gap3 SerPl-sCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="8.0"/>
+      <unit value="mmol/L"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="mmol/L"/>
+        <code value="mmol/L"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1718-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1719-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: PMV Bld = 7.8 fL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="28542-9"/>
+        <display value="PMV Bld"/>
+      </coding>
+      <text value="PMV Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="7.8"/>
+      <unit value="fL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="6.3"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="9.6"/>
+        <unit value="fL"/>
+        <code value="fL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1719-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1720-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RDW RBC-Rto = 16.8 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="30385-9"/>
+        <display value="RDW RBC-Rto"/>
+      </coding>
+      <text value="RDW RBC-Rto"/>
+    </code>
+    <valueQuantity>
+      <value value="16.8"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="11.5"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="14.5"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1720-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1721-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: nRBC/100 WBC Bld-Rto = 5 #/100 WBC</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="19048-8"/>
+        <display value="nRBC/100 WBC Bld-Rto"/>
+      </coding>
+      <text value="nRBC/100 WBC Bld-Rto"/>
+    </code>
+    <valueQuantity>
+      <value value="5.0"/>
+      <unit value="#/100 WBC"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="#/100 WBC"/>
+        <code value="#/100 WBC"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="24.0"/>
+        <unit value="#/100 WBC"/>
+        <code value="#/100 WBC"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1721-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1722-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Neutrophils NFr Bld Auto = 40 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="770-8"/>
+        <display value="Neutrophils NFr Bld Auto"/>
+      </coding>
+      <text value="Neutrophils NFr Bld Auto"/>
+    </code>
+    <valueQuantity>
+      <value value="40.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="37.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="67.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1722-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1723-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RBC morph Bld = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="6742-1"/>
+        <display value="RBC morph Bld"/>
+      </coding>
+      <text value="RBC morph Bld"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1723-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1724-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 89 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="89.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1724-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1725-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 86 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="86.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1725-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1726-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 82 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="82.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1726-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1727-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose Bld-mCnc = 76 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="76.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1727-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1728-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: WBC # Bld = 17.7 10*3/uL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="26464-8"/>
+        <display value="WBC # Bld"/>
+      </coding>
+      <text value="WBC # Bld"/>
+    </code>
+    <valueQuantity>
+      <value value="17.7"/>
+      <unit value="10*3/uL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="9.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="37.0"/>
+        <unit value="10*3/uL"/>
+        <code value="10*3/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1728-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1729-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: RBC # Bld Auto = 4.58 10*6/uL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="789-8"/>
+        <display value="RBC # Bld Auto"/>
+      </coding>
+      <text value="RBC # Bld Auto"/>
+    </code>
+    <valueQuantity>
+      <value value="4.58"/>
+      <unit value="10*6/uL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="4.1"/>
+        <unit value="10*6/uL"/>
+        <code value="10*6/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.1"/>
+        <unit value="10*6/uL"/>
+        <code value="10*6/uL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1729-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1730-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Glucose SerPl-mCnc = 62 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2345-7"/>
+        <display value="Glucose SerPl-mCnc"/>
+      </coding>
+      <text value="Glucose SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="62.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1730-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1731-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Bilirub SerPl-mCnc = 6.9 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="6.9"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1731-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1732-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Bilirub SerPl-mCnc = 5.4 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="5.4"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1732-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1733-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: BUN SerPl-mCnc = 10 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="3094-0"/>
+        <display value="BUN SerPl-mCnc"/>
+      </coding>
+      <text value="BUN SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="10.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="5.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="20.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1733-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1734-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Slight&#39;, &#39;Moderate&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Polychromasia Bld Ql Smear = Slight </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10378-8"/>
+        <display value="Polychromasia Bld Ql Smear"/>
+      </coding>
+      <text value="Polychromasia Bld Ql Smear"/>
+    </code>
+    <valueString value="Slight"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1734-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1735-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Ovalocytes Bld Ql Smear = Few </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="774-0"/>
+        <display value="Ovalocytes Bld Ql Smear"/>
+      </coding>
+      <text value="Ovalocytes Bld Ql Smear"/>
+    </code>
+    <valueString value="Few"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1735-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1736-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;None&#39;, &#39;Few&#39;, &#39;Many&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Schistocytes Bld Ql Smear = None </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="800-3"/>
+        <display value="Schistocytes Bld Ql Smear"/>
+      </coding>
+      <text value="Schistocytes Bld Ql Smear"/>
+    </code>
+    <valueString value="None"/>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1736-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1737-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-05: Variant Lymphs NFr Bld Manual = 3 %</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="735-1"/>
+        <display value="Variant Lymphs NFr Bld Manual"/>
+      </coding>
+      <text value="Variant Lymphs NFr Bld Manual"/>
+    </code>
+    <valueQuantity>
+      <value value="3.0"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-05"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="0.0"/>
+        <unit value="%"/>
+        <code value="%"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1737-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1738-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Bilirub SerPl-mCnc = 10.2 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="10.2"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1738-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1739-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Bilirub SerPl-mCnc = 10.1 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="10.1"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1739-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1740-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Glucose Bld-mCnc = 60 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="60.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1740-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1741-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-06: Glucose Bld-mCnc = 93 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="93.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-06"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1741-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1742-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+      <text value="Biotinidase DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2005-07-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1742-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1743-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Phe DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+      <text value="Phe DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2005-07-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1743-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1744-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Bilirub SerPl-mCnc = 8.6 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="8.6"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1744-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1745-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-07: Bilirub SerPl-mCnc = 8.3 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="8.3"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-07"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="7.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1745-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1746-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-08: Bilirub SerPl-mCnc = 11.3 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="11.3"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1746-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1747-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-08: Bilirub SerPl-mCnc = 11 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="11.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-08"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1747-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1748-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2005-07-10: Bilirub SerPl-mCnc = 10.5 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="1975-2"/>
+        <display value="Bilirub SerPl-mCnc"/>
+      </coding>
+      <text value="Bilirub SerPl-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="10.5"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2005-07-10"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="6.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1748-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-114"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 50 MG/ML Oral Suspension (rxnorm: 239191)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="239191"/>
+        <display value="Amoxicillin 50 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 50 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2005-11-28"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="10"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="10 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-114"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-115"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops] (rxnorm: 352027)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="352027"/>
+        <display value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
+    </coding>
+    <text value="carbinoxamine 1 MG/ML / Dextromethorphan 4 MG/ML / Pseudoephedrine 15 MG/ML Oral Solution [Carbofed DM Drops]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+    </timing>
+    <text value=""/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="0"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-115"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-116"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Metoclopramide 1 MG/ML Oral Solution (rxnorm: 104884)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="104884"/>
+        <display value="Metoclopramide 1 MG/ML Oral Solution"/>
+    </coding>
+    <text value="Metoclopramide 1 MG/ML Oral Solution"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2006-01-08"/>
+        </boundsPeriod>
+        <frequency value="4"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="4"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="4 mL qid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-116"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-117"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Ranitidine 15 MG/ML Oral Solution [Zantac] (rxnorm: 755272)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="755272"/>
+        <display value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
+    </coding>
+    <text value="Ranitidine 15 MG/ML Oral Solution [Zantac]"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2006-01-08"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="6"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="6 mL bid"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-117"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-118"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 80 MG/ML Oral Suspension (rxnorm: 308189)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="308189"/>
+        <display value="Amoxicillin 80 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 80 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2006-08-31"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="7"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="7 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-118"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-119"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Mupirocin 0.02 MG/MG Topical Ointment (rxnorm: 106346)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="106346"/>
+        <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+    </coding>
+    <text value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+    </timing>
+    <asNeededBoolean value="true"/>
+    
+    <text value="apply nasally prn"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value=""/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value=""/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="30"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-119"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-373"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 22 tablets = 10 day supply of Mupirocin 0.02 MG/MG Topical Ointment
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-119"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="22"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="106346"/>
+        <display value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+    </coding>
+    <text value="Mupirocin 0.02 MG/MG Topical Ointment"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-04-06"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-373"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationOrder>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationOrder-120"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension (rxnorm: 617423)
+    </div>
+  </text>
+
+  <status value="active" />
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617423"/>
+        <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <dosageInstruction>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2009-06-17"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnits value="d"/>
+      </repeat>
+      
+    </timing>
+    <doseQuantity>
+      <value value="7"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </doseQuantity>
+    
+    <text value="7 mL bid x 10 days"/>
+  </dosageInstruction>
+  <dispenseRequest>
+     <numberOfRepeatsAllowed value="1"/>
+     
+     <quantity>
+        <value value="1"/>
+        <unit value="mL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+     </quantity>
+     
+     <expectedSupplyDuration>
+        <value value="10"/>
+        <unit value="days"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="d"/>
+     </expectedSupplyDuration>
+     
+  </dispenseRequest>
+  
+</MedicationOrder>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationOrder/smart-MedicationOrder-120"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+<MedicationDispense>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-MedicationDispense-379"/>
+  <!--  insert contents here  -->
+   <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      Dispensed 100 tablets = 10 day supply of Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension
+    </div>
+  </text>
+
+  <status value="completed"/>
+
+  <patient>
+    <reference value="Patient/smart-1134281"/>
+  </patient>
+
+  <authorizingPrescription>
+    <reference value="MedicationOrder/smart-MedicationOrder-120"/>
+  </authorizingPrescription>
+
+  <quantity>
+      <value value="100"/>
+      <unit value="tablets"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="{tablets}"/>
+  </quantity>
+
+  <daysSupply>
+      <value value="10" />
+      <unit value="days" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="d" />
+  </daysSupply>
+
+  <medicationCodeableConcept>
+    <coding>
+        <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+        <code value="617423"/>
+        <display value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+    </coding>
+    <text value="Amoxicillin 40 MG/ML / Clavulanate 5.7 MG/ML Oral Suspension"/>
+  </medicationCodeableConcept>
+
+  <whenHandedOver value="2009-06-17"/>
+
+</MedicationDispense>
+
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="MedicationDispense/smart-MedicationDispense-379"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-222"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Neonatal jaundice associated with preterm delivery</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="73749009"/>
+        <display value="Neonatal jaundice associated with preterm delivery"/>
+      </coding>
+      <text value="Neonatal jaundice associated with preterm delivery"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-04"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-222"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-223"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Perinatal cyanotic attacks</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="95617006"/>
+        <display value="Perinatal cyanotic attacks"/>
+      </coding>
+      <text value="Perinatal cyanotic attacks"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-04"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-223"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-224"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Respiratory distress syndrome in the newborn</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="46775006"/>
+        <display value="Respiratory distress syndrome in the newborn"/>
+      </coding>
+      <text value="Respiratory distress syndrome in the newborn"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-04"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-224"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-225"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Scalp injury</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="206200000"/>
+        <display value="Scalp injury"/>
+      </coding>
+      <text value="Scalp injury"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-04"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-225"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-226"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-04"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-226"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-227"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Neonatal jaundice</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="387712008"/>
+        <display value="Neonatal jaundice"/>
+      </coding>
+      <text value="Neonatal jaundice"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-08"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-227"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-228"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Jaundice</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="18165001"/>
+        <display value="Jaundice"/>
+      </coding>
+      <text value="Jaundice"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-07-10"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-228"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-229"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54150009"/>
+        <display value="Acute upper respiratory infection"/>
+      </coding>
+      <text value="Acute upper respiratory infection"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2005-11-28"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-229"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-230"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Gastroesophageal reflux disease</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="235595009"/>
+        <display value="Gastroesophageal reflux disease"/>
+      </coding>
+      <text value="Gastroesophageal reflux disease"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2006-02-09"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-230"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-231"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65363002"/>
+        <display value="Otitis media"/>
+      </coding>
+      <text value="Otitis media"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2006-08-31"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-231"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-232"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Other and unspecified noninfectious gastroenteritis and colitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="25374005"/>
+        <display value="Other and unspecified noninfectious gastroenteritis and colitis"/>
+      </coding>
+      <text value="Other and unspecified noninfectious gastroenteritis and colitis"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2006-12-14"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-232"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-233"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute sinusitis</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-1134281"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Acute sinusitis"/>
+      </coding>
+      <text value="Acute sinusitis"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2009-06-17"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-233"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Immunization>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-Immunization-10"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">varicella virus vaccine</div>
+        </text>
+        <patient>
+            <reference value="Patient/smart-1134281"/>
+        </patient>
+        <date value="2009-03-11"/>
+        <vaccineCode>
+            <coding>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="21"/>
+                <display value="varicella virus vaccine"/>
+            </coding>
+        </vaccineCode>
+        <reported value="false"/>
+        <wasNotGiven value="true"/>
+        <explanation>
+            <reasonNotGiven>
+            <coding>
+                <system value="http://smarthealthit.org/terms/codes/ImmunizationRefusalReason#"/>
+                <code value="documentedImmunityOrPreviousDisease"/>
+                <display value="Documented immunity or previous disease"/>
+		</coding>
+            </reasonNotGiven>
+        </explanation>
+    
+    </Immunization>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Immunization/smart-Immunization-10"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <Immunization>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-Immunization-11"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">hepatitis A and hepatitis B vaccine</div>
+        </text>
+        <patient>
+            <reference value="Patient/smart-1134281"/>
+        </patient>
+        <date value="2005-11-11"/>
+        <vaccineCode>
+            <coding>
+                <system value="http://www2a.cdc.gov/vaccines/IIS/IISStandards/vaccines.asp?rpt=cvx"/>
+                <code value="104"/>
+                <display value="hepatitis A and hepatitis B vaccine"/>
+            </coding>
+        </vaccineCode>
+        <reported value="false"/>
+        <wasNotGiven value="false"/>
+    </Immunization>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Immunization/smart-Immunization-11"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="smart-Observation-9-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Never smoker</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="social-history"/>
+          <display value="Social History"/>
+      </coding>
+      <text value="Social History"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+      <text value="Tobacco smoking status"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="266919005"/>
+        <display value="Never smoker"/>
+      </coding>
+      <text value="Never smoker"/>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-1134281"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-9-smokingstatus"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-List-22"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+            <text value="Allergy"/>
+        </code>
+        <subject>
+          <reference value="Patient/smart-1134281"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+            <text value="Nil Known"/>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="List/smart-List-22"/>
+  </request>
+</entry>
+
+</Bundle>

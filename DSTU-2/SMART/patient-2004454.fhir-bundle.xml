@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-2004454"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Kevin Lee</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="2004454"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Lee"/>
+      <given value="Kevin"/>
+      <given value="H."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.lee@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="2007-07-15" />
+    <address>
+      <use value="home"/>
+      <line value="80 Mill StApt 21"/>
+      <city value="Sand Springs"/>
+      <state value="OK"/>
+      <postalCode value="74063"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-2004454"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1836-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-10: Glucose Bld-mCnc = 60 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2339-0"/>
+        <display value="Glucose Bld-mCnc"/>
+      </coding>
+      <text value="Glucose Bld-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="60.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2008-07-10"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="40.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="109.0"/>
+        <unit value="mg/dL"/>
+        <code value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1836-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1837-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+      <text value="Biotinidase DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1837-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1838-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-07-11: Phe DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+      <text value="Phe DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2008-07-11"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1838-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1839-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Phe DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="29571-7"/>
+        <display value="Phe DBS Ql"/>
+      </coding>
+      <text value="Phe DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1839-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1840-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Prolactin SerPl 3rd IS-mCnc = 86.5 ng/mL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="49220-7"/>
+        <display value="Prolactin SerPl 3rd IS-mCnc"/>
+      </coding>
+      <text value="Prolactin SerPl 3rd IS-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="86.5"/>
+      <unit value="ng/mL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+    <referenceRange>
+      <meaning>
+        <coding>
+         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <code value="normal"/>
+         <display value="Normal Range"/>
+       </coding>
+       <text value="Normal Range"/>
+      </meaning>
+      <low>
+        <value value="2.0"/>
+        <unit value="ng/mL"/>
+        <code value="ng/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </low>
+      <high>
+        <value value="15.0"/>
+        <unit value="ng/mL"/>
+        <code value="ng/mL"/>
+        <system value="http://unitsofmeasure.org"/>
+      </high>
+    </referenceRange>
+    
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1840-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-1841-lab"/>
+    <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/labs#value-range" >
+        <valueString value='[&#39;Normal&#39;, &#39;Abnormal&#39;]'/>
+    </extension>
+    
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2008-08-01: Biotinidase DBS Ql = Normal </div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="38478-4"/>
+        <display value="Biotinidase DBS Ql"/>
+      </coding>
+      <text value="Biotinidase DBS Ql"/>
+    </code>
+    <valueString value="Normal"/>
+    
+    <effectiveDateTime value="2008-08-01"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1841-lab"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-295"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Single liveborn, born in hospital, delivered without mention of cesarean section</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="442311008"/>
+        <display value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+      </coding>
+      <text value="Single liveborn, born in hospital, delivered without mention of cesarean section"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2008-07-09"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-295"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-296"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Abnormal weight loss</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="267024001"/>
+        <display value="Abnormal weight loss"/>
+      </coding>
+      <text value="Abnormal weight loss"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2008-07-14"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-296"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-297"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Diaper rash</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="91487003"/>
+        <display value="Diaper rash"/>
+      </coding>
+      <text value="Diaper rash"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2008-08-01"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-297"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-298"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Acute upper respiratory infection</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54150009"/>
+        <display value="Acute upper respiratory infection"/>
+      </coding>
+      <text value="Acute upper respiratory infection"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2009-03-02"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-298"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-299"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Otitis media</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="65363002"/>
+        <display value="Otitis media"/>
+      </coding>
+      <text value="Otitis media"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2009-03-02"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-299"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-300"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Nausea and vomiting</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="16932000"/>
+        <display value="Nausea and vomiting"/>
+      </coding>
+      <text value="Nausea and vomiting"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2009-08-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-300"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+  <Condition>
+  <meta>
+      <tag>
+          <system value="https://smarthealthit.org/tags"/>
+          <code value="smart-8-2017"/>
+      </tag>
+  </meta>
+  <id value="smart-Condition-301"/>
+    <text>
+     <status value="generated"/>
+     <div xmlns="http://www.w3.org/1999/xhtml">Viral disease</div>   
+   </text>
+    <patient>
+      <reference value="Patient/smart-2004454"/>
+    </patient>
+    <code> 
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34014006"/>
+        <display value="Viral disease"/>
+      </coding>
+      <text value="Viral disease"/>
+    </code>
+   <clinicalStatus value="active"/>
+   <verificationStatus value="confirmed"/>
+   <onsetDateTime value="2009-08-07"/>
+   
+  </Condition>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Condition/smart-Condition-301"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+  <id value="smart-Observation-1-smokingstatus"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">Tobacco smoking status: Current some day smoker</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="social-history"/>
+          <display value="Social History"/>
+      </coding>
+      <text value="Social History"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="72166-2"/>
+        <display value="Tobacco smoking status"/>
+      </coding>
+      <text value="Tobacco smoking status"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="428041000124106"/>
+        <display value="Current some day smoker"/>
+      </coding>
+      <text value="Current some day smoker"/>
+    </valueCodeableConcept>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-1-smokingstatus"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-2004454-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2007-07-15: Gestational age at birth = 30.6 weeks</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="exam"/>
+          <display value="Exam"/>
+      </coding>
+      <text value="Exam"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+      <text value="Gestational age at birth"/>
+    </code>
+    <valueQuantity>
+      <value value="30.6"/>
+      <unit value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2007-07-15"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-2004454"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-2004454-gestage"/>
+  </request>
+</entry>
+  <entry>
+  <resource>
+    
+    
+    <List>
+        <meta>
+            <tag>
+                <system value="https://smarthealthit.org/tags"/>
+                <code value="smart-8-2017"/>
+            </tag>
+        </meta>
+  <id value="smart-List-45"/>
+        <text>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">No known allergies</div>
+        </text>
+        <code>
+            <coding>
+               <system value="http://loinc.org/"/>
+               <code value="52473-6"/>
+               <display value="Allergy"/>
+            </coding>
+            <text value="Allergy"/>
+        </code>
+        <subject>
+          <reference value="Patient/smart-2004454"/>
+        </subject>
+        <date value="2000"/>
+        <mode value="snapshot"/>
+        <emptyReason>
+            <coding>
+                <system value="http://hl7.org/fhir/list-empty-reason"/>
+                <code value="nilknown"/>
+                <display value="Nil Known"/>
+            </coding>
+            <text value="Nil Known"/>
+        </emptyReason>
+    </List>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="List/smart-List-45"/>
+  </request>
+</entry>
+
+</Bundle>

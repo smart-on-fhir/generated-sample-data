@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <type value="transaction"/>
+
+  <entry>
+  <resource>
+    
+    
+  <Patient>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+    <id value="smart-7321938"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Billie Himston</p>
+      </div>
+    </text>
+    <identifier>
+      <use value="usual"/>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/v2/0203"/>
+          <code value="MR"/>
+          <display value="Medical record number"/>
+        </coding>
+        <text value="Medical record number"/>
+      </type>
+      <system value="http://hospital.smarthealthit.org"/>
+      <value value="7321938"/>
+    </identifier>
+    <name>
+      <use value="official"/>
+      <family value="Himston"/>
+      <given value="Billie"/>
+      <given value="H."/>
+    </name>
+    <telecom>
+      <system value="email"/>
+      <value value="billi.himston@example.com"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="2010-12-16" />
+    <address>
+      <use value="home"/>
+      <line value="80 Mill StApt 21"/>
+      <city value="Sand Springs"/>
+      <state value="OK"/>
+      <postalCode value="74063"/>
+      <country value="USA"/>
+    </address>
+    <active value="true"/>
+  </Patient>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Patient/smart-7321938"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3508-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-16T06:39:00: Bilirub Skin-mCnc = 4 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="4.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-16T06:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3508-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3509-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-17T06:39:00: Bilirub Skin-mCnc = 14 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="14.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-17T06:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3509-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3510-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-17T12:39:00: Bilirub Skin-mCnc = 13.2 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="13.2"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-17T12:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3510-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3511-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-17T18:39:00: Bilirub Skin-mCnc = 12 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="12.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-17T18:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3511-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3512-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-18T18:39:00: Bilirub Skin-mCnc = 11 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="11.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-18T18:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3512-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-3513-lab"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-20T18:39:00: Bilirub Skin-mCnc = 8 mg/dL</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+      </coding>
+      <text value="Laboratory"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="58941-6"/>
+        <display value="Bilirub Skin-mCnc"/>
+      </coding>
+      <text value="Bilirub Skin-mCnc"/>
+    </code>
+    <valueQuantity>
+      <value value="8.0"/>
+      <unit value="mg/dL"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value=""/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-20T18:39:00"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-3513-lab"/>
+  </request>
+</entry>
+<entry>
+  <resource>
+    
+    
+  <Observation>
+    <meta>
+        <tag>
+            <system value="https://smarthealthit.org/tags"/>
+            <code value="smart-8-2017"/>
+        </tag>
+    </meta>
+  <id value="smart-Observation-7321938-gestage"/>
+    <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">2010-12-16: Gestational age at birth = 30.6 weeks</div>
+    </text>
+    <category>
+      <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="exam"/>
+          <display value="Exam"/>
+      </coding>
+      <text value="Exam"/>
+    </category>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="18185-9"/>
+        <display value="Gestational age at birth"/>
+      </coding>
+      <text value="Gestational age at birth"/>
+    </code>
+    <valueQuantity>
+      <value value="30.6"/>
+      <unit value="weeks"/>
+      <system value="http://unitsofmeasure.org" />
+      <code value="wk"/>
+    </valueQuantity>
+    
+    <effectiveDateTime value="2010-12-16"/>
+    <status value="final"/>
+    <subject>
+      <reference value="Patient/smart-7321938"/>
+    </subject>
+  </Observation>
+  
+  </resource>
+  <request>
+    <method value="PUT"/>
+    <url value="Observation/smart-Observation-7321938-gestage"/>
+  </request>
+</entry>
+
+</Bundle>
