@@ -9,3 +9,5 @@ cd path/to/fhir-uploader
 node . -d my/input/directory -S http://my.fhir/server
 ```
 Just make sure that the `STU-3` directory is uploaded to stu3 server and the `DSTU-2` goes to dstu2 one.
+
+For **XML** bundle files we have written another simple uploader tool: https://github.com/smart-on-fhir/xml-bundle-uploader
