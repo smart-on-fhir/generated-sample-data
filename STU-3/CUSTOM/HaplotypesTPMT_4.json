@@ -1,0 +1,60 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "request": {
+                "method": "PUT",
+                "url": "Observation/HaplotypesTPMT_4"
+            },
+            "resource": {
+                "resourceType": "Observation",
+                "id": "HaplotypesTPMT_4",
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://www.genenames.org",
+                                    "version": "GRCh38.p7",
+                                    "code": "12014",
+                                    "display": "TPMT"
+                                }
+                            ],
+                            "text": "Patient test results for TPMT"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
+                        "valueCodeableConcept": {
+                            "text": "*1"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
+                        "valueCodeableConcept": {
+                            "text": "*2"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": {
+                    "text": "genetics"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "84413-4",
+                            "display": "Genotype display name"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/smart-1482713"
+                }
+            }
+        }
+    ]
+}
