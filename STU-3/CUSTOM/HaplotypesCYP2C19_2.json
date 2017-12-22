@@ -1,61 +1,48 @@
 {
-    "resourceType": "Bundle",
-    "type": "transaction",
-    "entry": [
+    "resourceType": "Observation",
+    "id": "HaplotypesCYP2C19-2",
+    "extension": [
         {
-            "request": {
-                "method": "PUT",
-                "url": "Observation/HaplotypesCYP2C19-2"
-            },
-            "resource": {
-                "resourceType": "Observation",
-                "id": "HaplotypesCYP2C19-2",
-                "extension": [
+            "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
+            "valueCodeableConcept": {
+                "coding": [
                     {
-                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
-                        "valueCodeableConcept": {
-                            "coding": [
-                                {
-                                    "system": "http://www.genenames.org",
-                                    "version": "GRCh38.p7",
-                                    "code": "2621",
-                                    "display": "CYP2C19"
-                                }
-                            ],
-                            "text": "Patient test results for CYP2C19"
-                        }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
-                        "valueCodeableConcept": {
-                            "text": "*2"
-                        }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
-                        "valueCodeableConcept": {
-                            "text": "*3"
-                        }
+                        "system": "http://www.genenames.org",
+                        "version": "GRCh38.p7",
+                        "code": "2621",
+                        "display": "CYP2C19"
                     }
                 ],
-                "status": "final",
-                "category": {
-                    "text": "genetics"
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://loinc.org",
-                            "code": "84413-4",
-                            "display": "Genotype display name"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/smart-1551992"
-                }
-            },
-            "fullUrl": "/Observation/HaplotypesCYP2C19-2"
+                "text": "Patient test results for CYP2C19"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
+            "valueCodeableConcept": {
+                "text": "*2"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
+            "valueCodeableConcept": {
+                "text": "*3"
+            }
         }
-    ]
+    ],
+    "status": "final",
+    "category": {
+        "text": "genetics"
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "84413-4",
+                "display": "Genotype display name"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/smart-1551992"
+    }
 }
