@@ -201,11 +201,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -219,7 +221,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-06-04",
+                "effectiveDateTime": "2016-07-12",
                 "id": "smart-smokingstatus-47",
                 "identifier": [
                     {
@@ -228,9 +230,11 @@
                         "value": "smart-47"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {

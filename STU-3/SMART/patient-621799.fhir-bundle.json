@@ -8,11 +8,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -35,31 +37,37 @@
                         "value": "smart-1982-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 160
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 10
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 160
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 10
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -94,11 +102,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -121,31 +131,37 @@
                         "value": "smart-1983-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 200
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 100
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 200
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 100
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -180,11 +196,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -207,31 +225,37 @@
                         "value": "smart-1984-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 450
-                    },
-                    "low": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 150
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 450
+                        },
+                        "low": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 150
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -266,11 +290,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -293,31 +319,37 @@
                         "value": "smart-1985-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 8
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 1
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 8
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 1
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -352,11 +384,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -379,31 +413,37 @@
                         "value": "smart-1986-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 8
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 1
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 8
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 1
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -438,11 +478,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -465,31 +507,37 @@
                         "value": "smart-1987-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.6
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.1
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.6
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.1
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -524,11 +572,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -551,31 +601,37 @@
                         "value": "smart-1988-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.6
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.1
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.6
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.1
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -610,11 +666,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -637,31 +695,37 @@
                         "value": "smart-1989-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.6
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 0.1
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.6
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 0.1
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -696,11 +760,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -723,31 +789,37 @@
                         "value": "smart-1990-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 259
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 20
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 259
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 20
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -782,11 +854,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -809,31 +883,37 @@
                         "value": "smart-1991-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 259
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 20
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 259
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 20
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -868,11 +948,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -895,31 +977,37 @@
                         "value": "smart-1992-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 259
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 20
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 259
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 20
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -954,11 +1042,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -981,31 +1071,37 @@
                         "value": "smart-1993-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 55
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 35
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 55
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 35
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1040,11 +1136,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1067,31 +1165,37 @@
                         "value": "smart-1994-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "fL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "fL",
-                        "value": 9.5
-                    },
-                    "low": {
-                        "code": "fL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "fL",
-                        "value": 6
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "fL",
+                            "value": 9.5
+                        },
+                        "low": {
+                            "code": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "fL",
+                            "value": 6
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1126,11 +1230,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1153,31 +1259,37 @@
                         "value": "smart-1995-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 10.5
-                    },
-                    "low": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 4
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 10.5
+                        },
+                        "low": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 4
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1212,11 +1324,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1239,31 +1353,37 @@
                         "value": "smart-1996-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "10*6/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*6/uL",
-                        "value": 6
-                    },
-                    "low": {
-                        "code": "10*6/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*6/uL",
-                        "value": 4.7
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "10*6/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*6/uL",
+                            "value": 6
+                        },
+                        "low": {
+                            "code": "10*6/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*6/uL",
+                            "value": 4.7
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1298,11 +1418,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1325,31 +1447,37 @@
                         "value": "smart-1997-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 110
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 70
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 110
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 70
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1384,11 +1512,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1411,31 +1541,37 @@
                         "value": "smart-1998-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 20
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 9
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 20
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 9
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1470,11 +1606,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1497,31 +1635,37 @@
                         "value": "smart-1999-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 1.3
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 0.2
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 1.3
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 0.2
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1556,11 +1700,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1583,31 +1729,37 @@
                         "value": "smart-2000-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 59
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 17
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 59
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 17
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1642,11 +1794,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1669,31 +1823,37 @@
                         "value": "smart-2001-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 145
-                    },
-                    "low": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 134
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 145
+                        },
+                        "low": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 134
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1728,11 +1888,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1755,31 +1917,37 @@
                         "value": "smart-2002-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 1.5
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 0.8
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 1.5
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 0.8
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1814,11 +1982,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1841,31 +2011,37 @@
                         "value": "smart-2003-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 72
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 21
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 72
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 21
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1900,11 +2076,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -1927,31 +2105,37 @@
                         "value": "smart-2004-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 5.5
-                    },
-                    "low": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 3.6
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 5.5
+                        },
+                        "low": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 3.6
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -1986,11 +2170,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2013,31 +2199,37 @@
                         "value": "smart-2005-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 107
-                    },
-                    "low": {
-                        "code": "mmol/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mmol/L",
-                        "value": 98
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 107
+                        },
+                        "low": {
+                            "code": "mmol/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mmol/L",
+                            "value": 98
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2072,11 +2264,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2109,9 +2303,11 @@
                         "value": "smart-2006-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2141,11 +2337,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2168,9 +2366,11 @@
                         "value": "smart-2007-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2181,9 +2381,7 @@
                     "status": "generated"
                 },
                 "valueQuantity": {
-                    "code": "",
                     "system": "http://unitsofmeasure.org",
-                    "unit": "",
                     "value": 1.02
                 },
                 "meta": {
@@ -2205,11 +2403,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2232,31 +2432,37 @@
                         "value": "smart-2008-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "[pH]",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "[pH]",
-                        "value": 9
-                    },
-                    "low": {
-                        "code": "[pH]",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "[pH]",
-                        "value": 5
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "[pH]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "[pH]",
+                            "value": 9
+                        },
+                        "low": {
+                            "code": "[pH]",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "[pH]",
+                            "value": 5
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2291,11 +2497,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2318,31 +2526,37 @@
                         "value": "smart-2009-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 450
-                    },
-                    "low": {
-                        "code": "10*3/uL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "10*3/uL",
-                        "value": 150
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 450
+                        },
+                        "low": {
+                            "code": "10*3/uL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "10*3/uL",
+                            "value": 150
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2377,11 +2591,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2404,31 +2620,37 @@
                         "value": "smart-2010-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "fL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "fL",
-                        "value": 100
-                    },
-                    "low": {
-                        "code": "fL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "fL",
-                        "value": 78
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "fL",
+                            "value": 100
+                        },
+                        "low": {
+                            "code": "fL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "fL",
+                            "value": 78
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2463,11 +2685,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2490,31 +2714,37 @@
                         "value": "smart-2011-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "pg",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "pg",
-                        "value": 31
-                    },
-                    "low": {
-                        "code": "pg",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "pg",
-                        "value": 27
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "pg",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "pg",
+                            "value": 31
+                        },
+                        "low": {
+                            "code": "pg",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "pg",
+                            "value": 27
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2549,11 +2779,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2576,31 +2808,37 @@
                         "value": "smart-2012-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 36
-                    },
-                    "low": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 32
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 36
+                        },
+                        "low": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 32
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2635,11 +2873,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2662,31 +2902,37 @@
                         "value": "smart-2013-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 126
-                    },
-                    "low": {
-                        "code": "U/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "U/L",
-                        "value": 38
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 126
+                        },
+                        "low": {
+                            "code": "U/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "U/L",
+                            "value": 38
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2721,11 +2967,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2748,31 +2996,37 @@
                         "value": "smart-2014-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 8.2
-                    },
-                    "low": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 6.3
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 8.2
+                        },
+                        "low": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 6.3
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2807,11 +3061,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2834,31 +3090,37 @@
                         "value": "smart-2015-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 5
-                    },
-                    "low": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 3.5
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 5
+                        },
+                        "low": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 3.5
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2893,11 +3155,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -2920,31 +3184,37 @@
                         "value": "smart-2016-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "%",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "%",
-                        "value": 14
-                    },
-                    "low": {
-                        "code": "%",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "%",
-                        "value": 11.5
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "%",
+                            "value": 14
+                        },
+                        "low": {
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "%",
+                            "value": 11.5
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2979,11 +3249,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -3006,31 +3278,37 @@
                         "value": "smart-2017-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 18
-                    },
-                    "low": {
-                        "code": "g/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "g/dL",
-                        "value": 13.5
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 18
+                        },
+                        "low": {
+                            "code": "g/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "g/dL",
+                            "value": 13.5
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3065,11 +3343,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -3092,31 +3372,37 @@
                         "value": "smart-2018-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 10.2
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 8.4
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 10.2
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 8.4
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3151,11 +3437,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -3178,31 +3466,37 @@
                         "value": "smart-2019-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mcU/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mcU/mL",
-                        "value": 5.5
-                    },
-                    "low": {
-                        "code": "mcU/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mcU/mL",
-                        "value": 0.4
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mcU/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mcU/mL",
+                            "value": 5.5
+                        },
+                        "low": {
+                            "code": "mcU/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mcU/mL",
+                            "value": 0.4
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3237,11 +3531,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -3264,31 +3560,37 @@
                         "value": "smart-2020-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/L",
-                        "value": 3
-                    },
-                    "low": {
-                        "code": "mg/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/L",
-                        "value": 0
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/L",
+                            "value": 3
+                        },
+                        "low": {
+                            "code": "mg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/L",
+                            "value": 0
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3830,11 +4132,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -3848,7 +4152,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-08-05",
+                "effectiveDateTime": "2016-12-10",
                 "id": "smart-smokingstatus-40",
                 "identifier": [
                     {
@@ -3857,9 +4161,11 @@
                         "value": "smart-40"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71081332"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71081332"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -3914,19 +4220,23 @@
                 "patient": {
                     "reference": "Patient/smart-621799"
                 },
-                "reaction": {
-                    "manifestation": {
-                        "coding": [
+                "reaction": [
+                    {
+                        "manifestation": [
                             {
-                                "code": "271807003",
-                                "display": "skin rash",
-                                "system": "http://snomed.info/sct"
+                                "coding": [
+                                    {
+                                        "code": "271807003",
+                                        "display": "skin rash",
+                                        "system": "http://snomed.info/sct"
+                                    }
+                                ],
+                                "text": "skin rash"
                             }
                         ],
-                        "text": "skin rash"
-                    },
-                    "severity": "mild"
-                },
+                        "severity": "mild"
+                    }
+                ],
                 "resourceType": "AllergyIntolerance",
                 "text": {
                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sensitivity to sulfonamide antibacterial</div>",
@@ -3968,19 +4278,23 @@
                 "patient": {
                     "reference": "Patient/smart-621799"
                 },
-                "reaction": {
-                    "manifestation": {
-                        "coding": [
+                "reaction": [
+                    {
+                        "manifestation": [
                             {
-                                "code": "39579001",
-                                "display": "Anaphylaxis",
-                                "system": "http://snomed.info/sct"
+                                "coding": [
+                                    {
+                                        "code": "39579001",
+                                        "display": "Anaphylaxis",
+                                        "system": "http://snomed.info/sct"
+                                    }
+                                ],
+                                "text": "Anaphylaxis"
                             }
                         ],
-                        "text": "Anaphylaxis"
-                    },
-                    "severity": "severe"
-                },
+                        "severity": "severe"
+                    }
+                ],
                 "resourceType": "AllergyIntolerance",
                 "text": {
                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sensitivity to peanut</div>",

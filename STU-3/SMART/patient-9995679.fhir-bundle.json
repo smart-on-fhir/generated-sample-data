@@ -16,9 +16,11 @@
                 ],
                 "birthDate": "1989-10-26",
                 "gender": "male",
-                "generalPractitioner": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "id": "smart-9995679",
                 "identifier": [
                     {
@@ -437,39 +439,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -481,11 +491,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -501,9 +513,11 @@
                 },
                 "effectiveDateTime": "2007-04-18",
                 "id": "smart-2",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -531,39 +545,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -575,11 +597,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -598,27 +622,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-3",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -646,39 +676,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -690,11 +728,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -713,27 +753,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-4",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -761,39 +807,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368208006",
-                        "display": "left arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368208006",
+                            "display": "left arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "left arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -805,11 +859,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -828,27 +884,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "33586001",
-                                "display": "sitting",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "33586001",
+                                    "display": "sitting",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "sitting"
                         }
                     }
                 ],
                 "id": "smart-5",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -876,39 +938,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368208006",
-                        "display": "left arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368208006",
+                            "display": "left arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "left arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -920,11 +990,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -943,27 +1015,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "33586001",
-                                "display": "sitting",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "33586001",
+                                    "display": "sitting",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "sitting"
                         }
                     }
                 ],
                 "id": "smart-6",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -991,39 +1069,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1035,11 +1121,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1055,9 +1143,11 @@
                 },
                 "effectiveDateTime": "2009-06-10",
                 "id": "smart-7",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1085,39 +1175,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "61396006",
-                        "display": "left thigh",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "61396006",
+                            "display": "left thigh",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "left thigh"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1129,11 +1227,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1152,27 +1252,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-8",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1200,39 +1306,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368208006",
-                        "display": "left arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368208006",
+                            "display": "left arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "left arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1244,11 +1358,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1267,27 +1383,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-9",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1315,39 +1437,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1359,11 +1489,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1382,27 +1514,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-10",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1430,39 +1568,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1474,11 +1620,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1497,27 +1645,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-11",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1545,39 +1699,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1589,11 +1751,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1612,27 +1776,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-12",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1660,39 +1830,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1704,11 +1882,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1727,27 +1907,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-13",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1775,39 +1961,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1819,11 +2013,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1842,27 +2038,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "40199007",
-                                "display": "supine",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "40199007",
+                                    "display": "supine",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "supine"
                         }
                     }
                 ],
                 "id": "smart-14",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1890,39 +2092,47 @@
             },
             "resource": {
                 "bodySite": {
-                    "coding": {
-                        "code": "368209003",
-                        "display": "right arm",
-                        "system": "http://snomed.info/sct"
-                    },
+                    "coding": [
+                        {
+                            "code": "368209003",
+                            "display": "right arm",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
                     "text": "right arm"
                 },
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1934,11 +2144,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1957,27 +2169,33 @@
                     {
                         "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
                         "valueCodeableConcept": {
-                            "coding": {
-                                "code": "33586001",
-                                "display": "sitting",
-                                "system": "http://snomed.info/sct"
-                            },
+                            "coding": [
+                                {
+                                    "code": "33586001",
+                                    "display": "sitting",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
                             "text": "sitting"
                         }
                     }
                 ],
                 "id": "smart-15",
                 "method": {
-                    "coding": {
-                        "code": "machine",
-                        "display": "machine",
-                        "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
-                    },
+                    "coding": [
+                        {
+                            "code": "machine",
+                            "display": "machine",
+                            "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#"
+                        }
+                    ],
                     "text": "machine"
                 },
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -2006,11 +2224,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2036,9 +2256,11 @@
                         "value": "smart-1082-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2073,11 +2295,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2103,9 +2327,11 @@
                         "value": "smart-1083-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2140,11 +2366,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2170,9 +2398,11 @@
                         "value": "smart-1084-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2207,11 +2437,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2237,9 +2469,11 @@
                         "value": "smart-1085-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2274,11 +2508,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2304,9 +2540,11 @@
                         "value": "smart-1086-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2341,11 +2579,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2371,9 +2611,11 @@
                         "value": "smart-1087-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2408,11 +2650,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2438,9 +2682,11 @@
                         "value": "smart-1088-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2475,11 +2721,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2505,9 +2753,11 @@
                         "value": "smart-1089-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2542,11 +2792,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2572,9 +2824,11 @@
                         "value": "smart-1090-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2609,11 +2863,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2639,9 +2895,11 @@
                         "value": "smart-1091-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2676,11 +2934,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2706,9 +2966,11 @@
                         "value": "smart-1092-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2743,11 +3005,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2773,9 +3037,11 @@
                         "value": "smart-1093-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2810,11 +3076,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2840,9 +3108,11 @@
                         "value": "smart-1094-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2877,11 +3147,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2907,9 +3179,11 @@
                         "value": "smart-1095-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2944,11 +3218,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2974,9 +3250,11 @@
                         "value": "smart-1096-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3011,11 +3289,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3041,9 +3321,11 @@
                         "value": "smart-1097-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3078,11 +3360,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3108,9 +3392,11 @@
                         "value": "smart-1098-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3145,11 +3431,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3175,9 +3463,11 @@
                         "value": "smart-1099-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3212,11 +3502,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3242,9 +3534,11 @@
                         "value": "smart-1100-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3279,11 +3573,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3309,9 +3605,11 @@
                         "value": "smart-1101-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3346,11 +3644,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3376,9 +3676,11 @@
                         "value": "smart-1102-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3413,11 +3715,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3443,9 +3747,11 @@
                         "value": "smart-1103-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3480,11 +3786,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3510,9 +3818,11 @@
                         "value": "smart-1104-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3547,11 +3857,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3577,9 +3889,11 @@
                         "value": "smart-1105-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3614,11 +3928,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3644,9 +3960,11 @@
                         "value": "smart-1106-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3681,11 +3999,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3711,9 +4031,11 @@
                         "value": "smart-1107-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3748,11 +4070,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3778,9 +4102,11 @@
                         "value": "smart-1108-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3815,11 +4141,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3845,9 +4173,11 @@
                         "value": "smart-1109-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3882,11 +4212,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3912,9 +4244,11 @@
                         "value": "smart-1110-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-7880378"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-7880378"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {

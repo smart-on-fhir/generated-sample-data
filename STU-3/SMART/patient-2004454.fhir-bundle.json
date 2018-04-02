@@ -21,9 +21,11 @@
                 ],
                 "birthDate": "2007-07-15",
                 "gender": "male",
-                "generalPractitioner": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "id": "smart-2004454",
                 "identifier": [
                     {
@@ -82,11 +84,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "exam",
-                            "display": "Exam",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Exam"
                     }
                 ],
@@ -109,9 +113,11 @@
                         "value": "smart-2004454-gestage"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -146,11 +152,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -173,31 +181,37 @@
                         "value": "smart-1836-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 109
-                    },
-                    "low": {
-                        "code": "mg/dL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/dL",
-                        "value": 40
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 109
+                        },
+                        "low": {
+                            "code": "mg/dL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/dL",
+                            "value": 40
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -232,11 +246,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -268,9 +284,11 @@
                         "value": "smart-1837-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -300,11 +318,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -336,9 +356,11 @@
                         "value": "smart-1838-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -368,11 +390,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -404,9 +428,11 @@
                         "value": "smart-1839-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -436,11 +462,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -463,31 +491,37 @@
                         "value": "smart-1840-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 15
-                    },
-                    "low": {
-                        "code": "ng/mL",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "ng/mL",
-                        "value": 2
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 15
+                        },
+                        "low": {
+                            "code": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "ng/mL",
+                            "value": 2
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -522,11 +556,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -558,9 +594,11 @@
                         "value": "smart-1841-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -863,11 +901,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -881,7 +921,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-01-13",
+                "effectiveDateTime": "2016-10-14",
                 "id": "smart-smokingstatus-1",
                 "identifier": [
                     {
@@ -890,9 +930,11 @@
                         "value": "smart-1"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {

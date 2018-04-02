@@ -21,9 +21,11 @@
                 ],
                 "birthDate": "2007-03-20",
                 "gender": "female",
-                "generalPractitioner": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "id": "smart-1032702",
                 "identifier": [
                     {
@@ -516,11 +518,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -534,7 +538,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-06-17",
+                "effectiveDateTime": "2016-06-02",
                 "id": "smart-smokingstatus-5",
                 "identifier": [
                     {
@@ -543,9 +547,11 @@
                         "value": "smart-5"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72004454"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72004454"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
