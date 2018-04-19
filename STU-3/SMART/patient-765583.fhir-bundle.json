@@ -8,11 +8,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "laboratory",
-                            "display": "Laboratory",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "laboratory",
+                                "display": "Laboratory",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Laboratory"
                     }
                 ],
@@ -35,31 +37,37 @@
                         "value": "smart-2542-lab"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71482713"
-                },
-                "referenceRange": {
-                    "high": {
-                        "code": "mg/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/L",
-                        "value": 3
-                    },
-                    "low": {
-                        "code": "mg/L",
-                        "system": "http://unitsofmeasure.org",
-                        "unit": "mg/L",
-                        "value": 0
-                    },
-                    "type": {
-                        "coding": {
-                            "code": "normal",
-                            "display": "Normal Range",
-                            "system": "http://hl7.org/fhir/referencerange-meaning"
-                        },
-                        "text": "Normal Range"
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71482713"
                     }
-                },
+                ],
+                "referenceRange": [
+                    {
+                        "high": {
+                            "code": "mg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/L",
+                            "value": 3
+                        },
+                        "low": {
+                            "code": "mg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "mg/L",
+                            "value": 0
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "normal",
+                                    "display": "Normal Range",
+                                    "system": "http://hl7.org/fhir/referencerange-meaning"
+                                }
+                            ],
+                            "text": "Normal Range"
+                        }
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -167,9 +175,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1323"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-40"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-40"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -295,9 +305,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1317"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-41"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-41"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -423,9 +435,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1314"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-42"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-42"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -476,9 +490,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1313"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-42"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-42"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -529,9 +545,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1315"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-42"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-42"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -582,9 +600,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1316"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-42"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-42"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -687,9 +707,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1301"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-43"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-43"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -740,9 +762,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1303"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-43"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-43"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -793,9 +817,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1302"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-43"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-43"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -921,9 +947,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1318"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-44"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-44"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -974,9 +1002,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1319"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-44"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-44"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1027,9 +1057,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1322"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-44"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-44"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1080,9 +1112,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1321"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-44"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-44"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1133,9 +1167,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1320"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-44"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-44"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1261,9 +1297,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1311"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-45"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-45"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1376,9 +1414,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1312"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-46"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-46"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1503,9 +1543,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1310"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-47"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-47"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1630,9 +1672,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1308"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-48"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-48"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1735,9 +1779,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1324"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-49"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-49"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1850,9 +1896,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1309"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-50"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-50"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -1977,9 +2025,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1305"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-51"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-51"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -2030,9 +2080,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1304"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-51"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-51"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -2083,9 +2135,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1306"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-51"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-51"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -2136,9 +2190,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-1307"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-51"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-51"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -2659,11 +2715,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -2677,7 +2735,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-09-02",
+                "effectiveDateTime": "2016-08-13",
                 "id": "smart-smokingstatus-43",
                 "identifier": [
                     {
@@ -2686,9 +2744,11 @@
                         "value": "smart-43"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71482713"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71482713"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {

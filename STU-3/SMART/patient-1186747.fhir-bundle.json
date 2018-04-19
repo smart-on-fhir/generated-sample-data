@@ -21,9 +21,11 @@
                 ],
                 "birthDate": "1995-02-22",
                 "gender": "male",
-                "generalPractitioner": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "id": "smart-1186747",
                 "identifier": [
                     {
@@ -87,11 +89,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "exam",
-                            "display": "Exam",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Exam"
                     }
                 ],
@@ -114,9 +118,11 @@
                         "value": "smart-1186747-gestage"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -795,30 +801,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -830,11 +842,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -850,9 +864,11 @@
                 },
                 "effectiveDateTime": "1999-07-02",
                 "id": "smart-691",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -881,30 +897,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -916,11 +938,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -936,9 +960,11 @@
                 },
                 "effectiveDateTime": "2004-08-03",
                 "id": "smart-692",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -967,30 +993,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1002,11 +1034,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1022,9 +1056,11 @@
                 },
                 "effectiveDateTime": "2004-08-05",
                 "id": "smart-693",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1053,30 +1089,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1088,11 +1130,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1108,9 +1152,11 @@
                 },
                 "effectiveDateTime": "2004-12-03",
                 "id": "smart-694",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1139,30 +1185,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1174,11 +1226,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1194,9 +1248,11 @@
                 },
                 "effectiveDateTime": "2005-08-18",
                 "id": "smart-695",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1225,30 +1281,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1260,11 +1322,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1280,9 +1344,11 @@
                 },
                 "effectiveDateTime": "2007-03-25",
                 "id": "smart-696",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1311,30 +1377,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1346,11 +1418,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1366,9 +1440,11 @@
                 },
                 "effectiveDateTime": "2007-08-14",
                 "id": "smart-697",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1397,30 +1473,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1432,11 +1514,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1452,9 +1536,11 @@
                 },
                 "effectiveDateTime": "2007-08-15",
                 "id": "smart-698",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1483,30 +1569,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1518,11 +1610,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1538,9 +1632,11 @@
                 },
                 "effectiveDateTime": "2007-09-13",
                 "id": "smart-699",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1569,30 +1665,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1604,11 +1706,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1624,9 +1728,11 @@
                 },
                 "effectiveDateTime": "2007-09-14",
                 "id": "smart-700",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1655,30 +1761,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1690,11 +1802,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1710,9 +1824,11 @@
                 },
                 "effectiveDateTime": "2007-09-24",
                 "id": "smart-701",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1741,30 +1857,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1776,11 +1898,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1796,9 +1920,11 @@
                 },
                 "effectiveDateTime": "2007-09-27",
                 "id": "smart-702",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1827,30 +1953,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1862,11 +1994,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1882,9 +2016,11 @@
                 },
                 "effectiveDateTime": "2008-12-30",
                 "id": "smart-703",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1913,30 +2049,36 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
                 "code": {
-                    "coding": {
-                        "code": "55284-4",
-                        "display": "Blood pressure",
-                        "system": "http://loinc.org"
-                    },
+                    "coding": [
+                        {
+                            "code": "55284-4",
+                            "display": "Blood pressure",
+                            "system": "http://loinc.org"
+                        }
+                    ],
                     "text": "Blood pressure"
                 },
                 "component": [
                     {
                         "code": {
-                            "coding": {
-                                "code": "8480-6",
-                                "display": "Systolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Systolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1948,11 +2090,13 @@
                     },
                     {
                         "code": {
-                            "coding": {
-                                "code": "8462-4",
-                                "display": "Diastolic blood pressure",
-                                "system": "http://loinc.org"
-                            },
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure",
+                                    "system": "http://loinc.org"
+                                }
+                            ],
                             "text": "Diastolic blood pressure"
                         },
                         "valueQuantity": {
@@ -1968,9 +2112,11 @@
                 },
                 "effectiveDateTime": "2009-01-05",
                 "id": "smart-704",
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
@@ -1999,11 +2145,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2029,9 +2177,11 @@
                         "value": "smart-3424-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2066,11 +2216,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2096,9 +2248,11 @@
                         "value": "smart-3425-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2133,11 +2287,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2163,9 +2319,11 @@
                         "value": "smart-3426-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2200,11 +2358,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2230,9 +2390,11 @@
                         "value": "smart-3427-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2267,11 +2429,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2297,9 +2461,11 @@
                         "value": "smart-3428-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2334,11 +2500,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2364,9 +2532,11 @@
                         "value": "smart-3429-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2401,11 +2571,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2431,9 +2603,11 @@
                         "value": "smart-3430-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2468,11 +2642,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2498,9 +2674,11 @@
                         "value": "smart-3431-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2535,11 +2713,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2565,9 +2745,11 @@
                         "value": "smart-3432-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2602,11 +2784,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2632,9 +2816,11 @@
                         "value": "smart-3433-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2669,11 +2855,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2699,9 +2887,11 @@
                         "value": "smart-3434-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2736,11 +2926,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2766,9 +2958,11 @@
                         "value": "smart-3435-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2803,11 +2997,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2833,9 +3029,11 @@
                         "value": "smart-3436-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2870,11 +3068,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2900,9 +3100,11 @@
                         "value": "smart-3437-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -2937,11 +3139,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -2967,9 +3171,11 @@
                         "value": "smart-3438-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3004,11 +3210,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3034,9 +3242,11 @@
                         "value": "smart-3439-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3071,11 +3281,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3101,9 +3313,11 @@
                         "value": "smart-3440-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3138,11 +3352,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3168,9 +3384,11 @@
                         "value": "smart-3441-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3205,11 +3423,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3235,9 +3455,11 @@
                         "value": "smart-3442-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3272,11 +3494,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3302,9 +3526,11 @@
                         "value": "smart-3443-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3339,11 +3565,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3369,9 +3597,11 @@
                         "value": "smart-3444-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3406,11 +3636,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3436,9 +3668,11 @@
                         "value": "smart-3445-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3473,11 +3707,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3503,9 +3739,11 @@
                         "value": "smart-3446-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3540,11 +3778,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3570,9 +3810,11 @@
                         "value": "smart-3447-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3607,11 +3849,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3637,9 +3881,11 @@
                         "value": "smart-3448-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3674,11 +3920,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3704,9 +3952,11 @@
                         "value": "smart-3449-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3741,11 +3991,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3771,9 +4023,11 @@
                         "value": "smart-3450-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3808,11 +4062,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3838,9 +4094,11 @@
                         "value": "smart-3451-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3875,11 +4133,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3905,9 +4165,11 @@
                         "value": "smart-3452-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -3942,11 +4204,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -3972,9 +4236,11 @@
                         "value": "smart-3453-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4009,11 +4275,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4039,9 +4307,11 @@
                         "value": "smart-3454-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4076,11 +4346,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4106,9 +4378,11 @@
                         "value": "smart-3455-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4143,11 +4417,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4173,9 +4449,11 @@
                         "value": "smart-3456-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4210,11 +4488,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4240,9 +4520,11 @@
                         "value": "smart-3457-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4277,11 +4559,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4307,9 +4591,11 @@
                         "value": "smart-3458-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4344,11 +4630,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4374,9 +4662,11 @@
                         "value": "smart-3459-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4411,11 +4701,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4441,9 +4733,11 @@
                         "value": "smart-3460-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4478,11 +4772,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4508,9 +4804,11 @@
                         "value": "smart-3461-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4545,11 +4843,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4575,9 +4875,11 @@
                         "value": "smart-3462-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4612,11 +4914,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4642,9 +4946,11 @@
                         "value": "smart-3463-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4679,11 +4985,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4709,9 +5017,11 @@
                         "value": "smart-3464-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4746,11 +5056,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4776,9 +5088,11 @@
                         "value": "smart-3465-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4813,11 +5127,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4843,9 +5159,11 @@
                         "value": "smart-3466-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4880,11 +5198,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4910,9 +5230,11 @@
                         "value": "smart-3467-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -4947,11 +5269,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -4977,9 +5301,11 @@
                         "value": "smart-3468-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5014,11 +5340,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5044,9 +5372,11 @@
                         "value": "smart-3469-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5081,11 +5411,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5111,9 +5443,11 @@
                         "value": "smart-3470-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5148,11 +5482,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5178,9 +5514,11 @@
                         "value": "smart-3471-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5215,11 +5553,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5245,9 +5585,11 @@
                         "value": "smart-3472-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5282,11 +5624,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5312,9 +5656,11 @@
                         "value": "smart-3473-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5349,11 +5695,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5379,9 +5727,11 @@
                         "value": "smart-3474-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5416,11 +5766,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5446,9 +5798,11 @@
                         "value": "smart-3475-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5483,11 +5837,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5513,9 +5869,11 @@
                         "value": "smart-3476-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5550,11 +5908,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5580,9 +5940,11 @@
                         "value": "smart-3477-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5617,11 +5979,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5647,9 +6011,11 @@
                         "value": "smart-3478-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5684,11 +6050,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5714,9 +6082,11 @@
                         "value": "smart-3479-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5751,11 +6121,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5781,9 +6153,11 @@
                         "value": "smart-3480-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5818,11 +6192,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5848,9 +6224,11 @@
                         "value": "smart-3481-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5885,11 +6263,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5915,9 +6295,11 @@
                         "value": "smart-3482-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -5952,11 +6334,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -5982,9 +6366,11 @@
                         "value": "smart-3483-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6019,11 +6405,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6049,9 +6437,11 @@
                         "value": "smart-3484-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6086,11 +6476,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6116,9 +6508,11 @@
                         "value": "smart-3485-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6153,11 +6547,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6183,9 +6579,11 @@
                         "value": "smart-3486-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6220,11 +6618,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6250,9 +6650,11 @@
                         "value": "smart-3487-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6287,11 +6689,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6317,9 +6721,11 @@
                         "value": "smart-3488-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6354,11 +6760,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6384,9 +6792,11 @@
                         "value": "smart-3489-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6421,11 +6831,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6451,9 +6863,11 @@
                         "value": "smart-3490-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6488,11 +6902,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6518,9 +6934,11 @@
                         "value": "smart-3491-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6555,11 +6973,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6585,9 +7005,11 @@
                         "value": "smart-3492-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6622,11 +7044,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6652,9 +7076,11 @@
                         "value": "smart-3493-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6689,11 +7115,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6719,9 +7147,11 @@
                         "value": "smart-3494-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6756,11 +7186,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6786,9 +7218,11 @@
                         "value": "smart-3495-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6823,11 +7257,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6853,9 +7289,11 @@
                         "value": "smart-3496-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6890,11 +7328,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6920,9 +7360,11 @@
                         "value": "smart-3497-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -6957,11 +7399,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -6987,9 +7431,11 @@
                         "value": "smart-3498-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7024,11 +7470,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7054,9 +7502,11 @@
                         "value": "smart-3499-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7091,11 +7541,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7121,9 +7573,11 @@
                         "value": "smart-3500-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7158,11 +7612,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7188,9 +7644,11 @@
                         "value": "smart-3501-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7225,11 +7683,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7255,9 +7715,11 @@
                         "value": "smart-3502-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7292,11 +7754,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7322,9 +7786,11 @@
                         "value": "smart-3503-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7359,11 +7825,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7389,9 +7857,11 @@
                         "value": "smart-3504-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7426,11 +7896,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7456,9 +7928,11 @@
                         "value": "smart-3505-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7493,11 +7967,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7523,9 +7999,11 @@
                         "value": "smart-3506-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7560,11 +8038,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7590,9 +8070,11 @@
                         "value": "smart-3507-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7627,11 +8109,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7657,9 +8141,11 @@
                         "value": "smart-3508-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7694,11 +8180,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7724,9 +8212,11 @@
                         "value": "smart-3509-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7761,11 +8251,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7791,9 +8283,11 @@
                         "value": "smart-3510-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7828,11 +8322,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7858,9 +8354,11 @@
                         "value": "smart-3511-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7895,11 +8393,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7925,9 +8425,11 @@
                         "value": "smart-3512-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -7962,11 +8464,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -7992,9 +8496,11 @@
                         "value": "smart-3513-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8029,11 +8535,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8059,9 +8567,11 @@
                         "value": "smart-3514-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8096,11 +8606,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8126,9 +8638,11 @@
                         "value": "smart-3515-height"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8163,11 +8677,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8193,9 +8709,11 @@
                         "value": "smart-3516-heartrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8230,11 +8748,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8260,9 +8780,11 @@
                         "value": "smart-3517-respiratoryrate"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8297,11 +8819,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8327,9 +8851,11 @@
                         "value": "smart-3518-temperature"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8364,11 +8890,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8394,9 +8922,11 @@
                         "value": "smart-3519-weight"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8431,11 +8961,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8461,9 +8993,11 @@
                         "value": "smart-3520-bmi"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8498,11 +9032,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "vital-signs",
-                            "display": "Vital Signs",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "display": "Vital Signs",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Vital Signs"
                     }
                 ],
@@ -8528,9 +9064,11 @@
                         "value": "smart-3521-oxygensaturation"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -8786,9 +9324,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-593"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -8839,9 +9379,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-595"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -8892,9 +9434,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-596"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -8945,9 +9489,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-591"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -8998,9 +9544,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-600"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9051,9 +9599,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-599"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9104,9 +9654,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-592"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9157,9 +9709,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-598"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9210,9 +9764,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-597"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9263,9 +9819,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-601"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9316,9 +9874,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-594"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-134"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-134"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9517,9 +10077,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-605"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-136"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-136"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9570,9 +10132,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-602"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-136"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-136"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9623,9 +10187,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-604"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-136"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-136"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9676,9 +10242,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-603"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-136"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-136"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9803,9 +10371,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-608"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9856,9 +10426,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-609"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9909,9 +10481,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-610"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -9962,9 +10536,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-606"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -10015,9 +10591,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-611"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -10068,9 +10646,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-607"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-137"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-137"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -10627,11 +11207,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -10645,7 +11227,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-07-29",
+                "effectiveDateTime": "2016-01-22",
                 "id": "smart-smokingstatus-8",
                 "identifier": [
                     {
@@ -10654,9 +11236,11 @@
                         "value": "smart-8"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-71032702"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-71032702"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {

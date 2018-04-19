@@ -21,9 +21,11 @@
                 ],
                 "birthDate": "2003-12-14",
                 "gender": "male",
-                "generalPractitioner": {
-                    "reference": "Practitioner/smart-Practitioner-72080416"
-                },
+                "generalPractitioner": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72080416"
+                    }
+                ],
                 "id": "smart-2080416",
                 "identifier": [
                     {
@@ -87,11 +89,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "exam",
-                            "display": "Exam",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "exam",
+                                "display": "Exam",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Exam"
                     }
                 ],
@@ -114,9 +118,11 @@
                         "value": "smart-2080416-gestage"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72080416"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72080416"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "unknown",
                 "subject": {
@@ -217,9 +223,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-89"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-219"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-219"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -344,9 +352,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-92"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-220"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-220"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -472,9 +482,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-91"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-221"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-221"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -525,9 +537,11 @@
                 "url": "MedicationDispense/smart-MedicationDispense-90"
             },
             "resource": {
-                "authorizingPrescription": {
-                    "reference": "MedicationRequest/smart-MedicationRequest-221"
-                },
+                "authorizingPrescription": [
+                    {
+                        "reference": "MedicationRequest/smart-MedicationRequest-221"
+                    }
+                ],
                 "daysSupply": {
                     "code": "d",
                     "system": "http://unitsofmeasure.org",
@@ -931,11 +945,13 @@
             "resource": {
                 "category": [
                     {
-                        "coding": {
-                            "code": "social-history",
-                            "display": "Social History",
-                            "system": "http://hl7.org/fhir/observation-category"
-                        },
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "display": "Social History",
+                                "system": "http://hl7.org/fhir/observation-category"
+                            }
+                        ],
                         "text": "Social History"
                     }
                 ],
@@ -949,7 +965,7 @@
                     ],
                     "text": "Tobacco smoking status"
                 },
-                "effectiveDateTime": "2016-12-15",
+                "effectiveDateTime": "2016-09-08",
                 "id": "smart-smokingstatus-4",
                 "identifier": [
                     {
@@ -958,9 +974,11 @@
                         "value": "smart-4"
                     }
                 ],
-                "performer": {
-                    "reference": "Practitioner/smart-Practitioner-72080416"
-                },
+                "performer": [
+                    {
+                        "reference": "Practitioner/smart-Practitioner-72080416"
+                    }
+                ],
                 "resourceType": "Observation",
                 "status": "final",
                 "subject": {
