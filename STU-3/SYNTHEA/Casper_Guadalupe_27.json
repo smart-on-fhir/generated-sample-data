@@ -3619,15 +3619,17 @@
                     "start": "2016-09-06T08:23:04-04:00",
                     "end": "2016-09-06T08:23:04-04:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "444814009",
-                            "display": "Viral sinusitis (disorder)"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "444814009",
+                                "display": "Viral sinusitis (disorder)"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:b05749d3-ba92-43cf-902c-4fda07741d12"
                 },

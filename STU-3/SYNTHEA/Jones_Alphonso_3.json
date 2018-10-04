@@ -2340,15 +2340,17 @@
                     "start": "2015-02-02T07:54:43-05:00",
                     "end": "2015-02-02T07:54:43-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "65363002",
-                            "display": "Otitis media"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "65363002",
+                                "display": "Otitis media"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:e424fe1d-27a3-45ac-b7f2-3b340db86ccf"
                 },

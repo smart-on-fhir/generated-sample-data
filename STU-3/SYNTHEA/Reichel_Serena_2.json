@@ -1489,15 +1489,17 @@
                     "start": "2016-01-11T11:58:08-05:00",
                     "end": "2016-01-11T12:21:15-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "10509002",
-                            "display": "Acute bronchitis (disorder)"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "10509002",
+                                "display": "Acute bronchitis (disorder)"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:4b6bf86e-5019-4c4b-a2ae-2f0056652d73"
                 },

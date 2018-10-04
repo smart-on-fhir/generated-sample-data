@@ -2024,15 +2024,17 @@
                     "start": "2010-03-08T14:39:38-05:00",
                     "end": "2010-03-08T14:59:42-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "10509002",
-                            "display": "Acute bronchitis (disorder)"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "10509002",
+                                "display": "Acute bronchitis (disorder)"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:b182344e-01f0-426d-9f0c-5d535c7f3e0e"
                 },

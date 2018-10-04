@@ -2900,15 +2900,17 @@
                     "start": "2016-01-14T17:44:15-05:00",
                     "end": "2016-01-14T17:44:15-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "65966004",
-                            "display": "Fracture of forearm"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "65966004",
+                                "display": "Fracture of forearm"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:495f2d77-2beb-4bf9-889b-80f10db09d6d"
                 },

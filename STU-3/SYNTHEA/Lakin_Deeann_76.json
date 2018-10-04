@@ -1414,15 +1414,17 @@
                     "start": "2008-07-20T16:10:21-04:00",
                     "end": "2008-07-20T16:10:21-04:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "403191005",
-                            "display": "Second degree burn"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "403191005",
+                                "display": "Second degree burn"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:1ea7e9b5-a5c5-4b7c-8124-8c0482df4397"
                 },

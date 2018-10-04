@@ -2660,15 +2660,17 @@
                     "start": "2016-09-25T21:30:52-04:00",
                     "end": "2016-09-25T21:30:52-04:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "65363002",
-                            "display": "Otitis media"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "65363002",
+                                "display": "Otitis media"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:1415674c-0bd9-40f2-8845-5450d4611cf8"
                 },

@@ -1786,15 +1786,17 @@
                     "start": "2014-02-18T04:20:12-05:00",
                     "end": "2014-02-18T04:20:12-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "36971009",
-                            "display": "Sinusitis (disorder)"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "36971009",
+                                "display": "Sinusitis (disorder)"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:a9630f36-5eae-40bd-bad1-f62d6e01ac1a"
                 },

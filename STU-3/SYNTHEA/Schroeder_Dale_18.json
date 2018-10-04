@@ -2895,15 +2895,17 @@
                     "start": "2014-01-14T23:03:03-05:00",
                     "end": "2014-01-14T23:03:03-05:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "195662009",
-                            "display": "Acute viral pharyngitis (disorder)"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "195662009",
+                                "display": "Acute viral pharyngitis (disorder)"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:2e4683f7-833e-412d-a245-e5b4eefaf82f"
                 },

@@ -3863,15 +3863,17 @@
                     "start": "2012-05-21T23:51:41-04:00",
                     "end": "2012-05-21T23:51:41-04:00"
                 },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "359817006",
-                            "display": "Closed fracture of hip"
-                        }
-                    ]
-                },
+                "reason": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "359817006",
+                                "display": "Closed fracture of hip"
+                            }
+                        ]
+                    }
+                ],
                 "serviceProvider": {
                     "reference": "urn:uuid:924b8352-eeeb-477f-a13b-e66d20589060"
                 },
