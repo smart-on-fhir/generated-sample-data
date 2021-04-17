@@ -15,27 +15,27 @@
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsGene",
                         "valueCodeableConcept": {
-                        "coding": [
-                            {
-                            "system": "http://www.genenames.org",
-                            "version": "GRCh38.p7",
-                            "code": "2621",
-                            "display": "CYP2C19"
-                            }
-                        ],
-                        "text": "Patient test results for CYP2C19"
+                            "coding": [
+                                {
+                                    "system": "http://www.genenames.org",
+                                    "version": "GRCh38.p7",
+                                    "code": "2621",
+                                    "display": "CYP2C19"
+                                }
+                            ],
+                            "text": "Patient test results for CYP2C19"
                         }
                     },
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
                         "valueCodeableConcept": {
-                        "text": "*1"
+                            "text": "*1"
                         }
                     },
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/observation-geneticsAlleleName",
                         "valueCodeableConcept": {
-                        "text": "*17"
+                            "text": "*17"
                         }
                     }
                 ],
@@ -44,13 +44,13 @@
                     "text": "genetics"
                 },
                 "code": {
-                "coding": [
-                    {
-                        "system": "http://loinc.org",
-                        "code": "84413-4",
-                        "display": "Genotype display name"
-                    }
-                ]
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "84413-4",
+                            "display": "Genotype display name"
+                        }
+                    ]
                 },
                 "subject": {
                     "reference": "Patient/smart-8888802"
