@@ -35,55 +35,13 @@ Then make a pull request to this repository. We will review your data, give it a
 #### Transaction requirements
 - Data should be in FHIR transaction bundles
 - There should be one transaction bundle for each patient
-- `urn:uuid` identifiers should be used instead of "real" IDs, These look like
-  `urn:uuid:{unique random string ID}`. This allows resources to reference to each
-  other by `urn:uuid`. While the data is being inserted, the FHIR server will
-  replace those with real IDs and keep track of them so that reference work properly.
+- Use unique resource IDs! Numeric values are not acceptable. You should verify that resource of that type
+  and having the that ID does NOT exist on the server already. If it does, pick another ID! We recommend using tools like https://www.uuidgenerator.net/version4 for generating unique IDs.
+
+- In POST requests the server is not guaranteed to respect or preserve the resource ID from the transaction 
+  bundle. In this case you can use `urn:uuid`. These look like `urn:uuid:{unique random string ID}`. This allows resources to reference to each other by `urn:uuid`. While the data is being inserted, the FHIR
+  server will replace those with real IDs and keep track of them so that reference work properly.
   For example:
-  ```json
-  // After uploading this bundle:
-  {
-      "resourceType": "Bundle",
-      "type": "transaction",
-      "entry": [
-          {
-              "fullUrl": "urn:uuid:39d9cd1b-ce97-4cda-bed8-7609c7af884b",
-              "resource": {
-                  "resourceType": "Patient",
-                  "id": "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
-                  ...
-              },
-              "request": {
-                  "method": "PUT",
-                  "url": "urn:uuid:39d9cd1b-ce97-4cda-bed8-7609c7af884b"
-              }
-          }
-  }
-  
-  // the server should have the following patient:
-  {
-      "resourceType": "Bundle",
-      "type": "searchset",
-      "entry": [
-          {
-              "fullUrl": "https://r4.smarthealthit.org/Patient/39d9cd1b-ce97-4cda-bed8-7609c7af884b",
-              "resource": {
-                  "resourceType": "Patient",
-                  "id": "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
-                  ...
-              }
-          }
-          ...
-      ]
-  }
-  ```
-- Make sure you are using unique string IDs. Values like `urn:uuid:123` are not acceptable.
-  You should verify that resource of that type and having the same ID does NOT exist on the server 
-  already. We recommend using tools like https://www.uuidgenerator.net/version4 to generate
-  unique IDs.
-- In the `entry` array of the transaction bundle, resources that are being 
-  referenced should be listed BEFORE those that reference them. For example,
-  a Patient should be listed before his conditions:
   ```js
   // Example in JavaScript for clarity
 
@@ -102,8 +60,8 @@ Then make a pull request to this repository. We will review your data, give it a
                   // ...
               },
               "request": {
-                  "method": "PUT",
-                  "url": `urn:uuid:${PATIENT_ID}`
+                  "method": "POST",
+                  "url": "Patient"
               }
           },
           {
@@ -117,8 +75,52 @@ Then make a pull request to this repository. We will review your data, give it a
                   // ...
               },
               "request": {
+                  "method": "POST",
+                  "url": "Condition"
+              }
+          }
+      ]
+  }
+  ```
+- In the `entry` array of the transaction bundle, resources that are being 
+  referenced should be listed BEFORE those that reference them. For example,
+  a Patient should be listed before his conditions. This way, by the time a condition is inserted,
+  the patient should already exist on the server:
+  ```js
+  // Example in JavaScript for clarity
+
+  const PATIENT_ID = "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
+  const CONDITION_ID = "629ca19c-1025-4b3e-9e5c-2cd805208a8b"
+  
+  const transaction = {
+      "resourceType": "Bundle",
+      "type": "transaction",
+      "entry": [
+          {
+              "fullUrl": `Patient/${PATIENT_ID}`,
+              "resource": {
+                  "resourceType": "Patient",
+                  "id": PATIENT_ID
+                  // ...
+              },
+              "request": {
                   "method": "PUT",
-                  "url": `urn:uuid:${CONDITION_ID}`
+                  "url": `Patient/${PATIENT_ID}`
+              }
+          },
+          {
+              "fullUrl": `Condition/${CONDITION_ID}`,
+              "resource": {
+                  "resourceType": "Condition",
+                  "id": CONDITION_ID,
+                  "patient": {
+                      "reference": `Patient/${PATIENT_ID}`
+                  },
+                  // ...
+              },
+              "request": {
+                  "method": "PUT",
+                  "url": `Condition/${CONDITION_ID}`
               }
           }
       ]
