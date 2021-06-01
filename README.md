@@ -40,22 +40,22 @@ Then make a pull request to this repository. We will review your data, give it a
   other by `urn:uuid`. While the data is being inserted, the FHIR server will
   replace those with real IDs and keep track of them so that reference work properly.
   For example:
-  <pre>
+  ```json
   // After uploading this bundle:
   {
       "resourceType": "Bundle",
       "type": "transaction",
       "entry": [
           {
-              "fullUrl": "urn:uuid:<b style="color:#069">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>",
+              "fullUrl": "urn:uuid:39d9cd1b-ce97-4cda-bed8-7609c7af884b",
               "resource": {
                   "resourceType": "Patient",
-                  "id": "<b style="color:#069">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
+                  "id": "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
                   ...
               },
               "request": {
                   "method": "PUT",
-                  "url": "urn:uuid:<b style="color:#069">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
+                  "url": "urn:uuid:39d9cd1b-ce97-4cda-bed8-7609c7af884b"
               }
           }
   }
@@ -66,17 +66,17 @@ Then make a pull request to this repository. We will review your data, give it a
       "type": "searchset",
       "entry": [
           {
-              "fullUrl": "https://r4.smarthealthit.org/Patient/<b style="color:#069">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>",
+              "fullUrl": "https://r4.smarthealthit.org/Patient/39d9cd1b-ce97-4cda-bed8-7609c7af884b",
               "resource": {
                   "resourceType": "Patient",
-                  "id": "<b style="color:#069">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
+                  "id": "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
                   ...
               }
           }
           ...
       ]
   }
-  </pre>
+  ```
 - Make sure you are using unique string IDs. Values like `urn:uuid:123` are not acceptable.
   You should verify that resource of that type and having the same ID does NOT exist on the server 
   already. We recommend using tools like https://www.uuidgenerator.net/version4 to generate
@@ -84,41 +84,46 @@ Then make a pull request to this repository. We will review your data, give it a
 - In the `entry` array of the transaction bundle, resources that are being 
   referenced should be listed BEFORE those that reference them. For example,
   a Patient should be listed before his conditions:
-  <pre>
-  {
+  ```js
+  // Example in JavaScript for clarity
+
+  const PATIENT_ID = "39d9cd1b-ce97-4cda-bed8-7609c7af884b"
+  const CONDITION_ID = "629ca19c-1025-4b3e-9e5c-2cd805208a8b"
+  
+  const transaction = {
       "resourceType": "Bundle",
       "type": "transaction",
       "entry": [
           {
-              "fullUrl": "urn:uuid:<b style="color:#960">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>",
+              "fullUrl": `urn:uuid:${PATIENT_ID}`,
               "resource": {
                   "resourceType": "Patient",
-                  "id": "<b style="color:#960">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
-                  ...
+                  "id": PATIENT_ID
+                  // ...
               },
               "request": {
                   "method": "PUT",
-                  "url": "urn:uuid:<b style="color:#960">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
+                  "url": `urn:uuid:${PATIENT_ID}`
               }
           },
           {
-              "fullUrl": "urn:uuid:<b style="color:#069">629ca19c-1025-4b3e-9e5c-2cd805208a8b</b>",
+              "fullUrl": `urn:uuid:${CONDITION_ID}`,
               "resource": {
                   "resourceType": "Condition",
-                  "id": "<b style="color:#069">629ca19c-1025-4b3e-9e5c-2cd805208a8b</b>",
+                  "id": CONDITION_ID,
                   "patient": {
-                      "reference": "urn:uuid:<b style="color:#960">39d9cd1b-ce97-4cda-bed8-7609c7af884b</b>"
+                      "reference": `urn:uuid:${PATIENT_ID}`
                   },
-                  ...
+                  // ...
               },
               "request": {
                   "method": "PUT",
-                  "url": "urn:uuid:<b style="color:#069">629ca19c-1025-4b3e-9e5c-2cd805208a8b</b>"
+                  "url": `urn:uuid:${CONDITION_ID}`
               }
           }
       ]
   }
-  </pre>
+  ```
 - For transaction entries use **PUT** requests rather then **POST** if possible. The differences between the 
   two are:
   - POST will create the resource but that might be a little unpredictable.
