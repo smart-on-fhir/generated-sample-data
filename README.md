@@ -28,8 +28,6 @@ You can create transaction bundles as described below and add them to the approp
 - STU-3/CUSTOM/
 - R4/CUSTOM/
 
-NOTE that for DSTU-2 transactions should be in XML!
-
 Then make a pull request to this repository. We will review your data, give it a try and if everything is OK, it will be permanently added to the server.
 
 #### Transaction requirements
